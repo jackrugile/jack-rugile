@@ -1,0 +1,104 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    )
+    title Jack Rugile | Front End Developer
+    meta(
+      name="description"
+      content=""
+    )
+    link(
+      href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i&font-display=swap"
+      rel="stylesheet"
+    )
+    link(
+      href="./styles/index.css"
+      rel="stylesheet"
+    )
+    link(
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./images/favicon.png"
+    )
+  body
+    header
+      h1
+        svg(xmlns='http://www.w3.org/2000/svg' viewbox='0 0 320 320')
+          polygon(fill='#FF0044' points='20,320 0,160 60,0 140,0 ')
+          polygon(fill='#FF0044' points='300,0 320,160 260,320 180,320 ')
+          polygon(fill='#FF0044' points='220,0 180,0 60,320 100,320 140,320 260,0 ')
+        | Jack Rugile
+      p Front End Web Developer
+    div.content
+      div.section
+        h2 About Me
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare velit at tortor gravida gravida. Proin ac congue ante, sed aliquet mauris. Maecenas tincidunt lectus turpis, eget efficitur dui imperdiet quis. Vivamus neque nibh, faucibus nec ornare eu, molestie in nisl. Morbi vel feugiat enim, non porttitor tellus.
+      hr
+      div.section
+        h2 Games
+        div.grid
+          div.cell
+            div.cell-image
+            h3.cell-title Lost Without You
+            h4.cell-subtitle Ludum Dare 41
+          div.cell
+            div.cell-image
+            h3.cell-title Lost Without You
+            h4.cell-subtitle Ludum Dare 41
+          div.cell
+            div.cell-image
+            h3.cell-title Lost Without You
+            h4.cell-subtitle Ludum Dare 41
+        //
+          <ul>
+          <li>Lost Without You</li>
+          <li>Mono Move</li>
+          <li>Radius Raid</li>
+          </ul>
+      hr
+      div.section
+        h2 Projects
+        ul
+          li Itch A Skitch
+      hr
+      div.section
+        h2 Employed Games
+        ul
+          li Capital One Games
+          li Boreal Magic
+      hr
+      div.section
+        h2 Employed Projects
+        ul
+          li If This Then Dominos
+          li ViewIn2 - YouTube
+          li Omelet Agency
+      hr
+      div.section
+        h2 Open Source
+        ul
+          li Variaboard
+          li Placeholdem
+          li jRumble
+      hr
+      div.section
+        h2 Articles &amp; Presentations
+        ul
+          li Start Making Games
+          li Codrops Particles
+          li Interview
+      hr
+      div.section
+        h2 Featured Demos
+        ul
+          li codepen demo 1
+          li codepen demo 2
+          li codepen demo 3
+    footer
+      div.footer-inner
+        img(src='./images/avatar.jpg')
+    script(src="./scripts/index.js")
