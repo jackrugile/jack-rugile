@@ -1,43 +1,44 @@
-:root {
-  --gloom-4: hsl(225, 17.6%, 12.8%);
-  --gloom-3: hsl(225, 21.2%, 24.7%);
-  --gloom-2: hsl(225, 16.7%, 76%);
-  --gloom-1: hsl(225, 5%, 95%);
-  --rose: hsl(345, 100%, 50%);
-  --lumos: hsl(0, 0%, 100%);
+@import './reset.css';
 
-  --font-primary: merriweather;
-  --font-secondary: merriweather;
+:root {
+  --color-nocturne: hsl(225, 17.6%, 12.8%);
+  --color-dim: hsl(225, 21.2%, 24.7%);
+  --color-cloud: hsl(225, 16.7%, 76%);
+  --color-sky: hsl(225, 5%, 95%);
+  --color-rose: hsl(345, 100%, 50%);
+  --color-lumos: hsl(0, 0%, 100%);
+
+  --font-primary: merriweather, serif;
+  --font-secondary: lato, san-serif;
 }
 
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
-html,
-body {
+.html,
+.body {
   height: 100%;
 }
 
-body {
-  background: var(--lumos);
-  color: var(--gloom-2);
-  font-family: merriweather;
+.body {
+  background: var(--color-lumos);
+  color: var(--color-cloud);
+  font-family: var(--font-primary);
   font-weight: 100;
   overflow-x: hidden;
 }
 
-header {
+.header {
   height: 100%;
   position: relative;
+  will-change: transform;
   z-index: 1;
 }
 
 h1 {
-  animation: h1-enter 1500ms 1500ms forwards;
-  color: var(--gloom-4);
+  animation: h1-enter 1500ms 0ms forwards;
+  color: var(--color-nocturne);
   font-family: merriweather;
   font-size: 50px;
   font-weight: 100;
@@ -61,17 +62,17 @@ h1 svg {
 @keyframes h1-enter {
   0% {
     opacity: 0;
-    transform: translate3d(0, -50%, 0) scale(0.95);
+    transform: translate3d(0, -30%, 0);
   }
   100% {
     opacity: 1;
-    transform: translate3d(0, -50%, 0) scale(1);
+    transform: translate3d(0, -50%, 0);
   }
 }
 
-header p {
-  animation: h1-enter 1500ms 1500ms forwards;
-  color: var(--gloom-4);
+.header p {
+  animation: h1-enter 1500ms 0ms forwards;
+  color: var(--color-nocturne);
   font-family: lato;
   font-size: 23px;
   font-weight: 400;
@@ -86,7 +87,7 @@ header p {
   z-index: 1;
 }
 
-header p span {
+.header p span {
   color: var(--rose);
   font-weight: 900;
   letter-spacing: -0.2em;
@@ -94,7 +95,7 @@ header p span {
 }
 
 .content {
-  background: var(--gloom-4);
+  background: var(--color-nocturne);
   padding: 100px;
   position: relative;
   z-index: 1;
@@ -113,7 +114,7 @@ header p span {
 }
 
 .section h2 {
-  color: var(--rose);
+  color: var(--color-rose);
   font-size: 32px;
   font-weight: 100;
   line-height: 1.25;
@@ -132,7 +133,7 @@ header p span {
 
 .grid {
   display: grid;
-  gap: 2rem;
+  grid-gap: 2rem;
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -140,7 +141,7 @@ header p span {
 }
 
 .cell-image {
-  background: var(--gloom-3);
+  background: var(--color-dim);
   margin-bottom: 2rem;
   position: relative;
 }
@@ -158,7 +159,7 @@ header p span {
 }
 
 hr {
-  background: var(--gloom-3);
+  background: var(--color-dim);
   border: none;
   height: 1px;
   margin: 60px auto;
@@ -167,21 +168,14 @@ hr {
 
 canvas {
   bottom: 0;
-  //cursor: move;
-  //cursor: grab;
   left: 0;
   position: fixed;
   right: 0;
   top: 0;
 }
 
-canvas:active {
-  cursor: move;
-  cursor: grabbing;
-}
-
-footer {
-  background: var(--rose);
+.footer {
+  background: var(--color-rose);
   height: 300px;
   position: relative;
   z-index: 1;
@@ -192,7 +186,7 @@ footer {
   max-width: 50rem;
 }
 
-footer img {
+.footer img {
   border: 5px solid #fff;
   display: block;
   width: 100px;

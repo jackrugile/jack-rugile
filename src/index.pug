@@ -1,15 +1,19 @@
 doctype html
-html(lang="en")
+html.html(lang="en")
   head
     meta(charset="utf-8")
     meta(
       name="viewport"
       content="width=device-width, initial-scale=1, viewport-fit=cover"
     )
-    title Jack Rugile | Front End Developer
+    title #{name} | #{title}
     meta(
       name="description"
       content=""
+    )
+    meta(
+      name="author"
+      content=name
     )
     link(
       href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i&font-display=swap"
@@ -20,19 +24,68 @@ html(lang="en")
       rel="stylesheet"
     )
     link(
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="./images/favicon.png"
+      rel="manifest"
+      href="./meta/site.webmanifest"
     )
-  body
-    header
+    link(
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./meta/apple-touch-icon.png"
+    )
+    link(
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./meta/favicon-32x32.png"
+    )
+    link(
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./meta/favicon-16x16.png"
+    )
+    link(
+      rel="manifest"
+      href="./meta/site.webmanifest"
+    )
+    link(
+      rel="mask-icon"
+      href="./meta/safari-pinned-tab.svg"
+      color="#ff0040"
+    )
+    meta(
+      name="msapplication-TileColor"
+      content="#ffffff"
+    )
+    meta(
+      name="msapplication-config"
+      content="./meta/browserconfig.xml"
+    )
+    meta(
+      name="theme-color"
+      content="#ffffff"
+    )
+    meta(
+      name="apple-mobile-web-app-capable"
+      content="yes"
+    )
+    meta(
+      name="apple-mobile-web-app-status-bar-style"
+      content="black"
+    )
+    link(
+      rel="canonical"
+      href="https://jackrugile.com"
+    )
+  body.body
+    header.header
       h1
         svg(xmlns='http://www.w3.org/2000/svg' viewbox='0 0 320 320')
           polygon(fill='#FF0044' points='20,320 0,160 60,0 140,0 ')
           polygon(fill='#FF0044' points='300,0 320,160 260,320 180,320 ')
           polygon(fill='#FF0044' points='220,0 180,0 60,320 100,320 140,320 260,0 ')
-        | Jack Rugile
-      p Front End Web Developer
+        | #{name}
+      p #{title}
     div.content
       div.section
         h2 About Me
@@ -44,21 +97,15 @@ html(lang="en")
           div.cell
             div.cell-image
             h3.cell-title Lost Without You
-            h4.cell-subtitle Ludum Dare 41
+            h4.cell-subtitle Turn-Based Action Puzzler
           div.cell
             div.cell-image
-            h3.cell-title Lost Without You
-            h4.cell-subtitle Ludum Dare 41
+            h3.cell-title Mono Move
+            h4.cell-subtitle Single Control Gravity Switching
           div.cell
             div.cell-image
-            h3.cell-title Lost Without You
-            h4.cell-subtitle Ludum Dare 41
-        //
-          <ul>
-          <li>Lost Without You</li>
-          <li>Mono Move</li>
-          <li>Radius Raid</li>
-          </ul>
+            h3.cell-title Radius Raid
+            h4.cell-subtitle Space Shoot 'Em Up
       hr
       div.section
         h2 Projects
@@ -98,7 +145,7 @@ html(lang="en")
           li codepen demo 1
           li codepen demo 2
           li codepen demo 3
-    footer
+    footer.footer
       div.footer-inner
         img(src='./images/avatar.jpg')
     script(src="./scripts/index.js")
