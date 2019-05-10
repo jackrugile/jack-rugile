@@ -8,8 +8,8 @@
   --color-rose: hsl(345, 100%, 50%);
   --color-lumos: hsl(0, 0%, 100%);
 
-  --font-primary: merriweather, serif;
-  --font-secondary: lato, san-serif;
+  --font-primary: 'Merriweather', serif;
+  --font-secondary: 'Lato', san-serif;
 }
 
 * {
@@ -39,7 +39,7 @@
 h1 {
   animation: h1-enter 1500ms 0ms forwards;
   color: var(--color-nocturne);
-  font-family: merriweather;
+  font-family: var(--font-primary);
   font-size: 50px;
   font-weight: 100;
   line-height: 1;
@@ -54,6 +54,7 @@ h1 {
 
 h1 svg {
   display: inline-block;
+  fill: var(--color-rose);
   margin-right: 10px;
   vertical-align: middle;
   width: 40px;
@@ -73,7 +74,7 @@ h1 svg {
 .header p {
   animation: h1-enter 1500ms 0ms forwards;
   color: var(--color-nocturne);
-  font-family: lato;
+  font-family: var(--font-secondary);
   font-size: 23px;
   font-weight: 400;
   line-height: 1;
@@ -94,7 +95,7 @@ h1 svg {
   margin-right: 10px;
 }
 
-.content {
+.main {
   background: var(--color-nocturne);
   padding: 100px;
   position: relative;
@@ -107,7 +108,7 @@ h1 svg {
 }
 
 .section p {
-  font-family: lato;
+  font-family: var(--font-secondary);
   font-size: 16px;
   font-weight: 400;
   line-height: 1.75;
@@ -125,7 +126,7 @@ h1 svg {
 }
 
 .section li {
-  font-family: lato;
+  font-family: var(--font-secondary);
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 10px;

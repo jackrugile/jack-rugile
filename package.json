@@ -12,8 +12,12 @@
   },
   "devDependencies": {
     "cssnano": "^4.1.10",
+    "eslint": "^5.16.0",
     "parcel-bundler": "^1.12.3",
     "parcel-plugin-browserconfig": "^1.0.0",
-    "pug": "^2.0.3"
+    "postcss": "^7.0.16",
+    "pug": "^2.0.3",
+    "stylelint": "^10.0.1",
+    "stylelint-config-standard": "^18.3.0"
   }
 }
