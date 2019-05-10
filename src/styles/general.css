@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+.html,
+.body {
+  background-color: var(--color-rose);
+  min-height: 100vh;
+}
+
+.body {
+  color: var(--color-cloud);
+  font-family: var(--font-primary);
+  font-weight: 100;
+  line-height: 1.5;
+  overflow-y: scroll;
+}

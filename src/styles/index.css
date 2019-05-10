@@ -1,125 +1,28 @@
 @import './reset.css';
-
-:root {
-  --color-nocturne: hsl(225, 17.6%, 12.8%);
-  --color-dim: hsl(225, 21.2%, 24.7%);
-  --color-cloud: hsl(225, 16.7%, 76%);
-  --color-sky: hsl(225, 5%, 95%);
-  --color-rose: hsl(345, 100%, 50%);
-  --color-lumos: hsl(0, 0%, 100%);
-
-  --font-primary: 'Merriweather', serif;
-  --font-secondary: 'Lato', san-serif;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.html,
-.body {
-  height: 100%;
-}
-
-.body {
-  background: var(--color-lumos);
-  color: var(--color-cloud);
-  font-family: var(--font-primary);
-  font-weight: 100;
-  overflow-x: hidden;
-}
-
-.header {
-  height: 100%;
-  position: relative;
-  will-change: transform;
-  z-index: 1;
-}
-
-h1 {
-  animation: h1-enter 1500ms 0ms forwards;
-  color: var(--color-nocturne);
-  font-family: var(--font-primary);
-  font-size: 50px;
-  font-weight: 100;
-  line-height: 1;
-  opacity: 0;
-  position: fixed;
-  text-align: center;
-  top: 50%;
-  transform: translate3d(0, -50%, 0);
-  width: 100%;
-  z-index: 1;
-}
-
-h1 svg {
-  display: inline-block;
-  fill: var(--color-rose);
-  margin-right: 10px;
-  vertical-align: middle;
-  width: 40px;
-}
-
-@keyframes h1-enter {
-  0% {
-    opacity: 0;
-    transform: translate3d(0, -30%, 0);
-  }
-  100% {
-    opacity: 1;
-    transform: translate3d(0, -50%, 0);
-  }
-}
-
-.header p {
-  animation: h1-enter 1500ms 0ms forwards;
-  color: var(--color-nocturne);
-  font-family: var(--font-secondary);
-  font-size: 23px;
-  font-weight: 400;
-  line-height: 1;
-  margin-left: 28px;
-  opacity: 0;
-  position: fixed;
-  text-align: center;
-  top: 57%;
-  transform: translate3d(0, -50%, 0);
-  width: 100%;
-  z-index: 1;
-}
-
-.header p span {
-  color: var(--rose);
-  font-weight: 900;
-  letter-spacing: -0.2em;
-  margin-right: 10px;
-}
-
-.main {
-  background: var(--color-nocturne);
-  padding: 100px;
-  position: relative;
-  z-index: 1;
-}
+@import './variables.css';
+@import './general.css';
+@import './header.css';
+@import './main.css';
+@import './footer.css';
 
 .section {
   margin: 0 auto;
-  max-width: 50rem;
+  max-width: 60rem;
 }
 
 .section p {
   font-family: var(--font-secondary);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.75;
 }
 
 .section h2 {
   color: var(--color-rose);
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 100;
   line-height: 1.25;
-  margin-bottom: 30px;
+  margin-bottom: 2rem;
 }
 
 .section ul {
@@ -127,9 +30,9 @@ h1 svg {
 
 .section li {
   font-family: var(--font-secondary);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
-  margin-bottom: 10px;
+  margin-bottom: 0.75rem;
 }
 
 .grid {
@@ -163,32 +66,7 @@ hr {
   background: var(--color-dim);
   border: none;
   height: 1px;
-  margin: 60px auto;
-  max-width: 50rem;
+  margin: 3.75rem auto;
+  max-width: 60rem;
 }
 
-canvas {
-  bottom: 0;
-  left: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
-}
-
-.footer {
-  background: var(--color-rose);
-  height: 300px;
-  position: relative;
-  z-index: 1;
-}
-
-.footer-inner {
-  margin: 0 auto;
-  max-width: 50rem;
-}
-
-.footer img {
-  border: 5px solid #fff;
-  display: block;
-  width: 100px;
-}

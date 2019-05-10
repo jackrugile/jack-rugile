@@ -1,0 +1,17 @@
+.footer {
+  align-items: center;
+  display: flex;
+  min-height: 40vh;
+  padding: 5vw 10vw;
+}
+
+.footer-inner {
+  flex: 1 1 auto;
+  max-width: 60rem;
+}
+
+.footer img {
+  border: 0.25rem solid var(--color-lumos);
+  display: block;
+  width: 6.25rem;
+}

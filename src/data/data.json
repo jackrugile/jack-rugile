@@ -1,5 +1,7 @@
 {
   "name": "Jack Rugile",
   "title": "Front End Developer",
-  "baseUrl": "https://jackrugile.com"
+  "description": "Jack is a web developer from Denver, CO focusing on front end and game development.",
+  "baseUrl": "https://jackrugile.com",
+  "projects": []
 }

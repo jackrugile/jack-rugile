@@ -7,12 +7,11 @@
   "license": "MIT",
   "scripts": {
     "clean": "rm -rf dist",
-    "start": "yarn clean && parcel src/index.pug -p 1337",
-    "build": "yarn clean && parcel build src/index.pug --public-url ./"
+    "start": "yarn clean && parcel src/*.pug -p 1337",
+    "build": "yarn clean && parcel build src/*.pug --public-url ./"
   },
   "devDependencies": {
     "cssnano": "^4.1.10",
-    "eslint": "^5.16.0",
     "parcel-bundler": "^1.12.3",
     "parcel-plugin-browserconfig": "^1.0.0",
     "postcss": "^7.0.16",
