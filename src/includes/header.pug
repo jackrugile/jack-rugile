@@ -1,0 +1,21 @@
+header.header
+  svg.header-angle.header-angle--top(
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 1 1"
+    preserveAspectRatio="none"
+  )
+    polygon(points="0,0 0,1 1,0")
+  svg.header-angle.header-angle--bot(
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 1 1"
+    preserveAspectRatio="none"
+  )
+    polygon(points="0,1 1,0 1,1")
+  div.header-title
+    svg.header-title-icon(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 320 320")
+      polygon(points="20,320 0,160 60,0 140,0 ")
+      polygon(points="300,0 320,160 260,320 180,320 ")
+      polygon(points="220,0 180,0 60,320 100,320 140,320 260,0")
+    div.header-title-text
+      h1.header-title-text-top #{data.name}
+      p.header-title-text-bot #{data.title}

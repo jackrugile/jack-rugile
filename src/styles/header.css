@@ -1,11 +1,31 @@
 .header {
   align-items: center;
   background: var(--color-lumos);
-  border-top: 1rem solid var(--color-flame);
   display: flex;
   height: 60vh;
+  min-height: 20rem;
+  /*height: 100vh;*/
   justify-content: center;
   position: relative;
+}
+
+.header-angle {
+  height: 4vw;
+  left: 0;
+  min-height: 30px;
+  max-height: 60px;
+  position: absolute;
+  width: 100%;
+}
+
+.header-angle--top {
+  fill: var(--color-flame);
+  top: -1px;
+}
+
+.header-angle--bot {
+  bottom: -1px;
+  fill: var(--color-nocturne);
 }
 
 .header-title {

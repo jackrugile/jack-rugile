@@ -3,27 +3,21 @@
   const pageURL = `${data.baseUrl}`
 
 doctype html
-html.html(lang="en")
+html(lang="en")
   include ./includes/head.pug
-  body.body
-    header.header
-      div.header-title
-        svg.header-title-icon(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 320 320")
-          polygon(points="20,320 0,160 60,0 140,0 ")
-          polygon(points="300,0 320,160 260,320 180,320 ")
-          polygon(points="220,0 180,0 60,320 100,320 140,320 260,0")
-        div.header-title-text
-          h1.header-title-text-top #{data.name}
-          p.header-title-text-bot #{data.title}
+  body
+    include ./includes/header.pug
     main.main
       section.section
-        h2 About Me
+        h2 The web moves pretty fast. If you don’t stop and look around once in a while, you could miss it.
         p Lorem ipsum dolor sit amet, #[a(href="https://google.com") consectetur adipiscing] elit. Vestibulum ornare velit at tortor gravida gravida. Proin ac congue ante, sed aliquet mauris. Maecenas tincidunt lectus turpis, eget #[a(href="https://neverbeenhere.com") efficitur] dui imperdiet quis. Vivamus neque nibh, faucibus nec ornare eu, molestie in nisl. Morbi vel feugiat enim, non porttitor tellus.
       hr
       each feature in data.features
         - let cat = data.categories.find(e => e.slug === feature.category);
         section.section
           h2 #{cat.title}
+          if feature.description
+            p #{feature.description}
           div.grid
             each slug in feature.projects
               - let project = data.projects.find(e => e.slug === slug);
@@ -39,18 +33,14 @@ html.html(lang="en")
                     data-src=project.image.src
                     alt=project.image.alt
                   )
-                h3.cell-title #{project.title}
-                h4.cell-subtitle #{project.subtitle}
-                a.cell-link(href=project.url) Play Game
-                a.cell-link(href=project.repository) View Code
+                div.cell-content
+                  h3.cell-title #{project.title}
+                  h4.cell-subtitle #{project.subtitle}
+                  div.cell-links
+                    a.cell-link(href=project.url) View Project
+                    if project.repository
+                      a.cell-link(href=project.repository) View Source
         hr
-      section.section
-        h2 Employed Projects
-        ul
-          li If This Then Dominos
-          li ViewIn2 - YouTube
-          li Omelet Agency
-      hr
       section.section
         h2 Open Source
         ul
@@ -64,12 +54,5 @@ html.html(lang="en")
           li Start Making Games
           li Codrops Particles
           li Interview
-      hr
-      section.section
-        h2 Featured Demos
-        ul
-          li codepen demo 1
-          li codepen demo 2
-          li codepen demo 3
-    include ./includes/foot.pug
+    include ./includes/footer.pug
     script(src="./scripts/index.js")

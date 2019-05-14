@@ -2,16 +2,26 @@
   box-sizing: border-box;
 }
 
-.html,
-.body {
+html,
+body {
   background-color: var(--color-flame);
   min-height: 100vh;
 }
 
-.body {
+html {
+  font-size: 12px;
+}
+
+body {
   color: var(--color-cloud);
   font-family: var(--font-primary);
   font-weight: 100;
   line-height: 1.5;
   overflow-y: scroll;
+}
+
+@media (min-width: 60em) {
+  html {
+    font-size: 16px;
+  }
 }

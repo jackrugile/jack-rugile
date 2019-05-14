@@ -1,0 +1,7 @@
+p {
+  margin-bottom: 2rem;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}

@@ -6,19 +6,24 @@
   "repository": "https://github.com/jackrugile/jack-rugile",
   "features": [
     {
+      "category": "sites",
+      "description": "",
+      "projects": [
+        "if-this-then-dominos",
+        "youtube-view-in-2",
+        "omelet-agency",
+        "itch-a-skitch"
+      ]
+    },
+    {
       "category": "games",
+      "description": "I've always found games to be the ultimate creative expression. Games combine story, gameplay, graphics, sound and music into a single cohesive experience.",
       "projects": [
         "lost-without-you",
         "mono-move",
         "radius-raid",
         "ride-the-magic",
         "turtlerat-alley"
-      ]
-    },
-    {
-      "category": "sites",
-      "projects": [
-        "itch-a-skitch"
       ]
     }
   ],
@@ -34,15 +39,27 @@
   ],
   "projects": [
     {
+      "slug": "if-this-then-dominos",
+      "category": "sites",
+      "title": "If This Then Dominos",
+      "subtitle": "Dominos + IFTTT Automatic Order Triggers",
+      "url": "https://ifthisthendominos.com",
+      "repository": "",
+      "image": {
+        "src": "./images/projects/if-this-then-dominos.jpg",
+        "alt": "Screenshot of If This Then Dominos"
+      }
+    },
+    {
       "slug": "itch-a-skitch",
-      "category": "games",
+      "category": "sites",
       "title": "Itch A Skitch",
       "subtitle": "Canvas Powered Etch A Sketch",
       "url": "https://itchaskitch.com",
       "repository": "",
       "image": {
-        "src": "./images/projects/blank.jpg",
-        "alt": ""
+        "src": "./images/projects/itch-a-skitch.jpg",
+        "alt": "Screenshot of Itch A Skitch"
       }
     },
     {
@@ -67,6 +84,18 @@
       "image": {
         "src": "./images/projects/mono-move.jpg",
         "alt": "Screenshot of Mono Move"
+      }
+    },
+    {
+      "slug": "omelet-agency",
+      "category": "sites",
+      "title": "Omelet Agency",
+      "subtitle": "Los Angeles Ad Agency",
+      "url": "https://www.omelet.com/",
+      "repository": "",
+      "image": {
+        "src": "./images/projects/omelet-agency.jpg",
+        "alt": "Screenshot of Omelet Agency"
       }
     },
     {
@@ -103,6 +132,18 @@
       "image": {
         "src": "./images/projects/turtlerat-alley.jpg",
         "alt": "Screenshot of TurtleRat Alley"
+      }
+    },
+    {
+      "slug": "youtube-view-in-2",
+      "category": "sites",
+      "title": "YouTube View in 2",
+      "subtitle": "Trends and Content Tips for Brands",
+      "url": "https://viewin2.withyoutube.com/",
+      "repository": "",
+      "image": {
+        "src": "./images/projects/youtube-view-in-2.jpg",
+        "alt": "Screenshot of YouTube View in 2"
       }
     }
   ]

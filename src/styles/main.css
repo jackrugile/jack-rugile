@@ -1,4 +1,10 @@
 .main {
   background: var(--color-nocturne);
-  padding: 10vw;
+  padding: 4rem 3rem 3rem;
+}
+
+@media (min-width: 60em) {
+  .main {
+    padding: 10vw;
+  }
 }
