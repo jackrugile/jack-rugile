@@ -3,5 +3,107 @@
   "title": "Front End Developer",
   "description": "Jack is a web developer from Denver, CO focusing on front end and game development.",
   "baseUrl": "https://jackrugile.com",
-  "projects": []
+  "repository": "https://github.com/jackrugile/jack-rugile",
+  "features": [
+    {
+      "category": "games",
+      "projects": [
+        "lost-without-you",
+        "mono-move",
+        "radius-raid",
+        "ride-the-magic",
+        "turtlerat-alley"
+      ]
+    },
+    {
+      "category": "sites",
+      "projects": [
+        "itch-a-skitch"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "slug": "games",
+      "title": "Games"
+    },
+    {
+      "slug": "sites",
+      "title": "Sites"
+    }
+  ],
+  "projects": [
+    {
+      "slug": "itch-a-skitch",
+      "category": "games",
+      "title": "Itch A Skitch",
+      "subtitle": "Canvas Powered Etch A Sketch",
+      "url": "https://itchaskitch.com",
+      "repository": "",
+      "image": {
+        "src": "./images/projects/blank.jpg",
+        "alt": ""
+      }
+    },
+    {
+      "slug": "lost-without-you",
+      "category": "games",
+      "title": "Lost Without You",
+      "subtitle": "Turn-Based Action Puzzler",
+      "url": "https://jackrugile.com/lost-without-you",
+      "repository": "https://github.com/jackrugile/lost-without-you",
+      "image": {
+        "src": "./images/projects/lost-without-you.jpg",
+        "alt": "Screenshot of Lost Without You"
+      }
+    },
+    {
+      "slug": "mono-move",
+      "category": "games",
+      "title": "Mono Move",
+      "subtitle": "Single Control Gravity Switching",
+      "url": "https://jackrugile.com/mono-move",
+      "repository": "https://github.com/jackrugile/mono-move",
+      "image": {
+        "src": "./images/projects/mono-move.jpg",
+        "alt": "Screenshot of Mono Move"
+      }
+    },
+    {
+      "slug": "radius-raid",
+      "category": "games",
+      "title": "Radius Raid",
+      "subtitle": "Space Shoot 'Em Up",
+      "url": "https://jackrugile.com/radius-raid",
+      "repository": "https://github.com/jackrugile/radius-raid-js13k",
+      "image": {
+        "src": "./images/projects/radius-raid.jpg",
+        "alt": "Screenshot of Radius Raid"
+      }
+    },
+    {
+      "slug": "ride-the-magic",
+      "category": "games",
+      "title": "Ride the Magic",
+      "subtitle": "Boreal Mountain Snowboard Adventure",
+      "url": "http://www.borealmagic.com",
+      "repository": "",
+      "image": {
+        "src": "./images/projects/ride-the-magic.jpg",
+        "alt": "Screenshot of Ride the Magic"
+      }
+    },
+    {
+      "slug": "turtlerat-alley",
+      "category": "games",
+      "title": "TurtleRat Alley",
+      "subtitle": "Capital One Bowling",
+      "url": "http://www.arcade.game/TurtleRatAlley/",
+      "repository": "",
+      "image": {
+        "src": "./images/projects/turtlerat-alley.jpg",
+        "alt": "Screenshot of TurtleRat Alley"
+      }
+    }
+  ]
 }

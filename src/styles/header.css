@@ -1,7 +1,7 @@
 .header {
   align-items: center;
   background: var(--color-lumos);
-  border-top: 1rem solid var(--color-rose);
+  border-top: 1rem solid var(--color-flame);
   display: flex;
   height: 60vh;
   justify-content: center;
@@ -15,7 +15,7 @@
 
 .header-title-icon {
   display: block;
-  fill: var(--color-rose);
+  fill: var(--color-flame);
   margin-right: 1.5rem;
   width: 4rem;
 }

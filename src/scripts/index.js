@@ -1,3 +1,5 @@
+import 'lazysizes';
+
 // let header = document.querySelector('header');
 // let scrolled = 0;
 

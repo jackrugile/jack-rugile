@@ -18,35 +18,32 @@ html.html(lang="en")
     main.main
       section.section
         h2 About Me
-        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare velit at tortor gravida gravida. Proin ac congue ante, sed aliquet mauris. Maecenas tincidunt lectus turpis, eget efficitur dui imperdiet quis. Vivamus neque nibh, faucibus nec ornare eu, molestie in nisl. Morbi vel feugiat enim, non porttitor tellus.
+        p Lorem ipsum dolor sit amet, #[a(href="https://google.com") consectetur adipiscing] elit. Vestibulum ornare velit at tortor gravida gravida. Proin ac congue ante, sed aliquet mauris. Maecenas tincidunt lectus turpis, eget #[a(href="https://neverbeenhere.com") efficitur] dui imperdiet quis. Vivamus neque nibh, faucibus nec ornare eu, molestie in nisl. Morbi vel feugiat enim, non porttitor tellus.
       hr
-      section.section
-        h2 Games
-        div.grid
-          article.cell
-            figure.cell-image
-            h3.cell-title Lost Without You
-            h4.cell-subtitle Turn-Based Action Puzzler
-          article.cell
-            figure.cell-image
-            h3.cell-title Mono Move
-            h4.cell-subtitle Single Control Gravity Switching
-          article.cell
-            figure.cell-image
-            h3.cell-title Radius Raid
-            h4.cell-subtitle Space Shoot 'Em Up
-      hr
-      section.section
-        h2 Projects
-        ul
-          li Itch A Skitch
-      hr
-      section.section
-        h2 Employed Games
-        ul
-          li Capital One Games
-          li Boreal Magic
-      hr
+      each feature in data.features
+        - let cat = data.categories.find(e => e.slug === feature.category);
+        section.section
+          h2 #{cat.title}
+          div.grid
+            each slug in feature.projects
+              - let project = data.projects.find(e => e.slug === slug);
+              article.cell
+                a.cell-image(href=project.url)
+                  img.lazyload(
+                    data-sizes="auto"
+                    data-srcset=`
+                      ${project.image.src.replace('.jpg', '-480.jpg')} 480w,
+                      ${project.image.src.replace('.jpg', '-800.jpg')} 800w,
+                      ${project.image.src} 1280w
+                    `
+                    data-src=project.image.src
+                    alt=project.image.alt
+                  )
+                h3.cell-title #{project.title}
+                h4.cell-subtitle #{project.subtitle}
+                a.cell-link(href=project.url) Play Game
+                a.cell-link(href=project.repository) View Code
+        hr
       section.section
         h2 Employed Projects
         ul

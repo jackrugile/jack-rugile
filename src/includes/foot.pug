@@ -1,3 +1,11 @@
 footer.footer
   div.footer-inner
-    img(src="./images/avatar.jpg")
+    img.lazyload(
+      data-sizes="auto"
+      data-srcset=`
+        ./images/avatar-256.jpg 256w,
+        ./images/avatar.jpg 512w
+      `
+      data-src="./images/avatar.jpg"
+      alt='Photo of Jack Rugile'
+    )
