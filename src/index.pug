@@ -1,6 +1,7 @@
 - 
   const pageTitle = `${data.name} | ${data.title}`
-  const pageURL = `${data.baseUrl}`
+  const pageDescription = data.description
+  const pageUrl = `${data.baseUrl}`
 
 doctype html
 html(lang="en")
@@ -41,18 +42,6 @@ html(lang="en")
                     if project.repository
                       a.cell-link(href=project.repository) View Source
         hr
-      section.section
-        h2 Open Source
-        ul
-          li Placeholdem
-          li jRumble
-      hr
-      section.section
-        h2 Articles &amp; Presentations
-        ul
-          li Start Making Games
-          li Codrops Particles
-          li Interview
     include ./includes/call-to-action.pug
     include ./includes/footer.pug
     script(src="./scripts/index.js")

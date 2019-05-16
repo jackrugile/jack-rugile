@@ -1,18 +1,46 @@
 head
+
+  //-
+  //- General
+  //-
+  meta(
+    http-equiv="X-UA-Compatible"
+    content="IE=edge"
+  )
   meta(charset="utf-8")
   meta(
     name="viewport"
     content="width=device-width, initial-scale=1, viewport-fit=cover"
   )
-  title #{pageTitle}
-  meta(
-    name="description"
-    content=""
-  )
   meta(
     name="author"
     content=data.name
   )
+  meta(
+    name="copyright"
+    content=data.name
+  )
+  title #{pageTitle}
+
+  //-
+  //- SEO
+  //-
+  meta(
+    name="description"
+    content=pageDescription
+  )
+  meta(
+    content="Jack Rugile, Front End Developer, Web Developer, Web Development, Game Development, Denver, Colorado"
+    name="keywords"
+  )
+  link(
+    rel="canonical"
+    href=pageUrl
+  )
+  
+  //-
+  //- Fonts
+  //-
   link(
     href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i&font-display=swap"
     rel="stylesheet"
@@ -21,10 +49,18 @@ head
     href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&font-display=swap"
     rel="stylesheet"
   )
+
+  //-
+  //- CSS
+  //-
   link(
     href="./styles/index.css"
     rel="stylesheet"
   )
+
+  //-
+  //- Manifest, Apple, Icons, Microsoft
+  //-
   link(
     rel="manifest"
     href="./site.webmanifest"
@@ -68,10 +104,86 @@ head
     content="yes"
   )
   meta(
+    name="apple-mobile-web-app-capable"
+    content="yes"
+  )
+  meta(
     name="apple-mobile-web-app-status-bar-style"
     content="black"
   )
-  link(
-    rel="canonical"
-    href=pageURL
+
+  //-
+  //- Facebook
+  //-
+  meta(
+    property="og:site_name"
+    content=data.name
+  )
+  meta(
+    property="og:title"
+    content=pageTitle
+  )
+  meta(
+    property="og:description"
+    content=pageDescription
+  )
+  meta(
+    property="og:type"
+    content="website"
+  )
+  meta(
+    property="og:url"
+    content=pageUrl
+  )
+  meta(
+    property="og:image"
+    content="./images/share/facebook.png"
+  )
+
+  //-
+  //- Twitter
+  //-
+  meta(
+    name="twitter:site"
+    content="@jackrugile"
+  )
+  meta(
+    name="twitter:title"
+    content=pageTitle
+  )
+  meta(
+    name="twitter:description"
+    content=pageDescription
+  )
+  meta(
+    name="twitter:image"
+    content="./images/share/twitter.png"
+  )
+  meta(
+    name="twitter:url"
+    content=pageUrl 
+  )
+  meta(
+    name="twitter:card"
+    content="summary_large_image"
+  )
+  meta(
+    name="twitter:domain"
+    content=data.baseUrl
+  )
+
+  //-
+  //- Share
+  //-
+  meta(
+    itemprop="name"
+    content=pageTitle
+  )
+  meta(
+    itemprop="description"
+    content=pageDescription
+  )
+  meta(
+    itemprop="image"
+    content="./images/share/general.png" 
   )

@@ -34,9 +34,22 @@
         "placeholdem",
         "jrumble"
       ]
+    },
+    {
+      "category": "community",
+      "description": "",
+      "projects": [
+        "start-making-games",
+        "3d-particle-explorations",
+        "inspect-interview"
+      ]
     }
   ],
   "categories": [
+    {
+      "slug": "community",
+      "title": "Community"
+    },
     {
       "slug": "games",
       "title": "Games"
@@ -52,6 +65,18 @@
   ],
   "projects": [
     {
+      "slug": "3d-particle-explorations",
+      "category": "community",
+      "title": "3D Particle Explorations",
+      "subtitle": "Codrops Playground&nbsp;Article",
+      "url": "https://tympanus.net/codrops/2017/12/12/3d-particle-explorations/",
+      "repository": "https://github.com/jackrugile/3d-particle-explorations",
+      "image": {
+        "src": "./images/projects/3d-particle-explorations.jpg",
+        "alt": "Screenshot of 3D Particle Explorations"
+      }
+    },
+    {
       "slug": "if-this-then-dominos",
       "category": "sites",
       "title": "If This Then Dominos",
@@ -61,6 +86,18 @@
       "image": {
         "src": "./images/projects/if-this-then-dominos.jpg",
         "alt": "Screenshot of If This Then Dominos"
+      }
+    },
+    {
+      "slug": "inspect-interview",
+      "category": "community",
+      "title": "Inspect Interview",
+      "subtitle": "Discussion with Kyle Coberly",
+      "url": "https://medium.com/denver-devs/inspect-2-handsome-jack-rugile-f40df8873e8a",
+      "repository": "",
+      "image": {
+        "src": "./images/projects/inspect-interview.jpg",
+        "alt": "Screenshot of Inspect Interview"
       }
     },
     {
@@ -157,6 +194,18 @@
       "image": {
         "src": "./images/projects/ride-the-magic.jpg",
         "alt": "Screenshot of Ride the Magic"
+      }
+    },
+    {
+      "slug": "start-making-games",
+      "category": "community",
+      "title": "Start Making Games",
+      "subtitle": "An Intro to Game Dev for the Web&nbsp;Dev",
+      "url": "https://jackrugile.com/start-making-games",
+      "repository": "https://github.com/jackrugile/start-making-games",
+      "image": {
+        "src": "./images/projects/start-making-games.jpg",
+        "alt": "Screenshot of Start Making Games"
       }
     },
     {
