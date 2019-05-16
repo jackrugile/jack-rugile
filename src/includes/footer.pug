@@ -1,10 +1,4 @@
 footer.footer
-  svg.footer-angle(
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 1 1"
-    preserveAspectRatio="none"
-  )
-    polygon(points="0,0 0,1 1,0")
   div.footer-inner
     div.footer-image
       img.lazyload(
@@ -16,3 +10,10 @@ footer.footer
         data-src="./images/avatar.jpg"
         alt='Photo of Jack Rugile'
       )
+    p.footer-description Sup, bro?
+    div.footer-links
+      a.footer-link(href="https://codepen.com/jackrugile") Twitter
+      a.footer-link(href="https://codepen.com/jackrugile") CodePen
+      a.footer-link(href="https://codepen.com/jackrugile") GitHub
+      a.footer-link(href="https://codepen.com/jackrugile") LinkedIn
+    p.footer-meta Made with <a href="#{data.repository}">code</a> in Denver, CO <span>//</span> &copy; Jack Rugile 2019

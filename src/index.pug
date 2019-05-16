@@ -35,7 +35,7 @@ html(lang="en")
                   )
                 div.cell-content
                   h3.cell-title #{project.title}
-                  h4.cell-subtitle #{project.subtitle}
+                  h4.cell-subtitle !{project.subtitle}
                   div.cell-links
                     a.cell-link(href=project.url) View Project
                     if project.repository
@@ -44,7 +44,6 @@ html(lang="en")
       section.section
         h2 Open Source
         ul
-          li Variaboard
           li Placeholdem
           li jRumble
       hr
@@ -54,5 +53,13 @@ html(lang="en")
           li Start Making Games
           li Codrops Particles
           li Interview
+    include ./includes/call-to-action.pug
     include ./includes/footer.pug
     script(src="./scripts/index.js")
+    script(
+      async="true"
+      src="https://www.googletagmanager.com/gtag/js?id=UA-5693606-7"
+    )
+    script
+      include ./scripts/analytics.js
+

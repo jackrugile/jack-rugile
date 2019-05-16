@@ -4,6 +4,7 @@
 @import './general.css';
 @import './header.css';
 @import './main.css';
+@import './call-to-action.css';
 @import './footer.css';
 
 .section {
@@ -47,9 +48,6 @@
   outline: 5px solid hsl(195, 100%, 50%);
 }
 
-.section p a:visited {
-}
-
 .section p a:focus {
   color: var(--color-water);
   outline: none;
@@ -70,7 +68,7 @@
 
 .section h2 {
   color: var(--color-lumos);
-  font-size: 2.5rem;
+  font-size: 2.75rem;
   font-weight: 100;
   line-height: 1.5;
   margin-bottom: 2rem;
@@ -192,7 +190,7 @@
   color: var(--color-lumos);
 }
 
-hr {
+.main hr {
   /*background-color: var(--color-dim);*/
   border: none;
   height: 1px;

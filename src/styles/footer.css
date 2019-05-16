@@ -1,23 +1,23 @@
 .footer {
   align-items: center;
+  background-color: var(--color-flame);
   display: flex;
   min-height: 40vh;
-  padding: 5vw 10vw;
+  padding: 3rem;
   position: relative;
 }
 
-.footer-angle {
-  fill: var(--color-nocturne);
-  height: 4vw;
-  left: 0;
-  min-height: 30px;
-  position: absolute;
-  top: -1px;
-  width: 100%;
+@media (min-width: 60em) {
+  .footer {
+    padding: 5vw 10vw;
+  }
 }
 
 .footer-inner {
+  align-items: center;
+  display: flex;
   flex: 1 1 auto;
+  flex-wrap: wrap;
   margin: 0 auto;
   max-width: 60rem;
 }
@@ -25,6 +25,8 @@
 .footer-image {
   background-color: var(--color-lumos);
   border: 0.25rem solid var(--color-lumos);
+  flex: 0 0 6.25rem;
+  margin-bottom: auto;
   position: relative;
   width: 6.25rem;
 }
@@ -49,4 +51,38 @@
 
 .footer-image img.lazyloaded {
   opacity: 1;
+}
+
+.footer-description {
+  color: var(--color-lumos);
+  font-family: var(--font-secondary);
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-bottom: 0;
+  /*padding: 0 2rem;*/
+}
+
+.footer-links {
+
+}
+
+.footer-link {
+
+}
+
+.footer-meta {
+  color: var(--color-lumos);
+  flex-basis: 100%;
+  font-family: var(--font-secondary);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.footer-meta a {
+  background: var(--color-lumos);
+  color: var(--color-flame);
+  display: inline-block;
 }

@@ -25,12 +25,25 @@
         "ride-the-magic",
         "turtlerat-alley"
       ]
+    },
+    {
+      "category": "open-source",
+      "description": "",
+      "projects": [
+        "variaboard",
+        "placeholdem",
+        "jrumble"
+      ]
     }
   ],
   "categories": [
     {
       "slug": "games",
       "title": "Games"
+    },
+    {
+      "slug": "open-source",
+      "title": "Open Source"
     },
     {
       "slug": "sites",
@@ -42,7 +55,7 @@
       "slug": "if-this-then-dominos",
       "category": "sites",
       "title": "If This Then Dominos",
-      "subtitle": "Dominos + IFTTT Automatic Order Triggers",
+      "subtitle": "Dominos + IFTTT Automatic Order&nbsp;Triggers",
       "url": "https://ifthisthendominos.com",
       "repository": "",
       "image": {
@@ -54,7 +67,7 @@
       "slug": "itch-a-skitch",
       "category": "sites",
       "title": "Itch A Skitch",
-      "subtitle": "Canvas Powered Etch A Sketch",
+      "subtitle": "Canvas Powered Etch A&nbsp;Sketch",
       "url": "https://itchaskitch.com",
       "repository": "",
       "image": {
@@ -63,10 +76,22 @@
       }
     },
     {
+      "slug": "jrumble",
+      "category": "open-source",
+      "title": "jRumble",
+      "subtitle": "Element Rumbling jQuery&nbsp;Plugin",
+      "url": "https://jackrugile.com/jrumble/",
+      "repository": "https://github.com/jackrugile/jrumble/",
+      "image": {
+        "src": "./images/projects/jrumble.jpg",
+        "alt": "Screenshot of jRumble"
+      }
+    },
+    {
       "slug": "lost-without-you",
       "category": "games",
       "title": "Lost Without You",
-      "subtitle": "Turn-Based Action Puzzler",
+      "subtitle": "Turn-Based Action&nbsp;Puzzler",
       "url": "https://jackrugile.com/lost-without-you",
       "repository": "https://github.com/jackrugile/lost-without-you",
       "image": {
@@ -78,7 +103,7 @@
       "slug": "mono-move",
       "category": "games",
       "title": "Mono Move",
-      "subtitle": "Single Control Gravity Switching",
+      "subtitle": "Single Control Gravity&nbsp;Switching",
       "url": "https://jackrugile.com/mono-move",
       "repository": "https://github.com/jackrugile/mono-move",
       "image": {
@@ -90,7 +115,7 @@
       "slug": "omelet-agency",
       "category": "sites",
       "title": "Omelet Agency",
-      "subtitle": "Los Angeles Ad Agency",
+      "subtitle": "Los Angeles Ad&nbsp;Agency",
       "url": "https://www.omelet.com/",
       "repository": "",
       "image": {
@@ -99,10 +124,22 @@
       }
     },
     {
+      "slug": "placeholdem",
+      "category": "open-source",
+      "title": "Placeholdem",
+      "subtitle": "Placeholder Caret&nbsp;Animation",
+      "url": "http://placeholdem.jackrugile.com/",
+      "repository": "https://github.com/jackrugile/placeholdem",
+      "image": {
+        "src": "./images/projects/placeholdem.jpg",
+        "alt": "Screenshot of Placeholdem"
+      }
+    },
+    {
       "slug": "radius-raid",
       "category": "games",
       "title": "Radius Raid",
-      "subtitle": "Space Shoot 'Em Up",
+      "subtitle": "Space Shoot 'Em&nbsp;Up",
       "url": "https://jackrugile.com/radius-raid",
       "repository": "https://github.com/jackrugile/radius-raid-js13k",
       "image": {
@@ -114,7 +151,7 @@
       "slug": "ride-the-magic",
       "category": "games",
       "title": "Ride the Magic",
-      "subtitle": "Boreal Mountain Snowboard Adventure",
+      "subtitle": "Boreal Mountain Snowboard&nbsp;Adventure",
       "url": "http://www.borealmagic.com",
       "repository": "",
       "image": {
@@ -126,7 +163,7 @@
       "slug": "turtlerat-alley",
       "category": "games",
       "title": "TurtleRat Alley",
-      "subtitle": "Capital One Bowling",
+      "subtitle": "Capital One&nbsp;Bowling",
       "url": "http://www.arcade.game/TurtleRatAlley/",
       "repository": "",
       "image": {
@@ -135,10 +172,22 @@
       }
     },
     {
+      "slug": "variaboard",
+      "category": "open-source",
+      "title": "VariaBoard",
+      "subtitle": "Parameter Control&nbsp;Interface",
+      "url": "https://s.codepen.io/jackrugile/debug/LeJowx",
+      "repository": "https://github.com/jackrugile/variaboard",
+      "image": {
+        "src": "./images/projects/variaboard.jpg",
+        "alt": "Screenshot of VariaBoard"
+      }
+    },
+    {
       "slug": "youtube-view-in-2",
       "category": "sites",
       "title": "YouTube View in 2",
-      "subtitle": "Trends and Content Tips for Brands",
+      "subtitle": "Trends and Content Tips for&nbsp;Brands",
       "url": "https://viewin2.withyoutube.com/",
       "repository": "",
       "image": {
