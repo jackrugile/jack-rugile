@@ -1,5 +1,6 @@
 .main {
   background: var(--color-nocturne);
+  overflow: hidden;
   padding: 4rem 3rem 3rem;
   position: relative;
   z-index: 10;

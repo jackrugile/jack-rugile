@@ -12,8 +12,16 @@ footer.footer
       )
     p.footer-description Sup, bro?
     div.footer-links
-      a.footer-link(href="https://codepen.com/jackrugile") Twitter
-      a.footer-link(href="https://codepen.com/jackrugile") CodePen
-      a.footer-link(href="https://codepen.com/jackrugile") GitHub
-      a.footer-link(href="https://codepen.com/jackrugile") LinkedIn
+      a.footer-link(href="https://codepen.io/jackrugile")
+        include ./icons/codepen.pug
+        CodePen
+      a.footer-link(href="https://github.com/jackrugile")
+        include ./icons/github.pug
+        GitHub
+      a.footer-link(href="https://twitter.com/jackrugile")
+        include ./icons/twitter.pug
+        Twitter
+      a.footer-link(href="https://www.linkedin.com/in/jackrugile/")
+        include ./icons/linkedin.pug
+        LinkedIn
     p.footer-meta Made with <a href="#{data.repository}">code</a> in Denver, CO <span>//</span> &copy; Jack Rugile 2019

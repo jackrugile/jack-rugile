@@ -12,7 +12,6 @@ html(lang="en")
       section.section
         h2 The web moves pretty fast. If you don’t stop and look around once in a while, you could miss it.
         p Lorem ipsum dolor sit amet, #[a(href="https://google.com") consectetur adipiscing] elit. Vestibulum ornare velit at tortor gravida gravida. Proin ac congue ante, sed aliquet mauris. Maecenas tincidunt lectus turpis, eget #[a(href="https://neverbeenhere.com") efficitur] dui imperdiet quis. Vivamus neque nibh, faucibus nec ornare eu, molestie in nisl. Morbi vel feugiat enim, non porttitor tellus.
-      hr
       each feature in data.features
         - let cat = data.categories.find(e => e.slug === feature.category);
         section.section
@@ -41,7 +40,6 @@ html(lang="en")
                     a.cell-link(href=project.url) View Project
                     if project.repository
                       a.cell-link(href=project.repository) View Source
-        hr
     include ./includes/call-to-action.pug
     include ./includes/footer.pug
     script(src="./scripts/index.js")

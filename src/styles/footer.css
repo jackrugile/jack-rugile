@@ -55,11 +55,8 @@
 
 .footer-description {
   color: var(--color-lumos);
-  font-family: var(--font-secondary);
   font-size: 1.25rem;
-  font-weight: 300;
   margin-bottom: 0;
-  /*padding: 0 2rem;*/
 }
 
 .footer-links {
@@ -67,13 +64,14 @@
 }
 
 .footer-link {
-
+  color: var(--color-lumos);
+  font-weight: 400;
+  text-decoration: none;
 }
 
 .footer-meta {
   color: var(--color-lumos);
   flex-basis: 100%;
-  font-family: var(--font-secondary);
   font-size: 1rem;
   font-weight: 400;
   line-height: 1;
@@ -83,6 +81,16 @@
 
 .footer-meta a {
   background: var(--color-lumos);
+  border-radius: 0.25rem;
   color: var(--color-flame);
   display: inline-block;
+  font-family: var(--font-monospace);
+  margin: 0 0.1rem;
+  padding: 0.25rem 0.35rem;
+  text-decoration: none;
+}
+
+.footer-meta:hover a {
+  background: var(--color-nocturne);
+  color: var(--color-lumos);
 }

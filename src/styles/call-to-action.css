@@ -39,6 +39,7 @@
 
 .call-to-action-title {
   color: var(--color-nocturne);
+  font-family: var(--font-serif);
   font-size: 2.75rem;
   font-weight: 100;
   line-height: 1.5;
@@ -58,20 +59,14 @@
 
 .call-to-action-subtitle {
   color: var(--color-nocturne);
-  font-family: var(--font-secondary);
   font-size: 1.25rem;
-  font-weight: 300;
-  line-height: 1.75;
-  margin-bottom: 0rem;
+  margin-bottom: 0;
   position: relative;
 }
 
 .call-to-action-content {
   color: var(--color-nocturne);
-  font-family: var(--font-secondary);
   font-size: 1.25rem;
-  font-weight: 300;
-  line-height: 1.75;
 }
 
 .call-to-action-content a {

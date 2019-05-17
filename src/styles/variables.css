@@ -7,6 +7,7 @@
   --color-water: hsl(195, 100%, 50%);
   --color-lumos: hsl(0, 0%, 100%);
 
-  --font-primary: 'Merriweather', georgia, serif;
-  --font-secondary: 'Lato', helvetica, arial, sans-serif;
+  --font-serif: 'Merriweather', georgia, serif;
+  --font-sans-serif: 'Lato', helvetica, arial, sans-serif;
+  --font-monospace: courier, monospace;
 }

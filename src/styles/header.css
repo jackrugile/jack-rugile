@@ -1,11 +1,48 @@
 .header {
-  align-items: center;
+  /*align-items: center;*/
   background-color: var(--color-lumos);
+  /*display: flex;
+  height: 60vh;
+  min-height: 20rem;
+  justify-content: center;
+  position: relative;*/
+  position: relative;
+  overflow: hidden;
+}
+
+/*.header-canvas-wrap {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  pointer-events: none;
+  width: 200%;
+  height: 200%;
+  z-index: 0;
+}
+
+.header-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+  overflow-x: hidden;
+  image-rendering: pixelated;
+}*/
+
+.header-above {
+  position: relative;
+  z-index: 1;
+
+  align-items: center;
+  /*background-color: var(--color-lumos);*/
   display: flex;
   height: 60vh;
   min-height: 20rem;
   justify-content: center;
-  position: relative;
 }
 
 .header-angle {
@@ -33,10 +70,10 @@
   will-change: opacity, transform;
 }
 
-.header-title-icon {
+.svg-icon--jack-rugile {
   display: block;
   fill: var(--color-flame);
-  margin-right: 1.5rem;
+  margin-right: 2rem;
   width: 4rem;
 }
 
@@ -46,18 +83,16 @@
 
 .header-title-text-top {
   color: var(--color-nocturne);
-  font-family: var(--font-primary);
+  font-family: var(--font-serif);
   font-size: 3rem;
   font-weight: 100;
   line-height: 1;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
 }
 
 .header-title-text-bot {
   color: var(--color-nocturne);
-  font-family: var(--font-secondary);
   font-size: 1.25rem;
-  font-weight: 400;
   line-height: 1;
   margin-bottom: 0;
 }

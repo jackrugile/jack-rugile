@@ -8,8 +8,12 @@
 @import './footer.css';
 
 .section {
-  margin: 0 auto;
+  margin: 0 auto 8rem;
   max-width: 60rem;
+}
+
+.section:last-child {
+  margin-bottom: 0;
 }
 
 .section ::selection {
@@ -23,10 +27,7 @@
 }
 
 .section p {
-  font-family: var(--font-secondary);
   font-size: 1.25rem;
-  font-weight: 300;
-  line-height: 1.75;
 }
 
 .section p a {
@@ -68,6 +69,7 @@
 
 .section h2 {
   color: var(--color-lumos);
+  font-family: var(--font-serif);
   font-size: 2.75rem;
   font-weight: 100;
   line-height: 1.5;
@@ -79,7 +81,7 @@
   color: var(--color-flame);
   content: '//';
   display: none;
-  font-family: var(--font-secondary);
+  font-family: var(--font-sans-serif);
   font-weight: 900;
   letter-spacing: 0.04em;
   margin-right: 1rem;
@@ -92,16 +94,6 @@
   .section h2:after {
     display: block;
   }
-}
-
-.section ul {
-}
-
-.section li {
-  font-family: var(--font-secondary);
-  font-size: 1.25rem;
-  font-weight: 300;
-  margin-bottom: 0.75rem;
 }
 
 .grid {
@@ -117,16 +109,47 @@
 }
 
 .cell-image {
+  background: linear-gradient(60deg, var(--color-water), var(--color-flame));
   display: block;
+  /*overflow: hidden;*/
   position: relative;
+  /*transition: transform 200ms;*/
 }
+
+/*.cell-image:before {
+  background-color: var(--color-lumos);
+  content: '';
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+.cell-image:hover:before {
+  animation: flash 400ms cubic-bezier(0.190, 1.000, 0.220, 1.000) forwards;
+}
+
+@keyframes flash {
+  0% {
+    opacity: 0.75;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+}*/
 
 .cell-image img {
   left: 0;
-  /*mix-blend-mode: luminosity;*/
+  mix-blend-mode: luminosity;
   position: absolute;
   top: 0;
-  transition: 800ms opacity;
+  transition: 800ms opacity, transform 200ms;
   width: 100%;
 }
 
@@ -144,6 +167,14 @@
   opacity: 1;
 }
 
+.cell-image:hover {
+  /*transform: scale(1.1);*/
+}
+
+.cell-image:hover img.lazyloaded {
+  /*transform: scale(0.9);*/
+}
+
 .cell-content {
   display: flex;
   flex-direction: column;
@@ -153,17 +184,12 @@
 
 .cell-title {
   color: var(--color-lumos);
-  font-family: var(--font-secondary);
   font-size: 1.25rem;
   font-weight: 400;
-  line-height: 1.75;
 }
 
 .cell-subtitle {
-  font-family: var(--font-secondary);
   font-size: 1rem;
-  font-weight: 300;
-  line-height: 1.75;
   margin-bottom: 1rem;
 }
 
@@ -176,7 +202,6 @@
   box-shadow: inset 0 0 0 1px var(--color-dim);
   color: var(--color-cloud);
   display: block;
-  font-family: var(--font-secondary);
   font-size: 1rem;
   font-weight: 600;
   line-height: 1;
@@ -190,10 +215,13 @@
   color: var(--color-lumos);
 }
 
-.main hr {
-  /*background-color: var(--color-dim);*/
-  border: none;
-  height: 1px;
-  margin: 4rem auto;
-  max-width: 60rem;
+/*.canvas-overlay {
+  height: 100%;
+  left: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 }
+*/
