@@ -94,3 +94,7 @@
   background: var(--color-nocturne);
   color: var(--color-lumos);
 }
+
+.footer-meta .svg-icon--jack-rugile {
+  width: 32px;
+}

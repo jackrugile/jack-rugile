@@ -45,7 +45,7 @@
   justify-content: center;
 }
 
-.header-angle {
+.header .angle {
   height: 4vw;
   left: 0;
   min-height: 30px;
@@ -54,12 +54,12 @@
   width: 100%;
 }
 
-.header-angle--top {
+.header .angle--top {
   fill: var(--color-flame);
   top: -1px;
 }
 
-.header-angle--bot {
+.header .angle--bot {
   bottom: -1px;
   fill: var(--color-nocturne);
 }

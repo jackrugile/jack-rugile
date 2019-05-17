@@ -42,11 +42,4 @@ html(lang="en")
                       a.cell-link(href=project.repository) View Source
     include ./includes/call-to-action.pug
     include ./includes/footer.pug
-    script(src="./scripts/index.js")
-    script(
-      async="true"
-      src="https://www.googletagmanager.com/gtag/js?id=UA-5693606-7"
-    )
-    script
-      include ./scripts/analytics.js
-
+    include ./includes/foot.pug

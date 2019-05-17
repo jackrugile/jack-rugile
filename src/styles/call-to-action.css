@@ -17,7 +17,7 @@
   }
 }
 
-.call-to-action-angle {
+.call-to-action .angle {
   height: 4vw;
   left: 0;
   min-height: 30px;
@@ -27,12 +27,12 @@
   z-index: 5;
 }
 
-.call-to-action-angle--top {
+.call-to-action .angle--top {
   fill: var(--color-nocturne);
   top: -1px;
 }
 
-.call-to-action-angle--bot {
+.call-to-action .angle--bot {
   bottom: -1px;
   fill: var(--color-flame);
 }
