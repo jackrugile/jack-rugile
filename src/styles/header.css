@@ -70,7 +70,7 @@
   will-change: opacity, transform;
 }
 
-.svg-icon--jack-rugile {
+.header-title .svg-icon--jack-rugile {
   display: block;
   fill: var(--color-flame);
   margin-right: 2rem;

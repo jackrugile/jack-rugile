@@ -1,3 +1,5 @@
+- const year = new Date().getFullYear();
+
 footer.footer
   div.footer-inner
     div.footer-image
@@ -10,18 +12,24 @@ footer.footer
         data-src="./images/avatar.jpg"
         alt='Photo of Jack Rugile'
       )
-    p.footer-description Sup, bro?
+    div.footer-profile
+      h4 Jack Rugile
+      br
+      p Raised in <a href="https://en.wikipedia.org/wiki/Basalt,_Colorado">Basalt, CO</a>, professionally developing in <a href="https://en.wikipedia.org/wiki/Denver">Denver, CO</a> since 2011. Likely hanging out with my girlfriend, <a href="https://nicollewitte.com/">Nicolle</a>, and our goofy dogs, <a href="https://www.instagram.com/p/BgZ5jcpjzA6/">Mary and Zoey</a>. Big fan of <a href="https://playoverwatch.com/en-us/">Overwatch</a> and <a href="https://i.giphy.com/media/3o7WIGDp6G7ATFyq64/source.gif">tasty adult beverages</a>.
     div.footer-links
       a.footer-link(href="https://codepen.io/jackrugile")
         include ./icons/codepen.pug
-        CodePen
+        span.footer-link-text CodePen
       a.footer-link(href="https://github.com/jackrugile")
         include ./icons/github.pug
-        GitHub
+        span.footer-link-text GitHub
       a.footer-link(href="https://twitter.com/jackrugile")
         include ./icons/twitter.pug
-        Twitter
+        span.footer-link-text Twitter
       a.footer-link(href="https://www.linkedin.com/in/jackrugile/")
         include ./icons/linkedin.pug
-        LinkedIn
-    p.footer-meta Made with <a href="#{data.repository}">code</a> in Denver, CO <span>//</span> &copy; Jack Rugile 2019
+        span.footer-link-text LinkedIn
+    p.footer-meta
+      span Made with <a href="#{data.repository}">code</a> in Denver, CO
+      include ./icons/jack-rugile.pug
+      span &copy; #{year} Jack Rugile 

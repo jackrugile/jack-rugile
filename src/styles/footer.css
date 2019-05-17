@@ -90,7 +90,7 @@
   text-decoration: none;
 }
 
-.footer-meta:hover a {
+.footer-meta a:hover {
   background: var(--color-nocturne);
   color: var(--color-lumos);
 }
