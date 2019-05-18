@@ -4,7 +4,7 @@
   const pageUrl = `${data.baseUrl}`
 
 doctype html
-html(lang="en")
+html.no-js(lang="en")
   include ./includes/head.pug
   body
     include ./includes/header.pug
@@ -24,7 +24,7 @@ html(lang="en")
               article.cell
                 a.cell-image(href=project.url)
                   noscript
-                    img(
+                    img.fallback(
                       sizes="auto"
                       srcset=`
                         ${project.image.src.replace('.jpg', '-480.jpg')} 480w,
