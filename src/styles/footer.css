@@ -2,8 +2,8 @@
   align-items: center;
   background-color: var(--color-flame);
   display: flex;
-  min-height: 40vh;
-  padding: 3rem;
+  min-height: 50vh;
+  padding: 4rem 3rem 3rem;
   position: relative;
 }
 
@@ -19,54 +19,97 @@
   flex: 1 1 auto;
   flex-wrap: wrap;
   margin: 0 auto;
-  max-width: 60rem;
+  max-width: 50rem;
 }
 
-.footer-image {
-  background-color: var(--color-lumos);
-  border: 0.25rem solid var(--color-lumos);
-  flex: 0 0 6.25rem;
-  margin-bottom: auto;
+.footer-profile {
+  align-items: center;
+  display: flex;
+  flex-basis: 100%;
+  margin-bottom: 3rem;
+  justify-content: center;
+}
+
+.footer-profile-image {
+  background: linear-gradient(60deg, var(--color-water), var(--color-flame));
+  border: 0.35rem solid var(--color-lumos);
+  flex: 0 0 7rem;
+  margin: 0 2rem auto 0;
   position: relative;
-  width: 6.25rem;
 }
 
-.footer-image:after {
+.footer-profile-image:after {
   content: '';
   display: block;
   padding-bottom: 100%;
 }
 
-.footer-image img {
+.footer-profile-image img {
   left: 0;
+  mix-blend-mode: luminosity;
   position: absolute;
   top: 0;
-  transition: 800ms opacity;
   width: 100%;
 }
 
-.footer-image img.lazyload {
+.footer-profile-image img.lazyload {
   opacity: 0;
 }
 
-.footer-image img.lazyloaded {
+.footer-profile-image img.lazyloaded {
   opacity: 1;
 }
 
-.footer-description {
+.footer-profile-content {
   color: var(--color-lumos);
-  font-size: 1.25rem;
+  font-size: 1rem;
+  font-weight: 400;
   margin-bottom: 0;
+  max-width: 50rem;
+}
+
+.footer-profile-content a {
+  color: var(--color-lumos);
+  font-weight: 700;
 }
 
 .footer-links {
-
+  display: flex;
+  flex-basis: 100%;
+  margin-bottom: 3rem;
+  justify-content: center;
 }
 
 .footer-link {
-  color: var(--color-lumos);
-  font-weight: 400;
+  margin-right: 2.25rem;
   text-decoration: none;
+}
+
+.footer-link:last-child {
+  margin-right: 0;
+}
+
+.footer-link .icon {
+  display: block;
+  fill: var(--color-lumos);
+  margin: 0 auto 0.25rem;
+  width: 2rem;
+  vertical-align: middle;
+}
+
+@media (min-width: 40rem) {
+  .footer-link .icon {
+    display: inline-block;
+    margin: 0 0.5rem 0 0;
+  }
+}
+
+.footer-link-text {
+  color: var(--color-lumos);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  vertical-align: middle;
 }
 
 .footer-meta {
@@ -95,6 +138,8 @@
   color: var(--color-lumos);
 }
 
-.footer-meta .svg-icon--jack-rugile {
-  width: 32px;
+.footer-meta span {
+  display: inline-block;
+  margin: 0 0.25rem;
 }
+

@@ -23,6 +23,17 @@ html(lang="en")
               - let project = data.projects.find(e => e.slug === slug);
               article.cell
                 a.cell-image(href=project.url)
+                  noscript
+                    img(
+                      sizes="auto"
+                      srcset=`
+                        ${project.image.src.replace('.jpg', '-480.jpg')} 480w,
+                        ${project.image.src.replace('.jpg', '-800.jpg')} 800w,
+                        ${project.image.src} 1280w
+                      `
+                      src=project.image.src
+                      alt=project.image.alt
+                    )
                   img.lazyload(
                     data-sizes="auto"
                     data-srcset=`

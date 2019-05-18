@@ -1,4 +1,7 @@
 import 'lazysizes';
+
+lazySizes.cfg.expand = 1000;
+//console.log(lazySizes.cfg.expand);
 //import SimplexNoise from 'simplex-noise';
 //import Calc from './calc';
 

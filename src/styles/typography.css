@@ -1,3 +1,13 @@
+::selection {
+  background: var(--color-water);
+  color: var(--color-lumos);
+}
+
+::-moz-selection {
+  background: var(--color-water);
+  color: var(--color-lumos);
+}
+
 p {
   margin-bottom: 2rem;
 }
