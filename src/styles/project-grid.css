@@ -1,0 +1,121 @@
+.project-grid {
+  display: grid;
+  flex-wrap: wrap;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+}
+
+@media (min-width: 70rem) {
+  .project-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.cell {
+  background-color: var(--color-dim);
+  display: flex;
+  flex-direction: column;
+}
+
+.cell-image {
+  background: linear-gradient(60deg, var(--color-water), var(--color-flame));
+  box-shadow: 0 0 0 0 hsla(0, 0%, 100%, 0);
+  display: block;
+  outline: 4px solid transparent;
+  outline-offset: 4px;
+  position: relative;
+  transition:
+    box-shadow 400ms,
+    outline 400ms;
+}
+
+.cell-image:hover {
+  box-shadow: 0 0 0 4px hsla(0, 0%, 100%, 1);
+  transition-duration: 0ms;
+}
+
+.cell-image:focus {
+  outline: 4px solid var(--color-water);
+  transition-duration: 0ms;
+}
+
+.cell-image:after {
+  content: '';
+  display: block;
+  padding-bottom: 56.25%;
+}
+
+.cell-image img {
+  left: 0;
+  mix-blend-mode: luminosity;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.cell-image img.lazyload {
+  opacity: 0;
+}
+
+.cell-image img.lazyloaded {
+  opacity: 1;
+}
+
+.cell-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 1rem 1rem 0;
+}
+
+.cell-title {
+  color: var(--color-lumos);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.cell-subtitle {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cell-links {
+  margin-top: auto;
+}
+
+.cell-link {
+  border-top: 2px solid var(--color-nocturne);
+  box-shadow:
+    inset 4px 0 0 var(--color-mist),
+    inset 6px 0 0 var(--color-nocturne);
+  color: var(--color-cloud);
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0 -1rem 0;
+  outline: 4px solid transparent;
+  outline-offset: 4px;
+  padding: 1rem;
+  text-decoration: none;
+  transition:
+    background-color 400ms,
+    box-shadow 400ms,
+    color 400ms,
+    outline 400ms;
+}
+
+.cell-link:hover {
+  background-color: var(--color-mist);
+  box-shadow: inset 4px 0 0 var(--color-cloud), inset 6px 0 0 var(--color-nocturne);
+  color: var(--color-lumos);
+  transition-duration: 0ms;
+}
+
+.cell-link:focus {
+  outline: 4px solid var(--color-water);
+  transition-duration: 0ms;
+}

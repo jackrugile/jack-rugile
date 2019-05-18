@@ -18,7 +18,7 @@ html(lang="en")
           h2 #{cat.title}
           if feature.description
             p #{feature.description}
-          div.grid
+          div.project-grid
             each slug in feature.projects
               - let project = data.projects.find(e => e.slug === slug);
               article.cell

@@ -73,35 +73,19 @@
   color: var(--color-flame);
   display: inline-block;
   font-weight: 700;
-  position: relative;
-}
-
-.call-to-action-content a:before {
-  bottom: -5px;
-  content: '';
-  left: -10px;
-  opacity: 0;
-  pointer-events: none;
-  position: absolute;
-  right: -10px;
-  top: -5px;
-  outline: 5px solid hsl(195, 100%, 50%);
-}
-
-.call-to-action-content a:focus {
-  color: var(--color-water);
-  outline: none;
-}
-
-.call-to-action-content a:focus:before {
-  opacity: 1;
+  outline: 4px solid transparent;
+  outline-offset: 4px;
+  transition:
+    color 400ms,
+    outline 400ms;
 }
 
 .call-to-action-content a:hover {
   color: var(--color-water);
+  transition-duration: 0ms;
 }
 
-.call-to-action-content a:active {
-  color: var(--color-water);
-  transform: translateY(1px);
+.call-to-action-content a:focus {
+  outline: 4px solid var(--color-water);
+  transition-duration: 0ms;
 }

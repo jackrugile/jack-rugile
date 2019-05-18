@@ -70,7 +70,25 @@
 
 .footer-profile-content a {
   color: var(--color-lumos);
+  display: inline-block;
   font-weight: 700;
+  outline: 4px solid transparent;
+  outline-offset: 4px;
+  position: relative;
+  transition:
+    color 400ms,
+    outline 400ms;
+}
+
+.footer-profile-content a:hover {
+  color: var(--color-nocturne);
+  transition-duration: 0ms;
+}
+
+.footer-profile-content a:focus {
+  outline: 4px solid var(--color-nocturne);
+  transition-duration: 0ms;
+  z-index: 1;
 }
 
 .footer-links {
@@ -82,7 +100,15 @@
 
 .footer-link {
   margin-right: 2.25rem;
+  outline: 4px solid transparent;
+  outline-offset: 4px;
   text-decoration: none;
+  transition: outline 400ms;
+}
+
+.footer-link:focus {
+  outline: 4px solid var(--color-nocturne);
+  transition-duration: 0ms;
 }
 
 .footer-link:last-child {
@@ -93,8 +119,14 @@
   display: block;
   fill: var(--color-lumos);
   margin: 0 auto 0.25rem;
-  width: 2rem;
+  transition: fill 400ms;
   vertical-align: middle;
+  width: 2rem;
+}
+
+.footer-link:hover .icon {
+  fill: var(--color-nocturne);
+  transition-duration: 0ms;
 }
 
 @media (min-width: 40rem) {
@@ -109,7 +141,13 @@
   font-size: 1rem;
   font-weight: 400;
   line-height: 1;
+  transition: color 400ms;
   vertical-align: middle;
+}
+
+.footer-link:hover .footer-link-text {
+  color: var(--color-nocturne);
+  transition-duration: 0ms;
 }
 
 .footer-meta {
@@ -129,13 +167,27 @@
   display: inline-block;
   font-family: var(--font-monospace);
   margin: 0 0.1rem;
+  outline: 4px solid transparent;
+  outline-offset: 4px;
   padding: 0.25rem 0.35rem;
+  position: relative;
   text-decoration: none;
+  transition:
+    background-color 400ms,
+    color 400ms,
+    outline 400ms;
 }
 
 .footer-meta a:hover {
   background-color: var(--color-nocturne);
   color: var(--color-lumos);
+  transition-duration: 0ms;
+}
+
+.footer-meta a:focus {
+  outline: 4px solid var(--color-nocturne);
+  transition-duration: 0ms;
+  z-index: 1;
 }
 
 .footer-meta span {

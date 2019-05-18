@@ -1,7 +1,8 @@
 :root {
   --color-nocturne: hsl(225, 20%, 10%);
   --color-dim: hsl(225, 20%, 15%);
-  --color-cloud: hsl(225, 15%, 75%);
+  --color-mist: hsl(225, 20%, 25%);
+  --color-cloud: hsl(225, 20%, 75%);
   --color-sky: hsl(225, 5%, 95%);
   --color-flame: hsl(345, 100%, 50%);
   --color-water: hsl(195, 100%, 50%);
