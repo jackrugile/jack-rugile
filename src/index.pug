@@ -4,7 +4,11 @@
   const pageUrl = `${data.baseUrl}`
 
 doctype html
-html.no-js(lang="en")
+html.no-js(
+  lang="en"
+  itemscope
+  itemtype="http://schema.org/WebPage"
+)
   include ./includes/head.pug
   body
     include ./includes/header.pug
