@@ -33,3 +33,31 @@ if(is404) {
   window.addEventListener('resize', set404Height);
   window.addEventListener('orientationchange', set404Height);
 }
+
+function consoleBrand() {
+  let styles1 = `
+    background: #14171f;
+    color: #fff;
+    font-family: courier, monospace, sans-serif;
+    font-weight: bold;
+    line-height: 1;
+    padding: 6px 10px;
+  `;
+  let styles2 = `
+    background: #ff0040;
+    color: #14171f;
+    font-family: courier, monospace, sans-serif;
+    font-weight: bold;
+    line-height: 1;
+    padding: 6px 10px;
+  `;
+
+  if(navigator.userAgent.toLowerCase().indexOf('chrome') > -1 || navigator.userAgent.toLowerCase().indexOf('safari') > -1) {
+    console.log('%cMade in Denver, CO 🏔️🏙️ by%cJack Rugile', styles1, styles2); 
+  } else {
+    console.log('Made in Denver, CO by Jack Rugile');
+  }
+  console.log('View the source at: https://github.com/jackrugile/jack-rugile');
+}
+
+consoleBrand();
