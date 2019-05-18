@@ -69,7 +69,7 @@
 }
 
 .call-to-action-content a {
-  color: var(--color-flame);
+  color: var(--color-nocturne);
   display: inline-block;
   font-weight: 700;
   outline: 4px solid transparent;
@@ -80,7 +80,7 @@
 }
 
 .call-to-action-content a:hover {
-  color: var(--color-water);
+  color: var(--color-flame);
   transition-duration: 0ms;
 }
 
