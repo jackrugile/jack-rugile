@@ -1,23 +1,11 @@
 .header {
-  /*align-items: center;*/
+  align-items: center;
   background-color: var(--color-lumos);
-  /*display: flex;
+  display: flex;
   height: 60vh;
   min-height: 20rem;
   justify-content: center;
-  position: relative;*/
   position: relative;
-  overflow: hidden;
-}
-
-.header-above {
-  align-items: center;
-  display: flex;
-  height: 60vh;
-  min-height: 25rem;
-  position: relative;
-  justify-content: center;
-  z-index: 1;
 }
 
 .header .angle {
