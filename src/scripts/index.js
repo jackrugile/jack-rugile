@@ -57,7 +57,7 @@ function consoleBrand() {
   } else {
     console.log('Made in Denver, CO by Jack Rugile');
   }
-  console.log('View the source at: https://github.com/jackrugile/jack-rugile');
+  console.log('View Source: https://github.com/jackrugile/jack-rugile');
 }
 
 consoleBrand();
