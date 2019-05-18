@@ -53,7 +53,7 @@ function consoleBrand() {
   `;
 
   if(navigator.userAgent.toLowerCase().indexOf('chrome') > -1 || navigator.userAgent.toLowerCase().indexOf('safari') > -1) {
-    console.log('%cMade in Denver, CO 🏔️🏙️ by%cJack Rugile', styles1, styles2); 
+    console.log('%c🏔️ Made in Denver, CO 🏔️%cJack Rugile', styles1, styles2); 
   } else {
     console.log('Made in Denver, CO by Jack Rugile');
   }
