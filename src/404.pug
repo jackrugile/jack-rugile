@@ -1,11 +1,14 @@
 - 
-  const pageTitle = `Not Found | ${data.name}`
+  const pageTitle = `Page Not Found | ${data.name}`
   const pageURL = `${data.baseUrl}/404`
 
 doctype html
-html(lang="en")
+html.no-js.is-404(lang="en")
   include ./includes/head.pug
   body
-    include ./includes/header.pug
-    p Not Found
+    div.page-not-found
+      include ./includes/svgs/angle-top.pug
+      include ./includes/svgs/angle-bot.pug
+      div.page-not-found-title
+        h1.page-not-found-title-text Page Not Found
     include ./includes/foot.pug

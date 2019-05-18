@@ -1,14 +1,16 @@
-.header {
+.page-not-found {
   align-items: center;
   background-color: var(--color-lumos);
   display: flex;
-  height: 60vh;
-  min-height: 20rem;
+  height: 100%;
+  /*min-height: 20rem;*/
+  overflow: hidden;
   justify-content: center;
   position: relative;
+  text-align: center;
 }
 
-.header .angle {
+.page-not-found .angle {
   height: 4vw;
   left: 0;
   min-height: 30px;
@@ -17,44 +19,27 @@
   width: 100%;
 }
 
-.header .angle--top {
+.page-not-found .angle--top {
   fill: var(--color-flame);
   top: -0.5px;
 }
 
-.header .angle--bot {
+.page-not-found .angle--bot {
   bottom: -0.5px;
   fill: var(--color-nocturne);
 }
 
-.header-title {
+.page-not-found-title {
   align-items: center;
   display: flex;
 }
 
-.header-title .icon {
-  display: block;
-  fill: var(--color-flame);
-  margin-right: 2rem;
-  width: 4rem;
-}
-
-.header-title-text {
-  white-space: nowrap;
-}
-
-.header-title-text-top {
+.page-not-found-title-text {
   color: var(--color-nocturne);
   font-family: var(--font-serif);
   font-size: 3.5rem;
   font-weight: 300;
   line-height: 1;
-  margin-bottom: 1.25rem;
-}
-
-.header-title-text-bot {
-  color: var(--color-nocturne);
-  font-size: 1.5rem;
-  line-height: 1;
   margin-bottom: 0;
+  white-space: nowrap;
 }

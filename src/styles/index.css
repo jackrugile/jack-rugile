@@ -8,6 +8,7 @@
 @import './project-grid.css';
 @import './call-to-action.css';
 @import './footer.css';
+@import './page-not-found.css';
 
 .section {
   margin: 0 auto 9rem;
