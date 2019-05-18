@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   min-height: 50vh;
-  padding: 4rem 3rem;
+  padding: 5rem 3rem;
   position: relative;
   text-align: center;
 }
@@ -41,7 +41,7 @@
   color: var(--color-nocturne);
   font-family: var(--font-serif);
   font-size: 2.75rem;
-  font-weight: 100;
+  font-weight: 300;
   line-height: 1.5;
   margin-bottom: 4rem;
   position: relative;

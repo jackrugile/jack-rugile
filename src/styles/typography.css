@@ -1,10 +1,10 @@
 ::selection {
-  background: var(--color-water);
+  background-color: var(--color-water);
   color: var(--color-lumos);
 }
 
 ::-moz-selection {
-  background: var(--color-water);
+  background-color: var(--color-water);
   color: var(--color-lumos);
 }
 
