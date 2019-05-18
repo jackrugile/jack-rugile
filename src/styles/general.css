@@ -8,6 +8,11 @@ body {
   min-height: 100vh;
 }
 
+html.mac-os,
+html.mac-os body {
+  background-color: var(--color-lumos);
+}
+
 html {
   font-size: 10px;
 }

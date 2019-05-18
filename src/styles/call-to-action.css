@@ -23,17 +23,16 @@
   max-height: 60px;
   position: absolute;
   width: 100%;
-  will-change: transform;
   z-index: 5;
 }
 
 .call-to-action .angle--top {
   fill: var(--color-nocturne);
-  top: 0;
+  top: -0.5px;
 }
 
 .call-to-action .angle--bot {
-  bottom: 0;
+  bottom: -0.5px;
   fill: var(--color-flame);
 }
 

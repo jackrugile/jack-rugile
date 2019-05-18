@@ -70,7 +70,6 @@
 
 .footer-profile-content a {
   color: var(--color-lumos);
-  display: inline-block;
   font-weight: 700;
   outline: 4px solid transparent;
   outline-offset: 4px;

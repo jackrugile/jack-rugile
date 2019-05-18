@@ -10,29 +10,6 @@
   overflow: hidden;
 }
 
-/*.header-canvas-wrap {
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  pointer-events: none;
-  width: 200%;
-  height: 200%;
-  z-index: 0;
-}
-
-.header-canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  min-width: 50%;
-  min-height: 50%;
-  overflow-x: hidden;
-  image-rendering: pixelated;
-}*/
-
 .header-above {
   align-items: center;
   display: flex;
@@ -50,16 +27,15 @@
   max-height: 60px;
   position: absolute;
   width: 100%;
-  will-change: transform;
 }
 
 .header .angle--top {
   fill: var(--color-flame);
-  top: 0;
+  top: -0.5px;
 }
 
 .header .angle--bot {
-  bottom: 0;
+  bottom: -0.5px;
   fill: var(--color-nocturne);
 }
 
