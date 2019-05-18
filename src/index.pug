@@ -48,9 +48,8 @@ html(lang="en")
                   h3.cell-title #{project.title}
                   h4.cell-subtitle !{project.subtitle}
                   div.cell-links
-                    a.cell-link(href=project.url) View Project
-                    if project.repository
-                      a.cell-link(href=project.repository) View Source
+                    each link in project.links
+                      a.cell-link(href=link.url) #{link.label}
     include ./includes/call-to-action.pug
     include ./includes/footer.pug
     include ./includes/foot.pug

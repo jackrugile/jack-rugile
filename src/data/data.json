@@ -70,7 +70,16 @@
       "title": "3D Particle Explorations",
       "subtitle": "Codrops Playground&nbsp;Article",
       "url": "https://tympanus.net/codrops/2017/12/12/3d-particle-explorations/",
-      "repository": "https://github.com/jackrugile/3d-particle-explorations",
+      "links": [
+        {
+          "label": "Read Article",
+          "url": "https://tympanus.net/codrops/2017/12/12/3d-particle-explorations/"
+        },
+        {
+          "label": "View Source",
+          "url": "https://github.com/jackrugile/3d-particle-explorations"
+        }
+      ],
       "image": {
         "src": "./images/projects/3d-particle-explorations.jpg",
         "alt": "Screenshot of 3D Particle Explorations"
@@ -82,7 +91,12 @@
       "title": "If This Then Dominos",
       "subtitle": "Dominos + IFTTT Automatic Order&nbsp;Triggers",
       "url": "https://ifthisthendominos.com",
-      "repository": "",
+      "links": [
+        {
+          "label": "View Site",
+          "url": "https://ifthisthendominos.com"
+        }
+      ],
       "image": {
         "src": "./images/projects/if-this-then-dominos.jpg",
         "alt": "Screenshot of If This Then Dominos"
@@ -94,7 +108,12 @@
       "title": "Inspect Interview",
       "subtitle": "Discussion with Kyle Coberly",
       "url": "https://medium.com/denver-devs/inspect-2-handsome-jack-rugile-f40df8873e8a",
-      "repository": "",
+      "links": [
+        {
+          "label": "Read Interview",
+          "url": "https://medium.com/denver-devs/inspect-2-handsome-jack-rugile-f40df8873e8a"
+        }
+      ],
       "image": {
         "src": "./images/projects/inspect-interview.jpg",
         "alt": "Screenshot of Inspect Interview"
@@ -106,7 +125,12 @@
       "title": "Itch A Skitch",
       "subtitle": "Canvas Powered Etch A&nbsp;Sketch",
       "url": "https://itchaskitch.com",
-      "repository": "",
+      "links": [
+        {
+          "label": "View Site",
+          "url": "https://itchaskitch.com"
+        }
+      ],
       "image": {
         "src": "./images/projects/itch-a-skitch.jpg",
         "alt": "Screenshot of Itch A Skitch"
@@ -118,7 +142,16 @@
       "title": "jRumble",
       "subtitle": "Element Rumbling jQuery&nbsp;Plugin",
       "url": "https://jackrugile.com/jrumble/",
-      "repository": "https://github.com/jackrugile/jrumble/",
+      "links": [
+        {
+          "label": "View Project",
+          "url": "https://jackrugile.com/jrumble/"
+        },
+        {
+          "label": "View Source",
+          "url": "https://github.com/jackrugile/jrumble/"
+        }
+      ],
       "image": {
         "src": "./images/projects/jrumble.jpg",
         "alt": "Screenshot of jRumble"
@@ -130,7 +163,16 @@
       "title": "Lost Without You",
       "subtitle": "Turn-Based Action&nbsp;Puzzler",
       "url": "https://jackrugile.com/lost-without-you",
-      "repository": "https://github.com/jackrugile/lost-without-you",
+      "links": [
+        {
+          "label": "Play Game",
+          "url": "https://jackrugile.com/lost-without-you"
+        },
+        {
+          "label": "View Source",
+          "url": "https://github.com/jackrugile/lost-without-you"
+        }
+      ],
       "image": {
         "src": "./images/projects/lost-without-you.jpg",
         "alt": "Screenshot of Lost Without You"
@@ -142,7 +184,16 @@
       "title": "Mono Move",
       "subtitle": "Single Control Gravity&nbsp;Switching",
       "url": "https://jackrugile.com/mono-move",
-      "repository": "https://github.com/jackrugile/mono-move",
+      "links": [
+        {
+          "label": "Play Game",
+          "url": "https://jackrugile.com/mono-move"
+        },
+        {
+          "label": "View Source",
+          "url": "https://github.com/jackrugile/mono-move"
+        }
+      ],
       "image": {
         "src": "./images/projects/mono-move.jpg",
         "alt": "Screenshot of Mono Move"
@@ -154,7 +205,12 @@
       "title": "Omelet Agency",
       "subtitle": "Los Angeles Ad&nbsp;Agency",
       "url": "https://www.omelet.com/",
-      "repository": "",
+      "links": [
+        {
+          "label": "View Site",
+          "url": "https://www.omelet.com/"
+        }
+      ],
       "image": {
         "src": "./images/projects/omelet-agency.jpg",
         "alt": "Screenshot of Omelet Agency"
@@ -166,7 +222,16 @@
       "title": "Placeholdem",
       "subtitle": "Placeholder Caret&nbsp;Animation",
       "url": "http://placeholdem.jackrugile.com/",
-      "repository": "https://github.com/jackrugile/placeholdem",
+      "links": [
+        {
+          "label": "View Project",
+          "url": "http://placeholdem.jackrugile.com/"
+        },
+        {
+          "label": "View Source",
+          "url": "https://github.com/jackrugile/placeholdem"
+        }
+      ],
       "image": {
         "src": "./images/projects/placeholdem.jpg",
         "alt": "Screenshot of Placeholdem"
@@ -178,7 +243,16 @@
       "title": "Radius Raid",
       "subtitle": "Space Shoot 'Em&nbsp;Up",
       "url": "https://jackrugile.com/radius-raid",
-      "repository": "https://github.com/jackrugile/radius-raid-js13k",
+      "links": [
+        {
+          "label": "Play Game",
+          "url": "https://jackrugile.com/radius-raid"
+        },
+        {
+          "label": "View Source",
+          "url": "https://github.com/jackrugile/radius-raid-js13k"
+        }
+      ],
       "image": {
         "src": "./images/projects/radius-raid.jpg",
         "alt": "Screenshot of Radius Raid"
@@ -190,7 +264,12 @@
       "title": "Ride the Magic",
       "subtitle": "Boreal Mountain Snowboard&nbsp;Adventure",
       "url": "http://www.borealmagic.com",
-      "repository": "",
+      "links": [
+        {
+          "label": "Play Game",
+          "url": "http://www.borealmagic.com"
+        }
+      ],
       "image": {
         "src": "./images/projects/ride-the-magic.jpg",
         "alt": "Screenshot of Ride the Magic"
@@ -200,9 +279,22 @@
       "slug": "start-making-games",
       "category": "community",
       "title": "Start Making Games",
-      "subtitle": "An Intro to Game Dev for the Web&nbsp;Dev",
-      "url": "https://jackrugile.com/start-making-games",
-      "repository": "https://github.com/jackrugile/start-making-games",
+      "subtitle": "DVLP DNVR // An Intro to Game Dev for the Web&nbsp;Dev",
+      "url": "https://www.youtube.com/watch?v=Zj7PKrdKWu4",
+      "links": [
+        {
+          "label": "Watch Talk",
+          "url": "https://www.youtube.com/watch?v=Zj7PKrdKWu4"
+        },
+        {
+          "label": "View Slides",
+          "url": "https://jackrugile.com/start-making-games"
+        },
+        {
+          "label": "View Source",
+          "url": "https://github.com/jackrugile/start-making-games"
+        }
+      ],
       "image": {
         "src": "./images/projects/start-making-games.jpg",
         "alt": "Screenshot of Start Making Games"
@@ -214,7 +306,12 @@
       "title": "TurtleRat Alley",
       "subtitle": "Capital One&nbsp;Bowling",
       "url": "http://www.arcade.game/TurtleRatAlley/",
-      "repository": "",
+      "links": [
+        {
+          "label": "Play Game",
+          "url": "http://www.arcade.game/TurtleRatAlley/"
+        }
+      ],
       "image": {
         "src": "./images/projects/turtlerat-alley.jpg",
         "alt": "Screenshot of TurtleRat Alley"
@@ -226,7 +323,16 @@
       "title": "VariaBoard",
       "subtitle": "Parameter Control&nbsp;Interface",
       "url": "https://s.codepen.io/jackrugile/debug/LeJowx",
-      "repository": "https://github.com/jackrugile/variaboard",
+      "links": [
+        {
+          "label": "View Project",
+          "url": "https://s.codepen.io/jackrugile/debug/LeJowx"
+        },
+        {
+          "label": "View Source",
+          "url": "https://github.com/jackrugile/variaboard"
+        }
+      ],
       "image": {
         "src": "./images/projects/variaboard.jpg",
         "alt": "Screenshot of VariaBoard"
@@ -238,7 +344,12 @@
       "title": "YouTube View in 2",
       "subtitle": "Trends and Content Tips for&nbsp;Brands",
       "url": "https://viewin2.withyoutube.com/",
-      "repository": "",
+      "links": [
+        {
+          "label": "View Site",
+          "url": "https://viewin2.withyoutube.com/"
+        }
+      ],
       "image": {
         "src": "./images/projects/youtube-view-in-2.jpg",
         "alt": "Screenshot of YouTube View in 2"
