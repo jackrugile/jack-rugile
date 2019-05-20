@@ -2,12 +2,14 @@
   "name": "Jack Rugile",
   "title": "Front End Developer",
   "description": "Front end web and game developer with 8 years of professional experience in the agency realm. Taking pride in my work to leave the web better than I found it.",
+  "aboutTitle": "The web moves pretty fast. If you don’t stop and look around once in a while, you could miss&nbsp;it.",
+  "aboutDescription": "I'm a front end web and game developer with 8 years of professional experience in the agency realm. My ambition is to create interactive experiences that bring people joy and solve problems. I take pride in my work and want to leave the web better than I found it. I'm looking to collaborate with a team of innovative professionals who are dedicated to their&nbsp;craft.",
+  "footerDescription": "Raised in <a href=\"https://en.wikipedia.org/wiki/Basalt,_Colorado\">Basalt, CO</a>, professionally developing in <a href=\"https://en.wikipedia.org/wiki/Denver\">Denver, CO</a> since 2011. Likely hanging out with my girlfriend, <a href=\"https://nicollewitte.com/\">Nicolle</a>, and our goofy dogs, <a href=\"https://www.instagram.com/p/BgZ5jcpjzA6/\">Mary and Zoey</a>. Big fan of <a href=\"https://playoverwatch.com/en-us/\">Overwatch</a> and <a href=\"https://i.giphy.com/media/3o7WIGDp6G7ATFyq64/source.gif\">tasty adult&nbsp;beverages</a>.",
   "baseUrl": "https://jackrugile.com",
   "repository": "https://github.com/jackrugile/jack-rugile",
   "features": [
     {
       "category": "sites",
-      "description": "",
       "projects": [
         "if-this-then-dominos",
         "youtube-view-in-2",
@@ -17,7 +19,6 @@
     },
     {
       "category": "games",
-      "description": "",
       "projects": [
         "lost-without-you",
         "mono-move",
@@ -28,7 +29,6 @@
     },
     {
       "category": "open-source",
-      "description": "",
       "projects": [
         "variaboard",
         "placeholdem",
@@ -37,7 +37,6 @@
     },
     {
       "category": "community",
-      "description": "",
       "projects": [
         "start-making-games",
         "3d-particle-explorations",
@@ -69,6 +68,8 @@
       "category": "community",
       "title": "3D Particle Explorations",
       "subtitle": "Codrops Playground&nbsp;Article",
+      "location": "Codrops",
+      "description": "An article with demos showing the power of 3D particles. Great for loader animations, backgrounds, and transitions. Built with&nbsp;Three.js.",
       "url": "https://tympanus.net/codrops/2017/12/12/3d-particle-explorations/",
       "links": [
         {
@@ -89,7 +90,9 @@
       "slug": "if-this-then-dominos",
       "category": "sites",
       "title": "If This Then Dominos",
-      "subtitle": "Dominos + IFTTT Automatic Order&nbsp;Triggers<br><em>@ Legwork Studio</em>",
+      "subtitle": "Dominos + IFTTT Automatic Order&nbsp;Triggers",
+      "location": "Legwork Studio & CPB",
+      "description": "A microsite featuring the many ways you can automatically order Dominos based on event triggers. Built with Vue.js and&nbsp;GSAP.",
       "url": "https://ifthisthendominos.com",
       "links": [
         {
@@ -107,6 +110,8 @@
       "category": "community",
       "title": "Inspect Interview",
       "subtitle": "Discussion with Kyle Coberly",
+      "location": "Denver Devs Medium",
+      "description": "A casual discussion about software, music, and games with Kyle Coberly. Learn about how it all started and why I do what I&nbsp; do.",
       "url": "https://medium.com/denver-devs/inspect-2-handsome-jack-rugile-f40df8873e8a",
       "links": [
         {
@@ -124,6 +129,8 @@
       "category": "sites",
       "title": "Itch A Skitch",
       "subtitle": "Canvas Powered Etch A&nbsp;Sketch",
+      "location": "",
+      "description": "A recreation of the famous Etch A Sketch, right in the browser. Users can save, share, and comment on the sketches. Built with 2D&nbsp;canvas.",
       "url": "https://itchaskitch.com",
       "links": [
         {
@@ -141,6 +148,8 @@
       "category": "open-source",
       "title": "jRumble",
       "subtitle": "Element Rumbling jQuery&nbsp;Plugin",
+      "location": "",
+      "description": "A jQuery plugin that rumbles, vibrates, shakes, and rotates elements. A prominent way of directing attention to a specific part of the&nbsp;UI.",
       "url": "https://jackrugile.com/jrumble/",
       "links": [
         {
@@ -162,11 +171,17 @@
       "category": "games",
       "title": "Lost Without You",
       "subtitle": "Turn-Based Action&nbsp;Puzzler",
+      "location": "Ludum Dare 41 with Nicolle&nbsp;Witte",
+      "description": "Help two friends find each other in the dark before they run out of light. Alternate between each friend to navigate through the darkness in a mysterious labyrinth. Received 29<sup>th</sup> place in LD41. Built with&nbsp;Three.js.",
       "url": "https://jackrugile.com/lost-without-you/",
       "links": [
         {
           "label": "Play Game",
           "url": "https://jackrugile.com/lost-without-you/"
+        },
+        {
+          "label": "Watch Dev Timelapse",
+          "url": "https://www.youtube.com/watch?v=cylmnmQCB9M"
         },
         {
           "label": "View Source",
@@ -183,6 +198,8 @@
       "category": "games",
       "title": "Mono Move",
       "subtitle": "Single Control Gravity&nbsp;Switching",
+      "location": "Denver Creative Tech",
+      "description": "Play to the end with as few deaths as possible in this single control, gravity switching, rage inducing, death tallying obstacle course. Featured at Denver Creative Tech meetup. Built with 2D&nbsp;canvas.",
       "url": "https://jackrugile.com/mono-move/",
       "links": [
         {
@@ -203,7 +220,9 @@
       "slug": "omelet-agency",
       "category": "sites",
       "title": "Omelet Agency",
-      "subtitle": "Los Angeles Ad&nbsp;Agency<br><em>@ Legwork Studio</em>",
+      "subtitle": "Los Angeles Ad&nbsp;Agency",
+      "location": "Legwork Studio",
+      "description": "A full website showcasing the work, people, and values of Los Angeles based ad agency, Omelet. Built with&nbsp;React.",
       "url": "https://www.omelet.com/",
       "links": [
         {
@@ -221,6 +240,8 @@
       "category": "open-source",
       "title": "Placeholdem",
       "subtitle": "Placeholder Caret&nbsp;Animation",
+      "location": "",
+      "description": "A JavaScript plugin that animates placeholder carets on inputs and textareas. The placeholder value will incrementally delete on focus, and restore on&nbsp;blur.",
       "url": "http://placeholdem.jackrugile.com/",
       "links": [
         {
@@ -241,7 +262,9 @@
       "slug": "radius-raid",
       "category": "games",
       "title": "Radius Raid",
-      "subtitle": "Space Shoot 'Em&nbsp;Up",
+      "subtitle": "Space Shoot 'Em&nbsp;Up in 13kb",
+      "location": "js13kGames 2013",
+      "description": "Blast away unrelenting enemies before they destroy you. Features 13 enemy types, 5 powerups, parallax backgrounds, retro sound effects, and locally stored stats. Received 1<sup>st</sup> place in js13kGames 2013. Built with 2D Canvas in&nbsp;13kb.",
       "url": "https://jackrugile.com/radius-raid/",
       "links": [
         {
@@ -262,7 +285,9 @@
       "slug": "ride-the-magic",
       "category": "games",
       "title": "Ride the Magic",
-      "subtitle": "Boreal Mountain Snowboard&nbsp;Adventure<br><em>@ Legwork Studio</em>",
+      "subtitle": "Boreal Mountain Snowboard&nbsp;Adventure",
+      "location": "Legwork Studio & Hovercraft&nbsp;Studio",
+      "description": "A snowboarding game promoting discounted tickets to ride Boreal Mountain in Soda Springs, CA. Built with&nbsp;Phaser.",
       "url": "http://www.borealmagic.com",
       "links": [
         {
@@ -279,7 +304,9 @@
       "slug": "start-making-games",
       "category": "community",
       "title": "Start Making Games",
-      "subtitle": "DVLP DNVR // An Intro to Game Dev for the Web&nbsp;Dev",
+      "subtitle": "An Intro to Game Dev for the Web&nbsp;Dev",
+      "location": "DVLP DNVR 2016",
+      "description": "A talk about why games are the ultimate creative expression, how to build a simple pong game, and how to ramp it up to the next&nbsp;level.",
       "url": "https://www.youtube.com/watch?v=Zj7PKrdKWu4",
       "links": [
         {
@@ -304,12 +331,14 @@
       "slug": "turtlerat-alley",
       "category": "games",
       "title": "TurtleRat Alley",
-      "subtitle": "Capital One&nbsp;Bowling<br><em>@ Legwork Studio</em>",
-      "url": "http://www.arcade.game/TurtleRatAlley/",
+      "subtitle": "Capital One&nbsp;Bowling",
+      "location": "Legwork Studio & DDB",
+      "description": "Part of Capital One's March Madness 2018 campaign featuring Charles Barkley and San Antonio, TX. Bowl an armadillo in three alleys. Built with Three.js and&nbsp;GSAP.",
+      "url": "http://cap-one-games.s3-website-us-east-1.amazonaws.com/TurtleRatAlley/",
       "links": [
         {
           "label": "Play Game",
-          "url": "http://www.arcade.game/TurtleRatAlley/"
+          "url": "http://cap-one-games.s3-website-us-east-1.amazonaws.com/TurtleRatAlley/"
         }
       ],
       "image": {
@@ -322,6 +351,8 @@
       "category": "open-source",
       "title": "VariaBoard",
       "subtitle": "Parameter Control&nbsp;Interface",
+      "location": "",
+      "description": "A control interface to modify parameters in JavaScript. Useful for live tweaking settings in visual&nbsp;demos.",
       "url": "https://s.codepen.io/jackrugile/debug/LeJowx",
       "links": [
         {
@@ -342,7 +373,9 @@
       "slug": "youtube-view-in-2",
       "category": "sites",
       "title": "YouTube View in 2",
-      "subtitle": "Trends and Content Tips for&nbsp;Brands<br><em>@ Legwork Studio</em>",
+      "subtitle": "Trends and Content Tips for&nbsp;Brands",
+      "location": "Legwork Studio",
+      "description": "A microsite feauring View in 2, a video series highlighting the latest YouTube trends, insights, and content tips for&nbsp;brands.",
       "url": "https://viewin2.withyoutube.com/",
       "links": [
         {

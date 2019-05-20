@@ -14,14 +14,12 @@ html.no-js(
     include ./includes/header.pug
     main.main
       section.section
-        h2 The web moves pretty fast. If you don’t stop and look around once in a while, you could miss&nbsp;it.
-        p I'm a front end web and game developer with 8 years of professional experience in the agency realm. My ambition is to create interactive experiences that bring people joy and solve problems. I take pride in my work and want to leave the web better than I found it. I'm looking to collaborate with a team of innovative professionals who are dedicated to their&nbsp;craft.
+        h2 !{data.aboutTitle}
+        p !{data.aboutDescription}
       each feature in data.features
         - let cat = data.categories.find(e => e.slug === feature.category);
         section.section
           h2 #{cat.title}
-          if feature.description
-            p #{feature.description}
           div.project-grid
             each slug in feature.projects
               - let project = data.projects.find(e => e.slug === slug);
@@ -51,6 +49,10 @@ html.no-js(
                 div.cell-content
                   h3.cell-title #{project.title}
                   h4.cell-subtitle !{project.subtitle}
+                  if project.description
+                    p.cell-description !{project.description}
+                  if project.location
+                    p.cell-location @ !{project.location}
                   div.cell-links
                     each link in project.links
                       a.cell-link(href=link.url) #{link.label}

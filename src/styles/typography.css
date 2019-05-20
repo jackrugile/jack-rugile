@@ -19,3 +19,8 @@ p:last-child {
 em {
   font-style: italic;
 }
+
+sup {
+  font-size: 0.8em;
+  vertical-align: top;
+}

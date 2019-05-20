@@ -1,6 +1,9 @@
 import 'lazysizes';
 
 lazySizes.cfg.expand = 1000;
+document.addEventListener('lazyloaded', function(e) {
+  e.target.parentNode.classList.add('image-loaded');
+});
 
 document.documentElement.classList.remove('no-js');
 
@@ -14,9 +17,7 @@ if (
   document.documentElement.classList.add('mac-os');
 }
 
-document.addEventListener('lazyloaded', function(e) {
-  e.target.parentNode.classList.add('image-loaded');
-});
+
 
 let is404 = document.querySelector('.is-404');
 
