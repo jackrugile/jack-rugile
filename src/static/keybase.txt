@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/jackrugile
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://jackrugile.com
+  * I am jackrugile (https://keybase.io/jackrugile) on keybase.
+  * I have a public key with fingerprint 3587 DA94 7B25 D76A E723  5757 05BF ACC4 A7AC 936C
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "010116a9c438d1716dc24bba3dadd5f093e30f9ff54357e361ec41ca302524dc80e70a",
+            "fingerprint": "3587da947b25d76ae723575705bfacc4a7ac936c",
+            "host": "keybase.io",
+            "key_id": "05bfacc4a7ac936c",
+            "kid": "010116a9c438d1716dc24bba3dadd5f093e30f9ff54357e361ec41ca302524dc80e70a",
+            "uid": "04a672dce5fb95cbffb8106b7e14ce19",
+            "username": "jackrugile"
+        },
+        "service": {
+            "hostname": "jackrugile.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1468897370,
+    "expire_in": 157680000,
+    "prev": "c27fae85754ed69d8bef4af1fc947eb54c50cab13c00ff8bf3041cc5f0a14616",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.53
+Comment: https://keybase.io/crypto
+
+yMIjAnicrVJbSFRBGF67aKlRhBVtVHCIilzr3OecLUm6GdRLpYQhbXO1k7pn27O7
+KhGEL7XZRboRZUGY0JpRFpFR1naxLB8iEakoIjJBs4KuIKXN6fLUa/MyzD/f9/3f
+/83cHTfSk56SPBYPVLW+6kjpuHU86lm/9+iGbQKySZXg3yaU0l8bLSPUiQRKLSL4
+BVESJUmHJlYVg0hA0gmWVYSgQiAhGhNNhSoiMxnTVEUDVNElilUJQ0WUNVkl2BAp
+EKHgE5gVLKHhUNgKRrisohmAQFMFSNYI0CEFMqdrQNQQgxirEEBsKjrmxM224zK4
+OQQdOt+yeY0fAr/t/Yv/z76jv+VUqAOZYKoxZGoYMYYMSdQRoJKKqWS6QIeGg7Cc
+cvQWiEvD0RKrjArbfQKvxyxM3WjdWf7BzMd2OeeHwnbExnYZv9sciYQcv8uNVIVc
+cAVFgT8yAWQFCc+SM2I07Fh2UPBLHIkjlqsrqbphmEABok+glSErTAOWi9CAboh8
+uX1ojEtiGTBIDR66SoluEgNRpkImMcxfhSJNxZqIIZIULIqMGYgpIs8H8+gg7yHp
+gjvY1qAt+FVuE5ZwSccqCcJINMynvp0sHuVJSfekjh7h/jFP+tgJf3/e9wtpP6a+
+3tKv31z9rf7MnfbmuHluYOMNm9Rn+3qqH7VnzX7+Y+Y+IaPa+4QWHNyR35BA+oyi
+/tMnnMyvrb2fUz85hVds50HO8jwSH343CD4u9V+8/K6hrm0xmVuwq3tjb1cF6zLn
+zVmZsWTigcJp9NDCzIYWtMz3fnjK4NuiA9NrYy+3Zkhf1z1809LXiRP5p9JyGj/3
+jsv7cG2VuXMRHbg0+WrWvD1Lk9sXtHXFK72w+UXf4cGhnrqms+PX3FulFF7ffdIZ
+c3/57Cbv/tqB7Guy92P3sxprUuP4WcbVT50FR8Cmi4nHNbXn624WZ6pfnubmintb
+fPkn96/oXlvRWJA4XO0fSv4EBN9NMw==
+=wkkB
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jackrugile
+
+==================================================================
