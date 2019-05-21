@@ -1,6 +1,6 @@
 # Jack Rugile's Portfolio Website
 
-I'm a front end web and game developer with 8 years of professional experience in the agency realm. My ambition is to create interactive experiences that bring people joy and solve problems. I take pride in my work and want to leave the web better than I found it. I'm looking to collaborate with a team of innovative professionals who are dedicated to their craft.
+I'm a front end web and game developer with professional experience in the agency realm. My ambition is to create interactive experiences that bring people joy and solve problems. I take pride in my work and want to leave the web better than I found it. I'm looking to collaborate with a team of innovative professionals who are dedicated to their craft.
 
 ## Made With:
 
