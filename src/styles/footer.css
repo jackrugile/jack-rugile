@@ -68,7 +68,6 @@
 
 .footer-profile-image img {
   left: 0;
-  mix-blend-mode: luminosity;
   position: absolute;
   top: 0;
   transition: opacity 800ms;
