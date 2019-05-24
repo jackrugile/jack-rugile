@@ -4,6 +4,7 @@
   display: flex;
   height: 60vh;
   min-height: 20rem;
+  overflow: hidden;
   justify-content: center;
   position: relative;
 }
@@ -15,6 +16,7 @@
   max-height: 60px;
   position: absolute;
   width: 100%;
+  z-index: 5;
 }
 
 .header .angle--top {
@@ -30,6 +32,8 @@
 .header-title {
   align-items: center;
   display: flex;
+  position: relative;
+  z-index: 5;
 }
 
 .header-title .icon {
@@ -57,4 +61,40 @@
   font-size: 1.5rem;
   line-height: 1;
   margin-bottom: 0;
+}
+
+.header-canvas-wrap {
+  height: 200px;
+  left: 0;
+  margin-top: -100px;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+.header-canvas-wrap:after {
+  background: linear-gradient(
+    90deg,
+    hsla(0, 0%, 100%, 0),
+    hsla(0, 0%, 100%, 1) 20%,
+    hsla(0, 0%, 100%, 1) 80%,
+    hsla(0, 0%, 100%, 0)
+  );
+  content: '';
+  height: 100%;
+  left: 50%;
+  /*opacity: 0.5;*/
+  margin-left: -500px;
+  position: absolute;
+  top: 0;
+  width: 1000px;
+}
+
+.header-canvas {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }

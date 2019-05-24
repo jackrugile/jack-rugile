@@ -1,10 +1,20 @@
+/*
+ * Imports
+ */
 import 'lazysizes';
+import HeaderCanvas from './header-canvas';
 
+/*
+ * Lazy Loading
+ */
 lazySizes.cfg.expand = 1000;
 document.addEventListener('lazyloaded', function(e) {
   e.target.parentNode.classList.add('image-loaded');
 });
 
+/*
+ * <html> and <body> Classes
+ */
 document.documentElement.classList.remove('no-js');
 
 if (
@@ -13,11 +23,13 @@ if (
   navigator.userAgent.indexOf('Chrome') == -1 &&
   navigator.userAgent.indexOf('iPad') == -1 &&
   navigator.userAgent.indexOf('iPhone') == -1
-  ) {
+) {
   document.documentElement.classList.add('mac-os');
 }
 
-
+/*
+ * Class and Height for 404
+ */
 
 let is404 = document.querySelector('.is-404');
 
@@ -29,11 +41,15 @@ function set404Height() {
   document.body.style.minHeight = `0px`;
 }
 
-if(is404) {
+if (is404) {
   set404Height();
   window.addEventListener('resize', set404Height);
   window.addEventListener('orientationchange', set404Height);
 }
+
+/*
+ * Custom Console Brand
+ */
 
 function consoleBrand() {
   let styles1 = `
@@ -53,8 +69,11 @@ function consoleBrand() {
     padding: 6px 10px;
   `;
 
-  if(navigator.userAgent.toLowerCase().indexOf('chrome') > -1 || navigator.userAgent.toLowerCase().indexOf('safari') > -1) {
-    console.log('%c🏔️ Made in Denver, CO 🏔️%cJack Rugile', styles1, styles2); 
+  if (
+    navigator.userAgent.toLowerCase().indexOf('chrome') > -1 ||
+    navigator.userAgent.toLowerCase().indexOf('safari') > -1
+  ) {
+    console.log('%c🏔️ Made in Denver, CO 🏔️%cJack Rugile', styles1, styles2);
   } else {
     console.log('Made in Denver, CO by Jack Rugile');
   }
@@ -62,3 +81,11 @@ function consoleBrand() {
 }
 
 consoleBrand();
+
+/*
+ * Header Canvas
+ */
+
+if (!is404) {
+  const headerCanvas = new HeaderCanvas();
+}
