@@ -4,13 +4,13 @@
 
 html,
 body {
-  background-color: var(--color-flame);
+  background-color: $color-flame;
   min-height: 100vh;
 }
 
 html.mac-os,
 html.mac-os body {
-  background-color: var(--color-lumos);
+  background-color: $color-lumos;
 }
 
 html {
@@ -42,8 +42,8 @@ html {
 }
 
 body {
-  color: var(--color-cloud);
-  font-family: var(--font-sans-serif);
+  color: $color-cloud;
+  font-family: $font-sans-serif;
   font-weight: 400;
   line-height: 1.75;
 }

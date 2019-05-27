@@ -1,6 +1,6 @@
 .footer {
   align-items: center;
-  background-color: var(--color-flame);
+  background-color: $color-flame;
   display: flex;
   min-height: 50vh;
   padding: 5rem 3rem;
@@ -31,8 +31,8 @@
 }
 
 .footer-profile-image {
-  background: linear-gradient(60deg, var(--color-water), var(--color-flame));
-  border: 0.35rem solid var(--color-lumos);
+  background: linear-gradient(60deg, $color-water, $color-flame);
+  border: 0.35rem solid $color-lumos;
   flex: 0 0 7rem;
   margin: 0 2rem auto 0;
   position: relative;
@@ -40,7 +40,7 @@
 
 .footer-profile-image:before {
   animation: image-loader-spin linear 700ms infinite;
-  border: 4px solid var(--color-lumos);
+  border: 4px solid $color-lumos;
   border-top-color: hsla(0, 0%, 100%, 0.15);
   border-right-color: hsla(0, 0%, 100%, 0.15);
   border-radius: 50%;
@@ -98,7 +98,7 @@
 }
 
 .footer-profile-content {
-  color: var(--color-nocturne);
+  color: $color-nocturne;
   font-size: 1rem;
   font-weight: 400;
   margin-bottom: 0;
@@ -106,23 +106,21 @@
 }
 
 .footer-profile-content a {
-  color: var(--color-nocturne);
+  color: $color-nocturne;
   font-weight: 700;
   outline: 4px solid transparent;
   outline-offset: 4px;
   position: relative;
-  transition:
-    color 400ms,
-    outline 400ms;
+  transition: color 400ms, outline 400ms;
 }
 
 .footer-profile-content a:hover {
-  color: var(--color-lumos);
+  color: $color-lumos;
   transition-duration: 0ms;
 }
 
 .footer-profile-content a:focus {
-  outline: 4px solid var(--color-lumos);
+  outline: 4px solid $color-lumos;
   transition-duration: 0ms;
   z-index: 1;
 }
@@ -143,7 +141,7 @@
 }
 
 .footer-link:focus {
-  outline: 4px solid var(--color-lumos);
+  outline: 4px solid $color-lumos;
   transition-duration: 0ms;
 }
 
@@ -153,7 +151,7 @@
 
 .footer-link .icon {
   display: block;
-  fill: var(--color-nocturne);
+  fill: $color-nocturne;
   margin: 0 auto 0.25rem;
   transition: fill 400ms;
   vertical-align: middle;
@@ -161,7 +159,7 @@
 }
 
 .footer-link:hover .icon {
-  fill: var(--color-lumos);
+  fill: $color-lumos;
   transition-duration: 0ms;
 }
 
@@ -173,7 +171,7 @@
 }
 
 .footer-link-text {
-  color: var(--color-nocturne);
+  color: $color-nocturne;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1;
@@ -182,12 +180,12 @@
 }
 
 .footer-link:hover .footer-link-text {
-  color: var(--color-lumos);
+  color: $color-lumos;
   transition-duration: 0ms;
 }
 
 .footer-meta {
-  color: var(--color-nocturne);
+  color: $color-nocturne;
   flex-basis: 100%;
   font-size: 1rem;
   font-weight: 400;
@@ -197,31 +195,28 @@
 }
 
 .footer-meta a {
-  background-color: var(--color-nocturne);
+  background-color: $color-nocturne;
   border-radius: 0.25rem;
-  color: var(--color-flame);
+  color: $color-flame;
   display: inline-block;
-  font-family: var(--font-monospace);
+  font-family: $font-monospace;
   margin: 0 0.1rem;
   outline: 4px solid transparent;
   outline-offset: 4px;
   padding: 0.25rem 0.35rem;
   position: relative;
   text-decoration: none;
-  transition:
-    background-color 400ms,
-    color 400ms,
-    outline 400ms;
+  transition: background-color 400ms, color 400ms, outline 400ms;
 }
 
 .footer-meta a:hover {
-  background-color: var(--color-lumos);
-  color: var(--color-nocturne);
+  background-color: $color-lumos;
+  color: $color-nocturne;
   transition-duration: 0ms;
 }
 
 .footer-meta a:focus {
-  outline: 4px solid var(--color-lumos);
+  outline: 4px solid $color-lumos;
   transition-duration: 0ms;
   z-index: 1;
 }
@@ -230,4 +225,3 @@
   display: inline-block;
   margin: 0 0.25rem;
 }
-

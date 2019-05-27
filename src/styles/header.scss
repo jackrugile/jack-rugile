@@ -1,6 +1,6 @@
 .header {
   align-items: center;
-  background-color: var(--color-lumos);
+  background-color: $color-lumos;
   display: flex;
   height: 60vh;
   min-height: 20rem;
@@ -18,13 +18,13 @@
 }
 
 .header .angle--top {
-  fill: var(--color-flame);
+  fill: $color-flame;
   top: -0.5px;
 }
 
 .header .angle--bot {
   bottom: -0.5px;
-  fill: var(--color-nocturne);
+  fill: $color-nocturne;
 }
 
 .header-title {
@@ -34,7 +34,7 @@
 
 .header-title .icon {
   display: block;
-  fill: var(--color-flame);
+  fill: $color-flame;
   margin-right: 2rem;
   width: 4rem;
 }
@@ -44,8 +44,8 @@
 }
 
 .header-title-text-top {
-  color: var(--color-nocturne);
-  font-family: var(--font-serif);
+  color: $color-nocturne;
+  font-family: $font-serif;
   font-size: 3.5rem;
   font-weight: 300;
   line-height: 1;
@@ -53,7 +53,7 @@
 }
 
 .header-title-text-bot {
-  color: var(--color-nocturne);
+  color: $color-nocturne;
   font-size: 1.5rem;
   line-height: 1;
   margin-bottom: 0;

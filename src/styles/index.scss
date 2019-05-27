@@ -1,14 +1,14 @@
-@import './reset.css';
-@import './variables.css';
-@import './animations.css';
-@import './typography.css';
-@import './general.css';
-@import './header.css';
-@import './main.css';
-@import './project-grid.css';
-@import './call-to-action.css';
-@import './footer.css';
-@import './page-not-found.css';
+@import './reset';
+@import './variables';
+@import './animations';
+@import './typography';
+@import './general';
+@import './header';
+@import './main';
+@import './project-grid';
+@import './call-to-action';
+@import './footer';
+@import './page-not-found';
 
 .section {
   margin: 0 auto 9rem;
@@ -25,8 +25,8 @@
 }
 
 .section > h2 {
-  color: var(--color-lumos);
-  font-family: var(--font-serif);
+  color: $color-lumos;
+  font-family: $font-serif;
   font-size: 3rem;
   font-weight: 300;
   line-height: 1.5;
@@ -36,10 +36,10 @@
 }
 
 .section > h2:after {
-  color: var(--color-flame);
+  color: $color-flame;
   content: '//';
   display: none;
-  font-family: var(--font-sans-serif);
+  font-family: $font-sans-serif;
   font-weight: 900;
   letter-spacing: 0.04em;
   margin-right: 1rem;

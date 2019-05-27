@@ -1,9 +1,8 @@
 .page-not-found {
   align-items: center;
-  background-color: var(--color-lumos);
+  background-color: $color-lumos;
   display: flex;
   height: 100%;
-  /*min-height: 20rem;*/
   overflow: hidden;
   justify-content: center;
   position: relative;
@@ -20,13 +19,13 @@
 }
 
 .page-not-found .angle--top {
-  fill: var(--color-flame);
+  fill: $color-flame;
   top: -0.5px;
 }
 
 .page-not-found .angle--bot {
   bottom: -0.5px;
-  fill: var(--color-nocturne);
+  fill: $color-nocturne;
 }
 
 .page-not-found-title {
@@ -35,8 +34,8 @@
 }
 
 .page-not-found-title-text {
-  color: var(--color-nocturne);
-  font-family: var(--font-serif);
+  color: $color-nocturne;
+  font-family: $font-serif;
   font-size: 3.5rem;
   font-weight: 300;
   line-height: 1;
