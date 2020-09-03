@@ -21,6 +21,6 @@
     "stylelint-config-standard": "^18.3.0"
   },
   "dependencies": {
-    "lazysizes": "^5.0.0"
+    "lazysizes": "^5.2.1"
   }
 }
