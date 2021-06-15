@@ -14,7 +14,7 @@
     "cssnano": "^4.1.10",
     "parcel-bundler": "^1.12.3",
     "parcel-plugin-lazy": "^0.0.4",
-    "postcss": "^7.0.16",
+    "postcss": "^7.0.36",
     "pug": "^2.0.3",
     "sass": "^1.20.1",
     "stylelint": "^10.0.1",
