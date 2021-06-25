@@ -8,7 +8,10 @@
   "scripts": {
     "clean": "rm -rf dist",
     "start": "yarn clean && parcel src/*.pug -p 1337",
-    "build": "yarn clean && parcel build src/*.pug --public-url ./ && cp -r src/static/ dist"
+    "build": "yarn clean && parcel build src/*.pug --public-url ./ && cp -r src/static/ dist",
+    "cleanw": "rd /s /q \"dist\"",
+    "startw": "parcel src/*.pug -p 1337",
+    "buildw": "yarn cleanw && parcel build src/*.pug --public-url ./ && cp -r src/static/ dist"
   },
   "devDependencies": {
     "cssnano": "^4.1.10",
