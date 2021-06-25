@@ -14,16 +14,16 @@
     "buildw": "yarn cleanw && parcel build src/*.pug --public-url ./ && cp -r src/static/ dist"
   },
   "devDependencies": {
-    "cssnano": "^4.1.10",
-    "parcel-bundler": "^1.12.3",
+    "cssnano": "^5.0.6",
+    "parcel-bundler": "^1.12.5",
     "parcel-plugin-lazy": "^0.0.4",
-    "postcss": "^7.0.36",
-    "pug": "^2.0.3",
-    "sass": "^1.20.1",
-    "stylelint": "^10.0.1",
-    "stylelint-config-standard": "^18.3.0"
+    "postcss": "^8.3.5",
+    "pug": "^3.0.2",
+    "sass": "^1.35.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^22.0.0"
   },
   "dependencies": {
-    "lazysizes": "^5.2.1"
+    "lazysizes": "^5.3.2"
   }
 }
