@@ -14,20 +14,21 @@ html.mac-os body {
 }
 
 html {
-  font-size: 10px;
+  font-size: 16px;
 }
 
-@media (min-width: 375px) {
-  html {
-    font-size: 12px;
-  }
-}
+// @media (min-width: 375px) {
+//   html {
+//     font-size: 12px;
+//     font-size: 16px;
+//   }
+// }
 
-@media (min-width: 60em) {
-  html {
-    font-size: 16px;
-  }
-}
+// @media (min-width: 60em) {
+//   html {
+//     font-size: 16px;
+//   }
+// }
 
 @media (min-width: 100em) {
   html {

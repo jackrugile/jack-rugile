@@ -4,7 +4,7 @@
   "description": "Front end web and game developer with professional experience in the agency realm. Taking pride in my work to leave the web better than I found it.",
   "aboutTitle": "The web moves pretty fast. If you don’t stop and look around once in a while, you could miss&nbsp;it.",
   "aboutDescription": "I'm a front end web and game developer with professional experience in the agency realm. My ambition is to create interactive experiences that bring people joy and solve problems. I take pride in my work and want to leave the web better than I found it. I'm looking to collaborate with a team of innovative professionals who are dedicated to their&nbsp;craft.",
-  "footerDescription": "Raised in <a href=\"https://en.wikipedia.org/wiki/Basalt,_Colorado\">Basalt, CO</a>, professionally developing in <a href=\"https://en.wikipedia.org/wiki/Denver\">Denver, CO</a> since 2011. Likely hanging out with my girlfriend, <a href=\"https://nicollewitte.com/\">Nicolle</a>, and our goofy dogs, <a href=\"https://www.instagram.com/p/BgZ5jcpjzA6/\">Mary and Zoey</a>. Big fan of <a href=\"https://playoverwatch.com/en-us/\">Overwatch</a> and <a href=\"https://i.giphy.com/media/3o7WIGDp6G7ATFyq64/source.gif\">tasty adult&nbsp;beverages</a>.",
+  "footerDescription": "Raised in <a href=\"https://en.wikipedia.org/wiki/Basalt,_Colorado\">Basalt, CO</a>, started my career in <a href=\"https://en.wikipedia.org/wiki/Denver\">Denver, CO</a>, and am now developing in <a href=\"https://en.wikipedia.org/wiki/Palm_Bay,_Florida\">Palm Bay, FL</a>. Likely hanging out with my <a href=\"https://www.instagram.com/p/CNoedLCl5mGkt9aZIU-cI1--Y3ahtCw2lPzJ0U0/\">family</a> and our goofy dog, <a href=\"https://www.instagram.com/p/Bk_daYkHmRK/\">Zoey</a>. Big fan of <a href=\"https://playoverwatch.com/en-us/\">Overwatch</a> and <a href=\"https://i.giphy.com/media/3o7WIGDp6G7ATFyq64/source.gif\">tasty adult&nbsp;beverages</a>.",
   "baseUrl": "https://jackrugile.com",
   "repository": "https://github.com/jackrugile/jack-rugile",
   "features": [
@@ -29,11 +29,7 @@
     },
     {
       "category": "open-source",
-      "projects": [
-        "variaboard",
-        "placeholdem",
-        "jrumble"
-      ]
+      "projects": ["variaboard", "placeholdem", "jrumble"]
     },
     {
       "category": "community",
@@ -68,22 +64,24 @@
       "category": "community",
       "title": "3D Particle Explorations",
       "subtitle": "Codrops Playground&nbsp;Article",
-      "location": "Codrops",
+      "location": "<a href=\"https://tympanus.net/codrops/\">Codrops</a>",
       "description": "An article with demos showing the power of 3D particles. Great for loader animations, backgrounds, and transitions. Built with&nbsp;Three.js.",
       "url": "https://tympanus.net/codrops/2017/12/12/3d-particle-explorations/",
       "links": [
         {
           "label": "Read Article",
+          "ariaLabel": "Read 3D Particle Explorations Article",
           "url": "https://tympanus.net/codrops/2017/12/12/3d-particle-explorations/"
         },
         {
-          "label": "View Source",
+          "label": "View Source Code",
+          "ariaLabel": "View 3D Particle Explorations Source Code",
           "url": "https://github.com/jackrugile/3d-particle-explorations"
         }
       ],
       "image": {
         "src": "./images/projects/3d-particle-explorations.jpg",
-        "alt": "Screenshot of 3D Particle Explorations"
+        "alt": "Screenshot of the 3D Particle Explorations demo, white particle dots on a colorful 3D plane."
       }
     },
     {
@@ -91,18 +89,19 @@
       "category": "sites",
       "title": "If This Then Dominos",
       "subtitle": "Dominos + IFTTT Automatic Order&nbsp;Triggers",
-      "location": "Legwork Studio & CPB",
+      "location": "<a href=\"https://www.legworkstudio.com/\">Legwork Studio</a> & <a href=\"https://www.cpbgroup.com/\">CPB</a>",
       "description": "A microsite featuring the many ways you can automatically order Dominos based on event triggers. Built with Vue.js and&nbsp;GSAP.",
       "url": "https://ifthisthendominos.com",
       "links": [
         {
-          "label": "View Site",
+          "label": "View Project",
+          "ariaLabel": "View If This Then Dominos Project",
           "url": "https://ifthisthendominos.com"
         }
       ],
       "image": {
         "src": "./images/projects/if-this-then-dominos.jpg",
-        "alt": "Screenshot of If This Then Dominos"
+        "alt": "Screenshot of If This Then Dominos project, illustrated cards showing different ways to trigger a pizza delivery."
       }
     },
     {
@@ -110,18 +109,19 @@
       "category": "community",
       "title": "Inspect Interview",
       "subtitle": "Discussion with Kyle Coberly",
-      "location": "Denver Devs Medium",
+      "location": "<a href=\"https://medium.com/@kyle.coberly\">Kyle Coberly Medium</a>",
       "description": "A casual discussion about software, music, and games with Kyle Coberly. Learn about how it all started and why I do what I&nbsp; do.",
-      "url": "https://medium.com/denver-devs/inspect-2-handsome-jack-rugile-f40df8873e8a",
+      "url": "https://medium.com/@kyle.coberly/inspect-2-handsome-jack-rugile-f40df8873e8a",
       "links": [
         {
           "label": "Read Interview",
-          "url": "https://medium.com/denver-devs/inspect-2-handsome-jack-rugile-f40df8873e8a"
+          "ariaLabel": "Read Inspect Interview with Jack Rugile and Kyle Coberly",
+          "url": "https://medium.com/@kyle.coberly/inspect-2-handsome-jack-rugile-f40df8873e8a"
         }
       ],
       "image": {
         "src": "./images/projects/inspect-interview.jpg",
-        "alt": "Screenshot of Inspect Interview"
+        "alt": "Photo of Jack Rugile wearing a scooter helmet with the word \"Inspect\" overlayed on top."
       }
     },
     {
@@ -134,13 +134,14 @@
       "url": "https://itchaskitch.com",
       "links": [
         {
-          "label": "View Site",
+          "label": "View Project",
+          "ariaLabel": "View Itch A Skitch Project",
           "url": "https://itchaskitch.com"
         }
       ],
       "image": {
         "src": "./images/projects/itch-a-skitch.jpg",
-        "alt": "Screenshot of Itch A Skitch"
+        "alt": "Screenshot of Itch A Skitch project with controls, resembling a classic Etch A Sketch toy."
       }
     },
     {
@@ -154,16 +155,18 @@
       "links": [
         {
           "label": "View Project",
+          "ariaLabel": "View jRumble Project",
           "url": "https://jackrugile.com/jrumble/"
         },
         {
-          "label": "View Source",
+          "label": "View Source Code",
+          "ariaLabel": "View jRumble Source Code",
           "url": "https://github.com/jackrugile/jrumble/"
         }
       ],
       "image": {
         "src": "./images/projects/jrumble.jpg",
-        "alt": "Screenshot of jRumble"
+        "alt": "Screenshot of jRumble website demo and documentation."
       }
     },
     {
@@ -171,26 +174,29 @@
       "category": "games",
       "title": "Lost Without You",
       "subtitle": "Turn-Based Action&nbsp;Puzzler",
-      "location": "Ludum Dare 41 with Nicolle&nbsp;Witte",
+      "location": "<a href=\"https://ldjam.com/events/ludum-dare/41\">Ludum Dare 41</a> with <a href=\"https://www.linkedin.com/in/nicollewitte/\">Nicolle&nbsp;Witte</a>",
       "description": "Help two friends find each other in the dark before they run out of light. Alternate between each friend to navigate through the darkness in a mysterious labyrinth. Received 29<sup>th</sup> place in LD41. Built with&nbsp;Three.js.",
       "url": "https://jackrugile.com/lost-without-you/",
       "links": [
         {
           "label": "Play Game",
+          "ariaLabel": "Play Lost Without You Game",
           "url": "https://jackrugile.com/lost-without-you/"
         },
         {
-          "label": "Watch Dev Timelapse",
+          "label": "Watch Development Timelapse",
+          "ariaLabel": "Watch Lost Without You Development Timelapse",
           "url": "https://www.youtube.com/watch?v=cylmnmQCB9M"
         },
         {
-          "label": "View Source",
+          "label": "View Source Code",
+          "ariaLabel": "View Lost Without You Source Code",
           "url": "https://github.com/jackrugile/lost-without-you"
         }
       ],
       "image": {
         "src": "./images/projects/lost-without-you.jpg",
-        "alt": "Screenshot of Lost Without You"
+        "alt": "Screenshot of Lost Without You gameplay."
       }
     },
     {
@@ -198,22 +204,24 @@
       "category": "games",
       "title": "Mono Move",
       "subtitle": "Single Control Gravity&nbsp;Switching",
-      "location": "Denver Creative Tech",
+      "location": "<a href=\"https://www.meetup.com/denver-creative-tech/\">Denver Creative Tech Meetup</a>",
       "description": "Play to the end with as few deaths as possible in this single control, gravity switching, rage inducing, death tallying obstacle course. Featured at Denver Creative Tech meetup. Built with 2D&nbsp;canvas.",
       "url": "https://jackrugile.com/mono-move/",
       "links": [
         {
           "label": "Play Game",
+          "ariaLabel": "Play Monomove Game",
           "url": "https://jackrugile.com/mono-move/"
         },
         {
-          "label": "View Source",
+          "label": "View Source Code",
+          "ariaLabel": "View Monomove Source",
           "url": "https://github.com/jackrugile/mono-move"
         }
       ],
       "image": {
         "src": "./images/projects/mono-move.jpg",
-        "alt": "Screenshot of Mono Move"
+        "alt": "Screenshot of Mono Move gameplay."
       }
     },
     {
@@ -221,18 +229,19 @@
       "category": "sites",
       "title": "Omelet Agency",
       "subtitle": "Los Angeles Ad&nbsp;Agency",
-      "location": "Legwork Studio",
+      "location": "<a href=\"https://www.legworkstudio.com/\">Legwork Studio</a>",
       "description": "A full website showcasing the work, people, and values of Los Angeles based ad agency, Omelet. Built with&nbsp;React.",
       "url": "https://www.omelet.com/",
       "links": [
         {
-          "label": "View Site",
+          "label": "View Project",
+          "ariaLabel": "View Omelet Agency Project",
           "url": "https://www.omelet.com/"
         }
       ],
       "image": {
         "src": "./images/projects/omelet-agency.jpg",
-        "alt": "Screenshot of Omelet Agency"
+        "alt": "Screenshot of Omelet Agency website homepage."
       }
     },
     {
@@ -242,20 +251,22 @@
       "subtitle": "Placeholder Caret&nbsp;Animation",
       "location": "",
       "description": "A JavaScript plugin that animates placeholder carets on inputs and textareas. The placeholder value will incrementally delete on focus, and restore on&nbsp;blur.",
-      "url": "http://placeholdem.jackrugile.com/",
+      "url": "https://placeholdem.jackrugile.com/",
       "links": [
         {
           "label": "View Project",
-          "url": "http://placeholdem.jackrugile.com/"
+          "ariaLabel": "View Placeholdem Project",
+          "url": "https://placeholdem.jackrugile.com/"
         },
         {
-          "label": "View Source",
+          "label": "View Source Code",
+          "ariaLabel": "View Placeholdem Source Code",
           "url": "https://github.com/jackrugile/placeholdem"
         }
       ],
       "image": {
         "src": "./images/projects/placeholdem.jpg",
-        "alt": "Screenshot of Placeholdem"
+        "alt": "Screenshot of Placeholdem demo."
       }
     },
     {
@@ -263,22 +274,24 @@
       "category": "games",
       "title": "Radius Raid",
       "subtitle": "Space Shoot 'Em&nbsp;Up in 13kb",
-      "location": "js13kGames 2013",
+      "location": "<a href=\"https://2013.js13kgames.com/\">js13kGames 2013</a>",
       "description": "Blast away unrelenting enemies before they destroy you. Features 13 enemy types, 5 powerups, parallax backgrounds, retro sound effects, and locally stored stats. Received 1<sup>st</sup> place in js13kGames 2013. Built with 2D Canvas in&nbsp;13kb.",
       "url": "https://jackrugile.com/radius-raid/",
       "links": [
         {
           "label": "Play Game",
+          "ariaLabel": "Play Radius Raid Game",
           "url": "https://jackrugile.com/radius-raid/"
         },
         {
-          "label": "View Source",
+          "label": "View Source Code",
+          "ariaLabel": "View Radius Raid Source Code",
           "url": "https://github.com/jackrugile/radius-raid-js13k"
         }
       ],
       "image": {
         "src": "./images/projects/radius-raid.jpg",
-        "alt": "Screenshot of Radius Raid"
+        "alt": "Screenshot of Radius Raid gameplay."
       }
     },
     {
@@ -286,18 +299,19 @@
       "category": "games",
       "title": "Ride the Magic",
       "subtitle": "Boreal Mountain Snowboard&nbsp;Adventure",
-      "location": "Legwork Studio & Hovercraft&nbsp;Studio",
+      "location": "<a href=\"https://www.legworkstudio.com/\">Legwork Studio</a> & <a href=\"https://hovercraftstudio.com/\">Hovercraft&nbsp;Studio</a>",
       "description": "A snowboarding game promoting discounted tickets to ride Boreal Mountain in Soda Springs, CA. Built with&nbsp;Phaser.",
-      "url": "http://www.borealmagic.com",
+      "url": "https://www.borealmagic.com",
       "links": [
         {
           "label": "Play Game",
-          "url": "http://www.borealmagic.com"
+          "ariaLabel": "Play Ride the Magic Game",
+          "url": "https://www.borealmagic.com"
         }
       ],
       "image": {
         "src": "./images/projects/ride-the-magic.jpg",
-        "alt": "Screenshot of Ride the Magic"
+        "alt": "Screenshot of Ride the Magic gameplay."
       }
     },
     {
@@ -305,26 +319,29 @@
       "category": "community",
       "title": "Start Making Games",
       "subtitle": "An Intro to Game Dev for the Web&nbsp;Dev",
-      "location": "DVLP DNVR 2016",
-      "description": "A talk about why games are the ultimate creative expression, how to build a simple pong game, and how to ramp it up to the next&nbsp;level.",
+      "location": "<a href=\"https://developdenver.org/\">DVLP DNVR 2016</a>",
+      "description": "A presentation about why games are the ultimate creative expression, how to build a simple pong game, and how to ramp it up to the next&nbsp;level.",
       "url": "https://www.youtube.com/watch?v=Zj7PKrdKWu4",
       "links": [
         {
-          "label": "Watch Talk",
+          "label": "Watch Presentation",
+          "ariaLabel": "Watch Start Making Games Presentation",
           "url": "https://www.youtube.com/watch?v=Zj7PKrdKWu4"
         },
         {
-          "label": "View Slides",
+          "label": "View Slide Deck",
+          "ariaLabel": "View Start Making Games Slide Deck",
           "url": "https://jackrugile.com/start-making-games/"
         },
         {
-          "label": "View Source",
+          "label": "View Source Code",
+          "ariaLabel": "View Start Making Games Source Code",
           "url": "https://github.com/jackrugile/start-making-games"
         }
       ],
       "image": {
         "src": "./images/projects/start-making-games.jpg",
-        "alt": "Screenshot of Start Making Games"
+        "alt": "Screenshot of Start Making Games final pong game demo."
       }
     },
     {
@@ -332,18 +349,19 @@
       "category": "games",
       "title": "TurtleRat Alley",
       "subtitle": "Capital One&nbsp;Bowling",
-      "location": "Legwork Studio & DDB",
+      "location": "<a href=\"https://www.legworkstudio.com/\">Legwork Studio</a> & <a href=\"https://www.ddb.com/\">DDB</a>",
       "description": "Part of Capital One's March Madness 2018 campaign featuring Charles Barkley and San Antonio, TX. Bowl an armadillo in three alleys. Built with Three.js and&nbsp;GSAP.",
-      "url": "http://cap-one-games.s3-website-us-east-1.amazonaws.com/TurtleRatAlley/",
+      "url": "https://cap-one-games.s3-website-us-east-1.amazonaws.com/TurtleRatAlley/",
       "links": [
         {
           "label": "Play Game",
+          "ariaLabel": "Play TurtleRat Alley Game",
           "url": "http://cap-one-games.s3-website-us-east-1.amazonaws.com/TurtleRatAlley/"
         }
       ],
       "image": {
         "src": "./images/projects/turtlerat-alley.jpg",
-        "alt": "Screenshot of TurtleRat Alley"
+        "alt": "Screenshot of TurtleRat Alley logo screen."
       }
     },
     {
@@ -357,16 +375,18 @@
       "links": [
         {
           "label": "View Project",
+          "ariaLabel": "View VariaBoard Project",
           "url": "https://s.codepen.io/jackrugile/debug/LeJowx"
         },
         {
-          "label": "View Source",
+          "label": "View Source Code",
+          "ariaLabel": "View VariaBoard Source Code",
           "url": "https://github.com/jackrugile/variaboard"
         }
       ],
       "image": {
         "src": "./images/projects/variaboard.jpg",
-        "alt": "Screenshot of VariaBoard"
+        "alt": "Screenshot of VariaBoard control interface demo."
       }
     },
     {
@@ -374,18 +394,19 @@
       "category": "sites",
       "title": "YouTube View in 2",
       "subtitle": "Trends and Content Tips for&nbsp;Brands",
-      "location": "Legwork Studio",
+      "location": "<a href=\"https://www.legworkstudio.com/\">Legwork Studio</a>",
       "description": "A microsite feauring View in 2, a video series highlighting the latest YouTube trends, insights, and content tips for&nbsp;brands.",
       "url": "https://viewin2.withyoutube.com/",
       "links": [
         {
-          "label": "View Site",
+          "label": "View Project",
+          "ariaLabel": "View View in 2 Project",
           "url": "https://viewin2.withyoutube.com/"
         }
       ],
       "image": {
         "src": "./images/projects/youtube-view-in-2.jpg",
-        "alt": "Screenshot of YouTube View in 2"
+        "alt": "Screenshot of YouTube View in 2 website homepage."
       }
     }
   ]

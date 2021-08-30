@@ -1,7 +1,7 @@
 import 'lazysizes';
 
 lazySizes.cfg.expand = 1000;
-document.addEventListener('lazyloaded', function(e) {
+document.addEventListener('lazyloaded', function (e) {
   e.target.parentNode.classList.add('image-loaded');
 });
 
@@ -13,11 +13,9 @@ if (
   navigator.userAgent.indexOf('Chrome') == -1 &&
   navigator.userAgent.indexOf('iPad') == -1 &&
   navigator.userAgent.indexOf('iPhone') == -1
-  ) {
+) {
   document.documentElement.classList.add('mac-os');
 }
-
-
 
 let is404 = document.querySelector('.is-404');
 
@@ -29,7 +27,7 @@ function set404Height() {
   document.body.style.minHeight = `0px`;
 }
 
-if(is404) {
+if (is404) {
   set404Height();
   window.addEventListener('resize', set404Height);
   window.addEventListener('orientationchange', set404Height);
@@ -53,10 +51,17 @@ function consoleBrand() {
     padding: 6px 10px;
   `;
 
-  if(navigator.userAgent.toLowerCase().indexOf('chrome') > -1 || navigator.userAgent.toLowerCase().indexOf('safari') > -1) {
-    console.log('%c🏔️ Made in Denver, CO 🏔️%cJack Rugile', styles1, styles2); 
+  if (
+    navigator.userAgent.toLowerCase().indexOf('chrome') > -1 ||
+    navigator.userAgent.toLowerCase().indexOf('safari') > -1
+  ) {
+    console.log(
+      '%cMade in Denver, CO and Palm Bay, FL 🏔️❄️🌴🌊%cJack Rugile',
+      styles1,
+      styles2
+    );
   } else {
-    console.log('Made in Denver, CO by Jack Rugile');
+    console.log('Made in Denver, CO and Palm Bay, FL 🏔️❄️🌴🌊 by Jack Rugile');
   }
   console.log('View Source: https://github.com/jackrugile/jack-rugile');
 }

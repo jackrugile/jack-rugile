@@ -24,7 +24,7 @@ html.no-js(
             each slug in feature.projects
               - let project = data.projects.find(e => e.slug === slug);
               article.cell
-                a.cell-image(href=project.url)
+                a.cell-image(href=project.url, tabindex="-1", aria-hidden="true")
                   noscript
                     img.fallback(
                       sizes="auto"
@@ -55,7 +55,7 @@ html.no-js(
                     p.cell-location @ !{project.location}
                   div.cell-links
                     each link in project.links
-                      a.cell-link(href=link.url) #{link.label}
+                      a.cell-link(href=link.url, aria-label=link.ariaLabel) #{link.label}
     include ./includes/call-to-action.pug
     include ./includes/footer.pug
     include ./includes/foot.pug

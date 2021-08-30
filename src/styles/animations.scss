@@ -6,3 +6,25 @@
     transform: translate3d(-50%, -50%, 0) rotate(359deg);
   }
 }
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  30%,
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(45deg) scale(0);
+  }
+  100% {
+    transform: rotate(225deg) scale(1);
+  }
+}

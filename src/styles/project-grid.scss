@@ -1,8 +1,14 @@
 .project-grid {
   display: grid;
   flex-wrap: wrap;
-  grid-gap: 3rem;
+  grid-gap: 2rem;
   grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+}
+
+@media (min-width: 60rem) {
+  .project-grid {
+    grid-gap: 3rem;
+  }
 }
 
 @media (min-width: 70rem) {
@@ -24,7 +30,10 @@
   outline: 4px solid transparent;
   outline-offset: 4px;
   position: relative;
-  transition: background 0ms 800ms, box-shadow 400ms, outline 400ms;
+  transition: box-shadow 400ms, outline 400ms;
+  @media (prefers-reduced-motion) {
+    transition: none;
+  }
 }
 
 .cell-image:hover {
@@ -38,7 +47,7 @@
 }
 
 .cell-image:before {
-  animation: image-loader-spin linear 700ms infinite;
+  animation: image-loader-spin linear 1000ms infinite;
   border: 4px solid $color-lumos;
   border-top-color: hsla(0, 0%, 100%, 0.15);
   border-right-color: hsla(0, 0%, 100%, 0.15);
@@ -46,11 +55,15 @@
   content: '';
   height: 32px;
   left: 50%;
+  mix-blend-mode: lighter;
   position: absolute;
   top: 50%;
   transform: translate3d(-50%, -50%, 0) rotate(0deg);
   width: 32px;
   z-index: 5;
+  @media (prefers-reduced-motion) {
+    animation-duration: 2000ms;
+  }
 }
 
 .no-js .cell-image:before,
@@ -72,6 +85,9 @@
   transition: opacity 800ms;
   width: 100%;
   z-index: 10;
+  @media (prefers-reduced-motion) {
+    transition: none;
+  }
 }
 
 .cell-image img.fallback {
@@ -140,6 +156,28 @@
   margin-bottom: 1rem;
 }
 
+.cell-location a {
+  color: inherit;
+  outline: 4px solid transparent;
+  outline-offset: 4px;
+  position: relative;
+  transition: color 400ms, outline 400ms;
+  @media (prefers-reduced-motion) {
+    transition: none;
+  }
+}
+
+.cell-location a:hover {
+  color: $color-lumos;
+  transition-duration: 0ms;
+}
+
+.cell-location a:focus {
+  outline: 4px solid $color-water;
+  transition-duration: 0ms;
+  z-index: 1;
+}
+
 .cell-links {
   margin-top: auto;
 }
@@ -151,7 +189,7 @@
   display: block;
   font-size: 1rem;
   font-weight: 700;
-  line-height: 1;
+  line-height: 1.2;
   margin: 0 -1rem 0;
   outline: 4px solid transparent;
   outline-offset: 4px;
@@ -159,6 +197,9 @@
   text-decoration: none;
   transition: background-color 400ms, box-shadow 400ms, color 400ms,
     outline 400ms;
+  @media (prefers-reduced-motion) {
+    transition: none;
+  }
 }
 
 .cell-link:hover {
