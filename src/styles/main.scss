@@ -1,9 +1,16 @@
 .main {
-  background-color: $color-nocturne;
+  background-color: #eee;
   overflow: hidden;
   padding: 5rem 2rem;
   position: relative;
+  transition: background-color 400ms;
   z-index: 10;
+  .dark-theme & {
+    background-color: #000;
+  }
+  @media (prefers-reduced-motion) {
+    transition: none;
+  }
 }
 
 @media (min-width: 60em) {

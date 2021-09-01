@@ -1,11 +1,18 @@
 .header {
   align-items: center;
-  background-color: $color-lumos;
+  background-color: #fff;
   display: flex;
   height: 30vh;
   justify-content: center;
   min-height: 20rem;
   position: relative;
+  transition: background-color 400ms;
+  .dark-theme & {
+    background-color: #111;
+  }
+  @media (prefers-reduced-motion) {
+    transition: none;
+  }
 }
 
 @media (min-width: 60em) {
@@ -30,7 +37,14 @@
 
 .header .angle--bot {
   bottom: -0.5px;
-  fill: $color-nocturne;
+  fill: #eee;
+  transition: fill 400ms;
+  .dark-theme & {
+    fill: #000;
+  }
+  @media (prefers-reduced-motion) {
+    transition: none;
+  }
 }
 
 .header-title {
@@ -57,12 +71,19 @@
 }
 
 .header-title-text-top {
-  color: $color-nocturne;
+  color: #000;
   font-family: $font-serif;
   font-size: 2.5rem;
   font-weight: 300;
   line-height: 1;
   margin-bottom: 1rem;
+  transition: color 400ms;
+  .dark-theme & {
+    color: #fff;
+  }
+  @media (prefers-reduced-motion) {
+    transition: none;
+  }
 }
 
 @media (min-width: 60em) {
@@ -73,10 +94,17 @@
 }
 
 .header-title-text-bot {
-  color: $color-nocturne;
+  color: #000;
   font-size: 1rem;
   line-height: 1;
   margin-bottom: 0;
+  transition: color 400ms;
+  .dark-theme & {
+    color: #fff;
+  }
+  @media (prefers-reduced-motion) {
+    transition: none;
+  }
 }
 
 @media (min-width: 60em) {

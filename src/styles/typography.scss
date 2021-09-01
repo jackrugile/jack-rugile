@@ -1,11 +1,19 @@
 ::selection {
-  background-color: $color-water;
-  color: $color-lumos;
+  background-color: $color-flame;
+  color: #000;
+  .dark-theme & {
+    background-color: $color-flame;
+    color: #fff;
+  }
 }
 
 ::-moz-selection {
-  background-color: $color-water;
-  color: $color-lumos;
+  background-color: $color-flame;
+  color: #000;
+  .dark-theme & {
+    background-color: $color-flame;
+    color: #fff;
+  }
 }
 
 p {

@@ -32,7 +32,7 @@
 }
 
 .section > h2 {
-  color: $color-lumos;
+  color: #000;
   font-family: $font-serif;
   font-size: 2rem;
   font-weight: 300;
@@ -40,6 +40,13 @@
   margin-bottom: 3rem;
   max-width: 60rem;
   position: relative;
+  transition: color 400ms;
+  .dark-theme & {
+    color: #fff;
+  }
+  @media (prefers-reduced-motion) {
+    transition: none;
+  }
 }
 
 @media (min-width: 60em) {
@@ -68,7 +75,7 @@
 
 .section > h2:before {
   animation-delay: -2000ms;
-  border-color: $color-water;
+  border-color: $color-flame;
   @media (prefers-reduced-motion) {
     opacity: 0;
   }

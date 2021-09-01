@@ -4,31 +4,29 @@
 
 html,
 body {
-  background-color: $color-flame;
+  background-color: #fff;
   min-height: 100vh;
+  transition: background-color 400ms;
+  &.dark-theme,
+  .dark-theme & {
+    background-color: #000;
+  }
+  @media (prefers-reduced-motion) {
+    transition: none;
+  }
 }
 
 html.mac-os,
 html.mac-os body {
-  background-color: $color-lumos;
+  background-color: #fff;
+  .dark-theme & {
+    background-color: #000;
+  }
 }
 
 html {
   font-size: 16px;
 }
-
-// @media (min-width: 375px) {
-//   html {
-//     font-size: 12px;
-//     font-size: 16px;
-//   }
-// }
-
-// @media (min-width: 60em) {
-//   html {
-//     font-size: 16px;
-//   }
-// }
 
 @media (min-width: 100em) {
   html {
@@ -43,8 +41,15 @@ html {
 }
 
 body {
-  color: $color-cloud;
+  color: #555;
   font-family: $font-sans-serif;
   font-weight: 400;
   line-height: 1.75;
+  transition: color 400ms;
+  .dark-theme & {
+    color: #aaa;
+  }
+  @media (prefers-reduced-motion) {
+    transition: none;
+  }
 }

@@ -1,6 +1,6 @@
 .call-to-action {
   align-items: center;
-  background-color: $color-lumos;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,6 +8,13 @@
   padding: 5rem 2rem;
   position: relative;
   text-align: center;
+  transition: background-color 400ms;
+  .dark-theme & {
+    background-color: #111;
+  }
+  @media (prefers-reduced-motion) {
+    transition: none;
+  }
 }
 
 @media (min-width: 60em) {
@@ -28,54 +35,83 @@
 }
 
 .call-to-action .angle--top {
-  fill: $color-nocturne;
+  fill: #eee;
   top: -0.5px;
+  transition: fill 400ms;
+  .dark-theme & {
+    fill: #000;
+  }
+  @media (prefers-reduced-motion) {
+    transition: none;
+  }
 }
 
 .call-to-action .angle--bot {
   bottom: -0.5px;
-  fill: $color-flame;
+  fill: #eee;
+  transition: fill 400ms;
+  .dark-theme & {
+    fill: #000;
+  }
+  @media (prefers-reduced-motion) {
+    transition: none;
+  }
 }
 
 .call-to-action-title {
-  color: $color-nocturne;
+  color: #000;
   font-family: $font-serif;
   font-size: 2.75rem;
   font-weight: 300;
   line-height: 1.5;
   margin-bottom: 4rem;
   position: relative;
+  transition: color 400ms;
+  .dark-theme & {
+    color: #fff;
+  }
+  @media (prefers-reduced-motion) {
+    transition: none;
+  }
 }
 
 .call-to-action-title:after {
-  background-color: $color-cloud;
+  background-color: #eee;
   bottom: -2rem;
   content: '';
   height: 2px;
   left: 0;
   position: absolute;
+  transition: background-color 400ms;
   width: 100%;
+  .dark-theme & {
+    background-color: #333;
+  }
+  @media (prefers-reduced-motion) {
+    transition: none;
+  }
 }
 
 .call-to-action-subtitle {
-  color: $color-nocturne;
   font-size: 1.5rem;
   margin-bottom: 0;
   position: relative;
 }
 
 .call-to-action-content {
-  color: $color-nocturne;
   font-size: 1.5rem;
 }
 
 .call-to-action-content a {
-  color: $color-nocturne;
+  color: #000;
   display: inline-block;
   font-weight: 700;
   outline: 4px solid transparent;
   outline-offset: 4px;
   transition: color 400ms, outline 400ms;
+  .dark-theme & {
+    color: #fff;
+  }
   @media (prefers-reduced-motion) {
     transition: none;
   }

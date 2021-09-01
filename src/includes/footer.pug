@@ -1,4 +1,5 @@
 footer.footer
+  include ./svgs/angle-bot.pug
   div.footer-inner
     div.footer-profile
       div.footer-profile-image
@@ -36,3 +37,8 @@ footer.footer
         include ./svgs/linkedin.pug
         span.footer-link-text LinkedIn
     p.footer-meta Made with <a href="#{data.repository}">code</a> <span class="footer-meta-divider">//</span> &copy; #{new Date().getFullYear()} Jack Rugile
+    button.footer-color-theme
+      span.footer-color-theme-icon
+        span.footer-color-theme-icon-light-rays.footer-color-theme-icon-light-rays--a
+        span.footer-color-theme-icon-light-rays.footer-color-theme-icon-light-rays--b
+      span.footer-color-theme-label Toggle Color Theme

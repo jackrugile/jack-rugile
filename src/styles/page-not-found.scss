@@ -1,12 +1,19 @@
 .page-not-found {
   align-items: center;
-  background-color: $color-lumos;
+  background-color: #fff;
   display: flex;
   height: 100%;
   overflow: hidden;
   justify-content: center;
   position: relative;
   text-align: center;
+  transition: background-color 400ms;
+  .dark-theme & {
+    background-color: #000;
+  }
+  @media (prefers-reduced-motion) {
+    transition: none;
+  }
 }
 
 .page-not-found .angle {
@@ -25,7 +32,7 @@
 
 .page-not-found .angle--bot {
   bottom: -0.5px;
-  fill: $color-nocturne;
+  fill: $color-flame;
 }
 
 .page-not-found-title {
@@ -34,11 +41,18 @@
 }
 
 .page-not-found-title-text {
-  color: $color-nocturne;
+  color: #000;
   font-family: $font-serif;
   font-size: 3.5rem;
   font-weight: 300;
   line-height: 1;
   margin-bottom: 0;
+  transition: color 400ms;
   white-space: nowrap;
+  .dark-theme & {
+    color: #fff;
+  }
+  @media (prefers-reduced-motion) {
+    transition: none;
+  }
 }

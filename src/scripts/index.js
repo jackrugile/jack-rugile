@@ -3,6 +3,9 @@ import 'lazysizes';
 lazySizes.cfg.expand = 1000;
 document.addEventListener('lazyloaded', function (e) {
   e.target.parentNode.classList.add('image-loaded');
+  window.setTimeout(() => {
+    e.target.parentNode.classList.add('image-loaded-complete');
+  }, 800);
 });
 
 document.documentElement.classList.remove('no-js');
@@ -35,7 +38,7 @@ if (is404) {
 
 function consoleBrand() {
   let styles1 = `
-    background: #14171f;
+    background-color: #000;
     color: #fff;
     font-family: courier, monospace, sans-serif;
     font-weight: bold;
@@ -43,8 +46,8 @@ function consoleBrand() {
     padding: 6px 10px;
   `;
   let styles2 = `
-    background: #ff0040;
-    color: #14171f;
+    background-color: #ff0040;
+    color: #000;
     font-family: courier, monospace, sans-serif;
     font-weight: bold;
     line-height: 1;
@@ -67,3 +70,41 @@ function consoleBrand() {
 }
 
 consoleBrand();
+
+function handleColorTheme() {
+  // init at null
+  let colorTheme = null;
+
+  // use local storage preference if it exists
+  colorTheme = localStorage.getItem('colorTheme');
+
+  // use OS preference if it exists
+  if(!colorTheme) {
+    colorTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+
+  // use dark if none is selected
+  if(!colorTheme) {
+    colorTheme = 'dark';
+  }
+
+  // set initial color theme if dark is chosen
+  if(colorTheme === 'dark') {
+    document.documentElement.classList.add('dark-theme');
+  }
+
+  // toggle color theme on click and store selection
+  document.querySelector('.footer-color-theme').addEventListener('click', () => {
+    if(colorTheme === 'dark') {
+      colorTheme = 'light';
+      document.documentElement.classList.remove('dark-theme');
+    } else {
+      colorTheme = 'dark';
+      document.documentElement.classList.add('dark-theme');
+    }
+
+    localStorage.setItem('colorTheme', colorTheme);
+  });
+}
+
+handleColorTheme();
