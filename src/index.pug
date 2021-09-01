@@ -11,6 +11,7 @@ html.no-js(
 )
   include ./includes/head.pug
   body
+    div.focus-indicator
     include ./includes/header.pug
     main.main
       section.section
@@ -24,7 +25,7 @@ html.no-js(
             each slug in feature.projects
               - let project = data.projects.find(e => e.slug === slug);
               article.cell
-                a.cell-image(href=project.url, tabindex="-1", aria-hidden="true")
+                div.cell-image
                   noscript
                     img.fallback(
                       sizes="auto"

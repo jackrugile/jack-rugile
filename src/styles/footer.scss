@@ -161,10 +161,9 @@
 .footer-profile-content a {
   color: #000;
   font-weight: 700;
-  outline: 4px solid transparent;
-  outline-offset: 4px;
   position: relative;
-  transition: color 400ms, outline 400ms;
+  transition: color 200ms;
+  white-space: nowrap;
   .dark-theme & {
     color: #fff;
   }
@@ -175,13 +174,10 @@
 
 .footer-profile-content a:hover {
   color: $color-flame;
-  transition-duration: 0ms;
 }
 
 .footer-profile-content a:focus {
-  outline: 4px solid $color-water;
-  transition-duration: 0ms;
-  z-index: 1;
+  color: $color-flame-inverted;
 }
 
 .footer-links {
@@ -200,8 +196,6 @@
 .footer-link {
   display: flex;
   margin-right: 2.25rem;
-  outline: 4px solid transparent;
-  outline-offset: 4px;
   text-decoration: none;
   transition: outline 400ms;
 }
@@ -212,11 +206,6 @@
   }
 }
 
-.footer-link:focus {
-  outline: 4px solid $color-water;
-  transition-duration: 0ms;
-}
-
 .footer-link:last-child {
   margin-right: 0;
 }
@@ -225,7 +214,7 @@
   display: block;
   fill: #000;
   margin: 0 auto 0.25rem;
-  transition: fill 400ms;
+  transition: fill 200ms;
   vertical-align: middle;
   width: 2rem;
   .dark-theme & {
@@ -238,7 +227,11 @@
 
 .footer-link:hover .icon {
   fill: $color-flame;
-  transition-duration: 0ms;
+  //transition-duration: 0ms;
+}
+
+.footer-link:focus .icon {
+  fill: $color-flame-inverted;
 }
 
 @media (min-width: 40rem) {
@@ -260,7 +253,7 @@
   font-size: 1rem;
   font-weight: 400;
   line-height: 1;
-  transition: color 400ms;
+  transition: color 200ms;
   vertical-align: middle;
   .dark-theme & {
     color: #fff;
@@ -272,7 +265,11 @@
 
 .footer-link:hover .footer-link-text {
   color: $color-flame;
-  transition-duration: 0ms;
+  //transition-duration: 0ms;
+}
+
+.footer-link:focus .footer-link-text {
+  color: $color-flame-inverted;
 }
 
 .footer-meta {
@@ -291,12 +288,10 @@
   display: inline-block;
   font-family: $font-monospace;
   margin: 0 0.1rem;
-  outline: 4px solid transparent;
-  outline-offset: 4px;
   padding: 0.25rem 0.35rem;
   position: relative;
   text-decoration: none;
-  transition: background-color 400ms, color 400ms, outline 400ms;
+  transition: background-color 200ms, color 200ms;
   .dark-theme & {
     background-color: #fff;
     color: #000;
@@ -309,16 +304,13 @@
 .footer-meta a:hover {
   background-color: $color-flame;
   color: #fff;
-  transition-duration: 0ms;
   .dark-theme & {
     color: #000;
   }
 }
 
 .footer-meta a:focus {
-  outline: 4px solid $color-water;
-  transition-duration: 0ms;
-  z-index: 1;
+  background-color: $color-flame-inverted;
 }
 
 .footer-meta span {
@@ -334,8 +326,8 @@
   font-family: inherit;
   font-size: 1rem;
   margin: 0 auto;
-  outline: 4px solid transparent;
-  outline-offset: 4px;
+  // outline: 4px solid transparent;
+  // outline-offset: 4px;
   padding: 1.5rem 1rem 1rem;
   text-align: center;
   transition: background-color 400ms, border-color 400ms, outline 400ms;
@@ -351,11 +343,11 @@
   border-color: $color-flame;
 }
 
-.footer-color-theme:focus {
-  outline: 4px solid $color-water;
-  transition: background-color 0ms, border-color 400ms, outline 0ms;
-  z-index: 1;
-}
+// .footer-color-theme:focus {
+//   outline: 4px solid $color-water;
+//   transition: background-color 0ms, border-color 400ms, outline 0ms;
+//   z-index: 1;
+// }
 
 .footer-color-theme-icon {
   background-color: #000;

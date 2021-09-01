@@ -53,3 +53,31 @@ body {
     transition: none;
   }
 }
+
+@keyframes pulse {
+  0% {
+    background-color: rgba(#fff, 1);
+  }
+  100% {
+    background-color: rgba(#fff, 0.5);
+  }
+}
+
+.focus-indicator {
+  animation: pulse 500ms infinite alternate;
+  background-color: #fff;
+  height: 1px;
+  left: 0;
+  mix-blend-mode: difference;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  transform-origin: 0% 0%;
+  transition: opacity 200ms, transform 200ms $easeOutExpo;
+  width: 1px;
+  z-index: 100;
+  @media (prefers-reduced-motion) {
+    transition: none;
+  }
+}

@@ -24,29 +24,15 @@
 
 .cell-image {
   background-color: #fff;
-  box-shadow: 0 0 0 0 hsla(0, 0%, 100%, 0);
-  display: block;
   margin-bottom: 4px;
-  outline: 4px solid transparent;
-  outline-offset: 4px;
   position: relative;
-  transition: background-color 400ms, box-shadow 400ms, outline 400ms;
+  transition: background-color 400ms;
   .dark-theme & {
     background-color: #111;
   }
   @media (prefers-reduced-motion) {
     transition: none;
   }
-}
-
-.cell-image:hover {
-  box-shadow: 0 0 0 4px $color-flame;
-  transition-duration: 0ms;
-}
-
-.cell-image:focus {
-  outline: 4px solid $color-water;
-  transition-duration: 0ms;
 }
 
 .cell-image:before {

@@ -91,3 +91,7 @@
     display: block;
   }
 }
+
+:focus {
+  outline: none !important;
+}
