@@ -3,23 +3,14 @@ footer.footer
   div.footer-inner
     div.footer-profile
       div.footer-profile-image
-        noscript
-          img.fallback(
-            sizes="auto"
-            srcset=`
-              ./images/avatar-256.jpg 256w,
-              ./images/avatar.jpg 512w
-            `
-            src="./images/avatar.jpg"
-            alt="Photo of Jack Rugile."
-          )
-        img.lazyload(
-          data-sizes="auto"
-          data-srcset=`
+        img(
+          loading="lazy"
+          sizes="auto"
+          srcset=`
             ./images/avatar-256.jpg 256w,
             ./images/avatar.jpg 512w
           `
-          data-src="./images/avatar.jpg"
+          src="./images/avatar.jpg"
           alt="Photo of Jack Rugile."
         )
       p.footer-profile-content !{data.footerDescription}

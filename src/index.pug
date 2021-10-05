@@ -4,7 +4,7 @@
   const pageUrl = `${data.baseUrl}`
 
 doctype html
-html.no-js(
+html(
   lang="en"
   itemscope
   itemtype="http://schema.org/WebPage"
@@ -26,25 +26,15 @@ html.no-js(
               - let project = data.projects.find(e => e.slug === slug);
               article.cell
                 div.cell-image
-                  noscript
-                    img.fallback(
-                      sizes="auto"
-                      srcset=`
-                        ${project.image.src.replace('.jpg', '-480.jpg')} 480w,
-                        ${project.image.src.replace('.jpg', '-800.jpg')} 800w,
-                        ${project.image.src} 1280w
-                      `
-                      src=project.image.src
-                      alt=project.image.alt
-                    )
-                  img.lazyload(
-                    data-sizes="auto"
-                    data-srcset=`
+                  img(
+                    loading="lazy"
+                    sizes="auto"
+                    srcset=`
                       ${project.image.src.replace('.jpg', '-480.jpg')} 480w,
                       ${project.image.src.replace('.jpg', '-800.jpg')} 800w,
                       ${project.image.src} 1280w
                     `
-                    data-src=project.image.src
+                    src=project.image.src
                     alt=project.image.alt
                   )
                 div.cell-content
