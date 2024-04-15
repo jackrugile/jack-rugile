@@ -7,10 +7,10 @@
   "license": "MIT",
   "scripts": {
     "clean": "rm -rf dist",
-    "start": "yarn clean && parcel src/*.pug -p 1337",
+    "start": "yarn clean && parcel src/*.pug",
     "build": "yarn clean && parcel build src/*.pug --public-url ./ --no-minify && cp -r src/static/ dist",
     "cleanw": "rd /s /q \"dist\"",
-    "startw": "parcel src/*.pug -p 1337",
+    "startw": "parcel src/*.pug",
     "buildw": "yarn cleanw && parcel build src/*.pug --public-url ./ --no-minify && cp -r src/static/ dist"
   },
   "devDependencies": {
@@ -22,7 +22,5 @@
     "sass": "^1.35.1",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0"
-  },
-  "dependencies": {
   }
 }

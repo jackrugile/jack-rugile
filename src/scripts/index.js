@@ -15,7 +15,7 @@ function getOffsetLeft(elem) {
   do {
     if ( !isNaN( elem.offsetLeft ) )
     {
-        offsetLeft += elem.offsetLeft;
+      offsetLeft += elem.offsetLeft;
     }
   } while( elem = elem.offsetParent );
   return offsetLeft;
