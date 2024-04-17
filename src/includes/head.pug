@@ -38,30 +38,6 @@ head
     href=pageUrl
   )
 
-  script.
-    window.JR = window.JR || {};
-
-    // init at null
-    window.JR.colorTheme = null;
-
-    // use local storage preference if it exists
-    window.JR.colorTheme = localStorage.getItem('colorTheme');
-
-    // use OS preference if it exists
-    if(!window.JR.colorTheme) {
-      window.JR.colorTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-    }
-
-    // use dark if none is selected
-    if(!window.JR.colorTheme) {
-      window.JR.colorTheme = 'dark';
-    }
-
-    // set initial color theme if dark is chosen
-    if(window.JR.colorTheme === 'dark') {
-      document.documentElement.classList.add('dark-theme');
-    }
-
   //-
   //- CSS
   //-
@@ -169,7 +145,7 @@ head
   )
   meta(
     name="twitter:url"
-    content=pageUrl 
+    content=pageUrl
   )
   meta(
     name="twitter:card"

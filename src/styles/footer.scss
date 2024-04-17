@@ -1,22 +1,14 @@
 .footer {
   align-items: center;
-  background-color: #eee;
+  background-color: $color-dark1;
   display: flex;
+  justify-content: center;
   min-height: 50vh;
-  padding: 5rem 2rem;
+  padding: 5rem 2rem 7rem;
   position: relative;
-  transition: background-color 400ms;
-  .dark-theme & {
-    background-color: #000;
-  }
-  @media (prefers-reduced-motion) {
-    transition: none;
-  }
-}
-
-@media (min-width: 60em) {
-  .footer {
-    padding: 7.5vw 10vw;
+  @media (min-width: 60em) {
+    padding: 7.5vw 10vw 10vw;
+    padding: 5rem 8rem 7rem;
   }
 }
 
@@ -36,11 +28,9 @@
 }
 
 .footer-inner {
-  align-items: center;
   display: flex;
-  flex: 1 1 auto;
-  flex-wrap: wrap;
-  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
   max-width: 50rem;
 }
 
@@ -50,32 +40,18 @@
   flex-basis: 100%;
   margin-bottom: 3rem;
   justify-content: center;
-}
-
-@media (min-width: 60rem) {
-  .footer-profile {
+  @media (min-width: 30em) {
     display: flex;
   }
 }
 
 .footer-profile-image {
   aspect-ratio: 1 / 1;
-  background-color: #fff;
-  border: 0.35rem solid #fff;
-  flex: 0 0 7rem;
+  background-color: $color-dark1;
+  border: 4px solid $color-dark2;
   margin: 0 0 2rem;
-  transition: border-color 400ms;
-  .dark-theme & {
-    background-color: #111;
-    border-color: #111;
-  }
-  @media (prefers-reduced-motion) {
-    transition: none;
-  }
-}
-
-@media (min-width: 60rem) {
-  .footer-profile-image {
+  @media (min-width: 30em) {
+    flex: 0 0 7rem;
     margin: 0 2rem auto 0;
   }
 }
@@ -93,115 +69,111 @@
 }
 
 .footer-profile-content a {
-  color: #000;
+  color: #fff;
   font-weight: 700;
   position: relative;
-  transition: color 200ms;
+  transition: color $duration-transition;
   white-space: nowrap;
-  .dark-theme & {
-    color: #fff;
+  &:hover {
+    color: $color-flame;
+    transition-duration: 0ms;
+  }
+  &:focus-visible {
+    color: $color-difference;
   }
   @media (prefers-reduced-motion) {
     transition: none;
   }
 }
 
-.footer-profile-content a:hover {
-  color: $color-flame;
-}
-
-.footer-profile-content a:focus {
-  color: $color-flame-inverted;
-}
-
 .footer-links {
-  display: block;
-  flex-basis: 100%;
-  margin-bottom: 3rem;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
   justify-content: center;
-}
-
-@media (min-width: 60rem) {
-  .footer-links {
-    display: flex;
+  margin-bottom: 3rem;
+  @media (min-width: 40em) {
+    gap: 2rem;
   }
 }
 
 .footer-link {
+  align-items: center;
+  background-color: $color-dark2;
   display: flex;
-  margin-right: 2.25rem;
+  padding: 0.75rem;
   text-decoration: none;
-  transition: outline 400ms;
-}
-
-@media (min-width: 60rem) {
-  .footer-link {
-    display: block;
+  transition: background-color $duration-transition;
+  width: calc(50% - 2px);
+  &:hover {
+    background-color: $color-dark3;
+    transition-duration: 0ms;
+  }
+  &:focus-visible {
+    background-color: $color-dark1;
+  }
+  @media (min-width: 40em) {
+    background-color: transparent;
+    padding: 0.25rem;
+    width: auto;
+    &:hover {
+      background-color: transparent;
+    }
+    &:focus-visible {
+      background-color: transparent;
+    }
   }
 }
 
-.footer-link:last-child {
-  margin-right: 0;
-}
-
-.footer-link .icon {
-  display: block;
-  fill: #000;
-  margin: 0 auto 0.25rem;
-  transition: fill 200ms;
-  vertical-align: middle;
-  width: 2rem;
-  .dark-theme & {
-    fill: #fff;
+.footer-link-icon {
+  fill: #fff;
+  flex-shrink: 0;
+  margin: 0 0.5rem 0 0;
+  transition: fill $duration-transition;
+  width: 1.5rem;
+  .footer-link:hover & {
+    fill: $color-flame;
+    transition-duration: 0ms;
+  }
+  .footer-link:focus-visible & {
+    fill: $color-difference;
+  }
+  @media (min-width: 40em) {
+    display: inline-block;
+    margin: 0 0.5rem 0 0;
+    width: 2rem;
   }
   @media (prefers-reduced-motion) {
     transition: none;
-  }
-}
-
-.footer-link:hover .icon {
-  fill: $color-flame;
-}
-
-.footer-link:focus .icon {
-  fill: $color-flame-inverted;
-}
-
-@media (min-width: 40rem) {
-  .footer-link .icon {
-    display: inline-block;
-    margin: 0 0.5rem 0 0;
-  }
-}
-
-@media (min-width: 60rem) {
-  .footer-link .icon {
-    display: inline-block;
-    margin: 0 0.5rem 0 0;
   }
 }
 
 .footer-link-text {
-  color: #000;
+  color: #fff;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1;
-  transition: color 200ms;
+  transition: color $duration-transition;
   vertical-align: middle;
-  .dark-theme & {
+  .footer-link:hover & {
     color: #fff;
+    transition-duration: 0ms;
+  }
+  .footer-link:focus-visible & {
+    color: $color-difference;
+  }
+  @media (min-width: 40em) {
+    .footer-link:hover & {
+      color: $color-flame;
+    }
+    .footer-link:focus-visible & {
+      color: $color-difference;
+    }
   }
   @media (prefers-reduced-motion) {
     transition: none;
   }
-}
-
-.footer-link:hover .footer-link-text {
-  color: $color-flame;
-}
-
-.footer-link:focus .footer-link-text {
-  color: $color-flame-inverted;
 }
 
 .footer-meta {
@@ -214,20 +186,16 @@
 }
 
 .footer-meta a {
-  background-color: #000;
+  background-color: #fff;
   border-radius: 0.25rem;
-  color: #fff;
+  color: $color-dark1;
   display: inline-block;
   font-family: $font-monospace;
   margin: 0 0.1rem;
   padding: 0.25rem 0.35rem;
   position: relative;
   text-decoration: none;
-  transition: background-color 200ms, color 200ms;
-  .dark-theme & {
-    background-color: #fff;
-    color: #000;
-  }
+  transition: background-color $duration-transition, color $duration-transition;
   @media (prefers-reduced-motion) {
     transition: none;
   }
@@ -235,155 +203,27 @@
 
 .footer-meta a:hover {
   background-color: $color-flame;
-  color: #fff;
-  .dark-theme & {
-    color: #000;
-  }
+  color: $color-dark1;
+  transition-duration: 0ms;
 }
 
-.footer-meta a:focus {
-  background-color: $color-flame-inverted;
+.footer-meta a:focus-visible {
+  background-color: $color-difference;
 }
 
-.footer-meta span {
-  display: inline-block;
+.footer-meta-divider {
+  display: none;
   margin: 0 0.25rem;
+  @media (min-width: 25em) {
+    display: inline-block;
+  }
 }
 
-.footer-color-theme {
-  background-color: transparent;
-  border: 4px solid #ccc;
-  cursor: pointer;
+.footer-meta-copyright {
   display: block;
-  font-family: inherit;
-  font-size: 1rem;
-  margin: 0 auto;
-  padding: 1.5rem 1rem 1rem;
-  text-align: center;
-  transition:
-    background-color 400ms,
-    border-color 400ms
-  ;
-  .dark-theme & {
-    border-color: #333;
+  margin-top: 0.5rem;
+  @media (min-width: 25em) {
+    display: inline-block;
+    margin-top: 0;
   }
-  @media (prefers-reduced-motion) {
-    transition: none;
-  }
-}
-
-.footer-color-theme:hover {
-  border-color: $color-flame;
-}
-
-.footer-color-theme:focus {
-  border-color: $color-water;
-}
-
-.footer-color-theme-icon {
-  background-color: #000;
-  border-radius: 50%;
-  display: block;
-  height: 24px;
-  margin: 0 auto 1.5rem;
-  position: relative;
-  transition: background-color 400ms;
-  width: 24px;
-  .dark-theme & {
-    background-color: #fff;
-  }
-  @media (prefers-reduced-motion) {
-    transition: none;
-  }
-}
-
-.footer-color-theme-icon:after {
-  border: 4px solid #eee;
-  border-radius: 50%;
-  bottom: -4px;
-  box-sizing: border-box;
-  content: '';
-  left: -4px;
-  position: absolute;
-  right: -4px;
-  top: -4px;
-  transition: border-color 400ms;
-  .dark-theme & {
-    border-color: #000;
-  }
-  @media (prefers-reduced-motion) {
-    transition: none;
-  }
-}
-
-.footer-color-theme-icon-light-rays {
-  animation: ray-spin 20000ms linear infinite;
-  height: 48px;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate3d(-50%, -50%, 0);
-  width: 48px;
-  @media (prefers-reduced-motion) {
-    animation: none;
-  }
-}
-
-.footer-color-theme-icon-light-rays:before,
-.footer-color-theme-icon-light-rays:after {
-  animation: ray-pulse 2000ms ease-in-out infinite alternate;
-  background-color: #000;
-  content: '';
-  position: absolute;
-  transition: background-color 400ms;
-  .dark-theme & {
-    background-color: #fff;
-  }
-  @media (prefers-reduced-motion) {
-    animation: none;
-    transition: none;
-  }
-}
-
-.footer-color-theme-icon-light-rays:before {
-  height: 100%;
-  left: 50%;
-  top: 50%;
-  transform: translate3d(-50%, -50%, 0);
-  width: 2px;
-}
-
-.footer-color-theme-icon-light-rays:after {
-  height: 2px;
-  left: 50%;
-  top: 50%;
-  transform: translate3d(-50%, -50%, 0);
-  width: 100%;
-}
-
-.footer-color-theme-icon-light-rays.footer-color-theme-icon-light-rays--a {
-  animation-delay: -2500ms;
-  &:before,
-  &:after {
-    animation-delay: -1000ms;
-  }
-}
-
-.footer-color-theme-icon-light-rays.footer-color-theme-icon-light-rays--b {
-  transform: translate3d(-50%, -50%, 0) rotate(45deg);
-}
-
-.footer-color-theme-label {
-  color: #000;
-  transition: color 400ms;
-  .dark-theme & {
-    color: #fff;
-  }
-  @media (prefers-reduced-motion) {
-    transition: none;
-  }
-}
-
-.footer-color-theme:focus .footer-color-theme-label {
-  color: $color-flame-inverted;
 }

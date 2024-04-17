@@ -1,19 +1,11 @@
 ::selection {
   background-color: $color-flame;
-  color: #000;
-  .dark-theme & {
-    background-color: $color-flame;
-    color: #fff;
-  }
+  color: $color-dark1;
 }
 
 ::-moz-selection {
   background-color: $color-flame;
-  color: #000;
-  .dark-theme & {
-    background-color: $color-flame;
-    color: #fff;
-  }
+  color: $color-dark1;
 }
 
 p {

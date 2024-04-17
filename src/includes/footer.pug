@@ -5,7 +5,7 @@ footer.footer
       div.footer-profile-image
         img(
           loading="lazy"
-          sizes="auto"
+          sizes="(min-width: 30em) 104px, 100vw"
           srcset=`
             ./images/avatar-256.jpg 256w,
             ./images/avatar.jpg 512w
@@ -27,9 +27,4 @@ footer.footer
       a.footer-link(href="https://www.linkedin.com/in/jackrugile/")
         include ./svgs/linkedin.pug
         span.footer-link-text LinkedIn
-    p.footer-meta Made with <a href="#{data.repository}">code</a> <span class="footer-meta-divider">//</span> &copy; #{new Date().getFullYear()} Jack Rugile
-    button.footer-color-theme
-      span.footer-color-theme-icon
-        span.footer-color-theme-icon-light-rays.footer-color-theme-icon-light-rays--a
-        span.footer-color-theme-icon-light-rays.footer-color-theme-icon-light-rays--b
-      span.footer-color-theme-label Toggle Color Theme
+    p.footer-meta Made with <a href="#{data.repository}">code</a> <span class="footer-meta-divider">//</span> <span class="footer-meta-copyright">&copy; #{new Date().getFullYear()} Jack Rugile</span>

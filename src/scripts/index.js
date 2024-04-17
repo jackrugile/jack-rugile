@@ -1,58 +1,50 @@
-document.querySelector('.footer-color-theme').addEventListener('click', () => {
-  if(window.JR.colorTheme === 'dark') {
-    window.JR.colorTheme = 'light';
-    document.documentElement.classList.remove('dark-theme');
-  } else {
-    window.JR.colorTheme = 'dark';
-    document.documentElement.classList.add('dark-theme');
-  }
+function consoleBrand() {
+  let styles1 = `
+    background-color: #000;
+    color: #fff;
+    font-family: courier, monospace, sans-serif;
+    font-weight: bold;
+    line-height: 1;
+    padding: 6px 10px;
+  `;
+  let styles2 = `
+    background-color: #ff0040;
+    color: #000;
+    font-family: courier, monospace, sans-serif;
+    font-weight: bold;
+    line-height: 1;
+    padding: 6px 10px;
+  `;
 
-  localStorage.setItem('colorTheme', window.JR.colorTheme);
-});
+  console.log(
+    "%cMade in Denver, CO and Palm Bay, FL 🏔️❄️🌴🌊%cJack Rugile",
+    styles1,
+    styles2
+  );
 
-function getOffsetLeft(elem) {
-  var offsetLeft = 0;
-  do {
-    if ( !isNaN( elem.offsetLeft ) )
-    {
-      offsetLeft += elem.offsetLeft;
-    }
-  } while( elem = elem.offsetParent );
-  return offsetLeft;
+  console.log("View Source: https://github.com/jackrugile/jack-rugile");
 }
 
-function getOffsetTop(elem) {
-  var offsetTop = 0;
-  do {
-    if ( !isNaN( elem.offsetTop ) )
-    {
-      offsetTop += elem.offsetTop;
-    }
-  } while( elem = elem.offsetParent );
-  return offsetTop;
-}
+consoleBrand();
 
 function handleFocusIndicator() {
-  const focusIndicator = document.querySelector('.focus-indicator');
-  const offset = 10;
+  const focusIndicator = document.querySelector(".focus-indicator");
+  const offset = 5;
 
   function syncFocusIndicator() {
-    const focusedElement = document.activeElement;
-    if(!focusedElement || focusedElement === document.body) {
-      focusIndicator.style.opacity = 0;
-    } else {
-      const x = getOffsetLeft(focusedElement) - offset / 2;
-      const y = getOffsetTop(focusedElement) - offset / 2;
-      const w = focusedElement.offsetWidth + offset;
-      const h = focusedElement.offsetHeight + offset;
-      focusIndicator.style.opacity = 1;
-      focusIndicator.style.transform = `translate3d(${x}px, ${y}px, 0) scale(${w}, ${h})`;
+    if (document.activeElement && document.activeElement !== document.body) {
+      const bcr = document.activeElement.getBoundingClientRect();
+      const x = bcr.x - offset;
+      const y = bcr.y - offset + window.scrollY;
+      const width = bcr.width + offset * 2;
+      const height = bcr.height + offset * 2;
+      focusIndicator.style.transform = `translate3d(${x}px, ${y}px, 0) scale(${width}, ${height})`;
     }
   }
 
-  document.addEventListener('blur', syncFocusIndicator, true);
-  document.addEventListener('focusin', syncFocusIndicator, true);
-  window.addEventListener('resize', syncFocusIndicator);
+  document.addEventListener("blur", syncFocusIndicator, true);
+  document.addEventListener("focusin", syncFocusIndicator, true);
+  window.addEventListener("resize", syncFocusIndicator);
 }
 
 handleFocusIndicator();

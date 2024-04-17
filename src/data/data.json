@@ -11,6 +11,7 @@
     {
       "category": "sites",
       "projects": [
+        "mission-bell",
         "if-this-then-dominos",
         "youtube-view-in-2",
         "omelet-agency",
@@ -90,7 +91,7 @@
       "title": "If This Then Dominos",
       "subtitle": "Dominos + IFTTT Automatic Order&nbsp;Triggers",
       "location": "<a href=\"https://www.legworkstudio.com/\">Legwork Studio</a> & <a href=\"https://www.cpbgroup.com/\">CPB</a>",
-      "description": "A microsite featuring the many ways you can automatically order Dominos based on event triggers. Built with Vue.js and&nbsp;GSAP.",
+      "description": "A microsite featuring the many ways you can automatically order Dominos based on event triggers. Built with Vue and&nbsp;GSAP.",
       "url": "https://ifthisthendominos.com",
       "links": [
         {
@@ -197,6 +198,26 @@
       "image": {
         "src": "./images/projects/lost-without-you.jpg",
         "alt": "Screenshot of Lost Without You gameplay."
+      }
+    },
+    {
+      "slug": "mission-bell",
+      "category": "sites",
+      "title": "Mission Bell",
+      "subtitle": "Architectural Woodwork and Casework Subcontractor",
+      "location": "<a href=\"https://www.consumeandcreate.co/\">Consume & Create</a>",
+      "description": "A portfolio website featuring the work, people, and services of a custom architectural woodwork company. Built with Vue, Nuxt, and&amp;Sanity.",
+      "url": "https://www.missionbell.com",
+      "links": [
+        {
+          "label": "View Project",
+          "ariaLabel": "View Mission Bell Project",
+          "url": "https://www.missionbell.com"
+        }
+      ],
+      "image": {
+        "src": "./images/projects/mission-bell.jpg",
+        "alt": "Screenshot of Mission Bell project homepage, featuring the Nvidia Treehouse."
       }
     },
     {

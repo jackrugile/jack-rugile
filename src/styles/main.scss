@@ -1,20 +1,13 @@
 .main {
-  background-color: #eee;
+  background-color: $color-dark1;
   overflow: hidden;
   padding: 5rem 2rem;
   position: relative;
-  transition: background-color 400ms;
   z-index: 10;
-  .dark-theme & {
-    background-color: #000;
-  }
-  @media (prefers-reduced-motion) {
-    transition: none;
-  }
 }
 
 @media (min-width: 60em) {
   .main {
-    padding: 7.5vw 10vw;
+    padding: 8rem;
   }
 }
