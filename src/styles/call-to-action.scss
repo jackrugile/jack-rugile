@@ -77,7 +77,8 @@
   }
 }
 
-.call-to-action-content a:hover {
+.call-to-action-content a:hover,
+.no-js .call-to-action-content a:focus-visible {
   color: $color-flame;
   transition-duration: 0ms;
 }

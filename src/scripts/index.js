@@ -1,5 +1,8 @@
+document.documentElement.classList.remove("no-js");
+document.documentElement.classList.add("has-js");
+
 function consoleBrand() {
-  let styles1 = `
+  const styles1 = `
     background-color: #000;
     color: #fff;
     font-family: courier, monospace, sans-serif;
@@ -7,7 +10,7 @@ function consoleBrand() {
     line-height: 1;
     padding: 6px 10px;
   `;
-  let styles2 = `
+  const styles2 = `
     background-color: #ff0040;
     color: #000;
     font-family: courier, monospace, sans-serif;
@@ -48,3 +51,27 @@ function handleFocusIndicator() {
 }
 
 handleFocusIndicator();
+
+function initImage(image) {
+  image.parentNode.classList.add("loaded");
+}
+
+function onImageLoad(e) {
+  initImage(this);
+  this.removeEventListener("load", onImageLoad);
+}
+
+function onImageError() {
+  this.removeEventListener("load", onImageError);
+}
+
+const images = document.querySelectorAll("img[loading='lazy']");
+
+images.forEach((image) => {
+  if (image.complete && image.naturalWidth > 1) {
+    initImage(image);
+  } else {
+    image.addEventListener("load", onImageLoad);
+    image.addEventListener("error", onImageError);
+  }
+});

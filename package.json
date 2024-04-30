@@ -17,6 +17,8 @@
     "build1": "yarn clean && parcel build src/*.pug --public-url ./ --no-minify && cp -r src/static/ dist"
   },
   "devDependencies": {
+    "@parcel/optimizer-data-url": "^2.12.0",
+    "@parcel/transformer-inline-string": "^2.12.0",
     "@parcel/transformer-pug": "2.12.0",
     "@parcel/transformer-sass": "2.12.0",
     "cssnano": "^5.0.6",
@@ -26,6 +28,7 @@
     "postcss": "^8.3.5",
     "pug": "^3.0.2",
     "sass": "^1.35.1",
+    "sharp": "^0.31.3",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0"
   }

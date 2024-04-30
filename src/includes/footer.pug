@@ -2,17 +2,30 @@ footer.footer
   include ./svgs/angle-bot.pug
   div.footer-inner
     div.footer-profile
-      div.footer-profile-image
-        img(
-          loading="lazy"
-          sizes="(min-width: 30em) 104px, 100vw"
-          srcset=`
-            ./images/avatar-256.jpg 256w,
-            ./images/avatar.jpg 512w
-          `
-          src="./images/avatar.jpg"
-          alt="Photo of Jack Rugile."
-        )
+      div.footer-profile-picture-wrap
+        div.footer-profile-lqip-wrap
+          img(
+            src="data-url:./images/jack-rugile-profile-photo.jpg?width=32"
+            class="footer-profile-lqip"
+          )
+        picture.footer-profile-picture
+          each imageType in data.imageTypes
+            source(
+              srcset=`
+                ./images/jack-rugile-profile-photo.jpg?as=${imageType}&width=256 256w,
+                ./images/jack-rugile-profile-photo.jpg?as=${imageType}&width=512 512w
+              `
+              type=`image/${imageType}`
+            )
+          img(
+            loading="lazy"
+            sizes="(min-width: 30em) 104px, 100vw"
+            src="./images/jack-rugile-profile-photo.jpg?&width=512"
+            alt="Profile photo of Jack Rugile from 2023."
+            width="512"
+            height="512"
+            class="footer-profile-image"
+          )
       p.footer-profile-content !{data.footerDescription}
     div.footer-links
       a.footer-link(href="https://codepen.io/jackrugile/")

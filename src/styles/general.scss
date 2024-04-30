@@ -45,6 +45,7 @@ body {
 .section > p {
   font-size: 1.25rem;
   max-width: 60rem;
+  text-wrap: balance;
 }
 
 @media (min-width: 60em) {
@@ -62,6 +63,7 @@ body {
   margin-bottom: 3rem;
   max-width: 60rem;
   position: relative;
+  text-wrap: balance;
 }
 
 @media (min-width: 60em) {
@@ -121,6 +123,9 @@ body {
     transform $duration-transition $easeOutExpo;
   width: 1px;
   z-index: 100;
+  &.no-js {
+    display: none;
+  }
   @media (prefers-reduced-motion) {
     transition: none;
   }
@@ -130,7 +135,18 @@ html:has(:focus-visible) .focus-indicator {
   opacity: 1;
 }
 
-a,
 a:focus {
-  outline: none !important;
+  outline: none;
+}
+
+a:focus-visible {
+  outline: 4px solid #fff;
+  outline-offset: 4px;
+}
+
+.has-js {
+  a:focus,
+  a:focus-visible {
+    outline: none;
+  }
 }

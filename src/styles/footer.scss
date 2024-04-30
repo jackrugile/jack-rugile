@@ -45,20 +45,60 @@
   }
 }
 
-.footer-profile-image {
-  aspect-ratio: 1 / 1;
-  background-color: $color-dark1;
-  border: 4px solid $color-dark2;
+.footer-profile-picture-wrap {
+  background-color: $color-dark2;
   margin: 0 0 2rem;
+  overflow: hidden;
+  padding: 4px;
+  position: relative;
   @media (min-width: 30em) {
     flex: 0 0 7rem;
     margin: 0 2rem auto 0;
   }
 }
 
-.footer-profile-image img {
-  display: block;
+.footer-profile-lqip-wrap {
+  bottom: 4px;
+  left: 4px;
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+}
+
+.footer-profile-lqip {
+  filter: blur(6px);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: scale(1.025);
+  transition: transform $duration-transition * 2;
   width: 100%;
+  .loaded & {
+    transform: scale(1);
+  }
+}
+
+.footer-profile-picture {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
+.footer-profile-image {
+  display: block;
+  height: auto;
+  position: relative;
+  width: 100%;
+  .has-js & {
+    opacity: 0;
+    transition: opacity $duration-transition * 2;
+  }
+  .has-js .loaded & {
+    opacity: 1;
+  }
 }
 
 .footer-profile-content {
@@ -74,7 +114,8 @@
   position: relative;
   transition: color $duration-transition;
   white-space: nowrap;
-  &:hover {
+  &:hover,
+  .no-js &:focus-visible {
     color: $color-flame;
     transition-duration: 0ms;
   }
@@ -103,12 +144,18 @@
   background-color: $color-dark2;
   display: flex;
   padding: 0.75rem;
+  position: relative;
   text-decoration: none;
   transition: background-color $duration-transition;
   width: calc(50% - 2px);
-  &:hover {
+  &:hover,
+  .no-js &:focus-visible {
     background-color: $color-dark3;
+    position: relative;
     transition-duration: 0ms;
+  }
+  .no-js &:focus-visible {
+    z-index: 1;
   }
   &:focus-visible {
     background-color: $color-dark1;
@@ -117,7 +164,8 @@
     background-color: transparent;
     padding: 0.25rem;
     width: auto;
-    &:hover {
+    &:hover,
+    .no-js &:focus-visible {
       background-color: transparent;
     }
     &:focus-visible {
@@ -132,7 +180,8 @@
   margin: 0 0.5rem 0 0;
   transition: fill $duration-transition;
   width: 1.5rem;
-  .footer-link:hover & {
+  .footer-link:hover &,
+  .no-js .footer-link:focus-visible & {
     fill: $color-flame;
     transition-duration: 0ms;
   }
@@ -156,7 +205,8 @@
   line-height: 1;
   transition: color $duration-transition;
   vertical-align: middle;
-  .footer-link:hover & {
+  .footer-link:hover &,
+  .no-js .footer-link:focus-visible & {
     color: #fff;
     transition-duration: 0ms;
   }
@@ -164,7 +214,8 @@
     color: $color-difference;
   }
   @media (min-width: 40em) {
-    .footer-link:hover & {
+    .footer-link:hover &,
+    .no-js .footer-link:focus-visible & {
       color: $color-flame;
     }
     .footer-link:focus-visible & {
@@ -196,19 +247,18 @@
   position: relative;
   text-decoration: none;
   transition: background-color $duration-transition, color $duration-transition;
+  &:hover,
+  .no-js &:focus-visible {
+    background-color: $color-flame;
+    color: $color-dark1;
+    transition-duration: 0ms;
+  }
+  &:focus-visible {
+    background-color: $color-difference;
+  }
   @media (prefers-reduced-motion) {
     transition: none;
   }
-}
-
-.footer-meta a:hover {
-  background-color: $color-flame;
-  color: $color-dark1;
-  transition-duration: 0ms;
-}
-
-.footer-meta a:focus-visible {
-  background-color: $color-difference;
 }
 
 .footer-meta-divider {

@@ -27,16 +27,57 @@
   flex-direction: column;
 }
 
-.cell-image {
+.cell-picture-wrap {
   background-color: $color-dark2;
   margin-bottom: 4px;
-  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  padding: 4px;
+  position: relative;
 }
 
-.cell-image img {
-  border: 4px solid $color-dark2;
-  display: block;
+.cell-lqip-wrap {
+  bottom: 4px;
+  left: 4px;
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+}
+
+.cell-lqip {
+  filter: blur(6px);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: scale(1.025);
+  transition: transform $duration-transition * 2;
   width: 100%;
+  .loaded & {
+    transform: scale(1);
+  }
+}
+
+.cell-picture {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
+.cell-image {
+  display: block;
+  height: auto;
+  position: relative;
+  width: 100%;
+  .has-js & {
+    opacity: 0;
+    transition: opacity $duration-transition * 2,
+      filter $duration-transition * 2;
+  }
+  .has-js .loaded & {
+    opacity: 1;
+  }
 }
 
 .cell-inner {
@@ -60,6 +101,7 @@
   font-weight: 700;
   margin-bottom: 0.25rem;
   line-height: 1.5;
+  text-wrap: balance;
 }
 
 .cell-subtitle {
@@ -68,6 +110,7 @@
   font-weight: 700;
   margin-bottom: 1.25rem;
   position: relative;
+  text-wrap: balance;
 }
 
 .cell-subtitle:after {
@@ -82,6 +125,7 @@
 .cell-description {
   font-size: 1rem;
   margin-bottom: 1rem;
+  text-wrap: balance;
 }
 
 .cell-location {
@@ -94,18 +138,17 @@
   color: inherit;
   position: relative;
   transition: color $duration-transition;
+  &:hover,
+  .no-js &:focus-visible {
+    color: $color-flame;
+    transition-duration: 0ms;
+  }
+  &:focus-visible {
+    color: $color-difference;
+  }
   @media (prefers-reduced-motion) {
     transition: none;
   }
-}
-
-.cell-location a:hover {
-  color: $color-flame;
-  transition-duration: 0ms;
-}
-
-.cell-location a:focus-visible {
-  color: $color-difference;
 }
 
 .cell-links {
@@ -126,7 +169,8 @@
   transition: background-color $duration-transition,
     border-color $duration-transition, box-shadow $duration-transition,
     color $duration-transition;
-  &:hover {
+  &:hover,
+  .no-js &:focus-visible {
     background-color: $color-dark3;
     box-shadow: inset 4px 0 0 $color-flame;
     color: #fff;
