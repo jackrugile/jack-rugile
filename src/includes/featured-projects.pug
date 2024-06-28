@@ -1,0 +1,44 @@
+each feature in data.features
+  - let cat = data.categories.find(e => e.slug === feature.category);
+  section.section
+    h2 #{cat.title}
+    div.project-grid
+      each slug in feature.projects
+        - let project = data.projects.find(e => e.slug === slug);
+        article.cell
+          div.cell-picture-wrap
+            div.cell-lqip-wrap
+              img(
+                src!=`data-url:${project.image.src}?width=32`
+                class="cell-lqip"
+              )
+            picture.cell-picture
+              each imageType in data.imageTypes
+                source(
+                  srcset!=`
+                    ${project.image.src}?as=${imageType}&width=480 480w,
+                    ${project.image.src}?as=${imageType}&width=800 800w,
+                    ${project.image.src}?as=${imageType}&width=1280 1280w
+                  `
+                  type=`image/${imageType}`
+                )
+              img(
+                loading="lazy"
+                sizes="(min-width: 160em) 540px, (min-width: 120em) 25vw, (min-width: 80em) 33vw, (min-width: 40em) 50vw, 100vw"
+                src!=`${project.image.src}?width=1280`
+                alt=project.image.alt
+                width="1280"
+                height="720"
+                class="cell-image"
+              )
+          div.cell-inner
+            div.cell-content
+              h3.cell-title #{project.title}
+              h4.cell-subtitle !{project.subtitle}
+              if project.description
+                p.cell-description !{project.description}
+              if project.location
+                p.cell-location @ !{project.location}
+            div.cell-links
+              each link in project.links
+                a.cell-link(href=link.url, aria-label=link.ariaLabel) #{link.label}
