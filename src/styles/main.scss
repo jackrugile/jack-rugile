@@ -1,7 +1,7 @@
 .main {
   background-color: $color-dark1;
-  overflow: hidden;
   padding: 5rem 2rem;
+  // padding: 5rem 0;
   position: relative;
   z-index: 10;
 }
@@ -9,5 +9,6 @@
 @media (min-width: 60em) {
   .main {
     padding: 8rem;
+    // padding: 8rem 0;
   }
 }

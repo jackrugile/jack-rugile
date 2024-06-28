@@ -1,9 +1,11 @@
-$color-flame: hsl(345, 100%, 50%);
+$color-accent-hue: 345;
+$color-accent: hsl($color-accent-hue, 100%, 50%);
 $color-difference: #fff;
 
-$color-dark1: #0d0d0d;
-$color-dark2: #181818;
-$color-dark3: #333;
+$color-dark1: hsl($color-accent-hue, 30%, 5%);
+$color-dark2: hsl($color-accent-hue, 15%, 10%);
+$color-dark3: hsl($color-accent-hue, 15%, 20%);
+$color-light1: hsl($color-accent-hue, 30%, 80%);
 
 $duration-transition: 300ms;
 

@@ -5,7 +5,7 @@
   "repository": "https://github.com/jackrugile/jack-rugile.git",
   "author": "Jack Rugile <jack@jackrugile.com> (https://jackrugile.com)",
   "license": "MIT",
-  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "browserslist": "> 0.5%, last 2 versions, Firefox ESR, not dead",
   "source": "src/index.pug",
   "staticFiles": {
     "staticPath": "src/static"
@@ -13,7 +13,7 @@
   "scripts": {
     "clean": "rm -rf dist",
     "start": "parcel",
-    "build": "parcel build",
+    "build": "yarn clean && parcel build",
     "build1": "yarn clean && parcel build src/*.pug --public-url ./ --no-minify && cp -r src/static/ dist"
   },
   "devDependencies": {

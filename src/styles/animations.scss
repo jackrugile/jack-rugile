@@ -19,3 +19,17 @@
     transform: rotate(225deg) scale(1);
   }
 }
+
+@keyframes caret-fade {
+  0%,
+  10% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90%,
+  100% {
+    opacity: 0;
+  }
+}

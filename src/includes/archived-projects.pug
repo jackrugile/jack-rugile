@@ -1,0 +1,13 @@
+section.section
+  h2 Archive
+  div.project-grid
+    each slug in data.archive.projects
+      - let project = data.projects.find(e => e.slug === slug);
+      article.cell
+        div.cell-inner
+          div.cell-content
+            h3.cell-title #{project.title}
+            h4.cell-subtitle !{project.subtitle}
+          div.cell-links
+            each link in project.links
+              a.cell-link(href=link.url, aria-label=link.ariaLabel) #{link.label}

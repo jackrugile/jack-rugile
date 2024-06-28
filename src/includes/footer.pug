@@ -28,16 +28,16 @@ footer.footer
           )
       p.footer-profile-content !{data.footerDescription}
     div.footer-links
-      a.footer-link(href="https://codepen.io/jackrugile/")
-        include ./svgs/codepen.pug
-        span.footer-link-text CodePen
       a.footer-link(href="https://github.com/jackrugile")
         include ./svgs/github.pug
         span.footer-link-text GitHub
-      a.footer-link(href="https://twitter.com/jackrugile")
-        include ./svgs/twitter.pug
-        span.footer-link-text Twitter
       a.footer-link(href="https://www.linkedin.com/in/jackrugile/")
         include ./svgs/linkedin.pug
         span.footer-link-text LinkedIn
-    p.footer-meta Made with <a href="#{data.repository}">code</a> <span class="footer-meta-divider">//</span> <span class="footer-meta-copyright">&copy; #{new Date().getFullYear()} Jack Rugile</span>
+      a.footer-link(href="https://codepen.io/jackrugile/")
+        include ./svgs/codepen.pug
+        span.footer-link-text CodePen
+      a.footer-link(href="https://x.com/jackrugile")
+        include ./svgs/x.pug
+        span.footer-link-text X
+    p.footer-meta Made with <a href="#{data.repository}">code<span>&nbsp;</span></a> <span class="footer-meta-divider">//</span> <a href="#{data.resume}">View my Resume</a> <span class="footer-meta-divider">//</span> <span class="footer-meta-copyright">&copy; #{new Date().getFullYear()} Jack Rugile</span>

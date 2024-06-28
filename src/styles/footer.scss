@@ -24,7 +24,7 @@
 
 .footer .angle--bot {
   bottom: -0.5px;
-  fill: $color-flame;
+  fill: $color-accent;
 }
 
 .footer-inner {
@@ -85,6 +85,13 @@
   display: block;
   overflow: hidden;
   position: relative;
+  // &:after {
+  //   background-color: $color-accent;
+  //   content: "";
+  //   inset: 4px;
+  //   mix-blend-mode: color;
+  //   position: absolute;
+  // }
 }
 
 .footer-profile-image {
@@ -114,13 +121,20 @@
   position: relative;
   transition: color $duration-transition;
   white-space: nowrap;
-  &:hover,
-  .no-js &:focus-visible {
-    color: $color-flame;
+  @mixin hover {
+    color: $color-accent;
     transition-duration: 0ms;
+  }
+  .no-js &:focus-visible {
+    @include hover;
   }
   &:focus-visible {
     color: $color-difference;
+  }
+  @media (hover: hover) {
+    &:hover {
+      @include hover;
+    }
   }
   @media (prefers-reduced-motion) {
     transition: none;
@@ -148,17 +162,22 @@
   text-decoration: none;
   transition: background-color $duration-transition;
   width: calc(50% - 2px);
-  &:hover,
-  .no-js &:focus-visible {
+  @mixin hover {
     background-color: $color-dark3;
     position: relative;
     transition-duration: 0ms;
+    z-index: 1;
   }
   .no-js &:focus-visible {
-    z-index: 1;
+    @include hover;
   }
   &:focus-visible {
     background-color: $color-dark1;
+  }
+  @media (hover: hover) {
+    &:hover {
+      @include hover;
+    }
   }
   @media (min-width: 40em) {
     background-color: transparent;
@@ -180,18 +199,25 @@
   margin: 0 0.5rem 0 0;
   transition: fill $duration-transition;
   width: 1.5rem;
-  .footer-link:hover &,
-  .no-js .footer-link:focus-visible & {
-    fill: $color-flame;
+  @mixin hover {
+    fill: $color-accent;
     transition-duration: 0ms;
+  }
+  .no-js .footer-link:focus-visible & {
+    @include hover;
   }
   .footer-link:focus-visible & {
     fill: $color-difference;
   }
+  @media (hover: hover) {
+    .footer-link:hover & {
+      @include hover;
+    }
+  }
   @media (min-width: 40em) {
     display: inline-block;
     margin: 0 0.5rem 0 0;
-    width: 2rem;
+    width: 1.75rem;
   }
   @media (prefers-reduced-motion) {
     transition: none;
@@ -205,21 +231,19 @@
   line-height: 1;
   transition: color $duration-transition;
   vertical-align: middle;
-  .footer-link:hover &,
-  .no-js .footer-link:focus-visible & {
-    color: #fff;
+  @mixin hover {
+    color: $color-accent;
     transition-duration: 0ms;
+  }
+  .no-js .footer-link:focus-visible & {
+    @include hover;
   }
   .footer-link:focus-visible & {
     color: $color-difference;
   }
-  @media (min-width: 40em) {
-    .footer-link:hover &,
-    .no-js .footer-link:focus-visible & {
-      color: $color-flame;
-    }
-    .footer-link:focus-visible & {
-      color: $color-difference;
+  @media (hover: hover) {
+    .footer-link:hover & {
+      @include hover;
     }
   }
   @media (prefers-reduced-motion) {
@@ -238,7 +262,6 @@
 
 .footer-meta a {
   background-color: #fff;
-  border-radius: 0.25rem;
   color: $color-dark1;
   display: inline-block;
   font-family: $font-monospace;
@@ -247,17 +270,35 @@
   position: relative;
   text-decoration: none;
   transition: background-color $duration-transition, color $duration-transition;
-  &:hover,
-  .no-js &:focus-visible {
-    background-color: $color-flame;
+  @mixin hover {
+    background-color: $color-accent;
     color: $color-dark1;
     transition-duration: 0ms;
+  }
+  .no-js &:focus-visible {
+    @include hover;
   }
   &:focus-visible {
     background-color: $color-difference;
   }
+  @media (hover: hover) {
+    &:hover {
+      @include hover;
+    }
+  }
   @media (prefers-reduced-motion) {
     transition: none;
+  }
+}
+
+.footer-meta a span {
+  background: currentColor;
+  animation: caret-fade 1000ms infinite;
+  display: inline-block;
+  margin-left: 2px;
+  width: 2px;
+  @media (prefers-reduced-motion) {
+    display: none;
   }
 }
 

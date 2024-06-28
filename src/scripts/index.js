@@ -1,3 +1,19 @@
+import data from "../data/data.json";
+
+let allProjects = data.projects.map((project) => project.slug);
+let featuredProjects = [];
+data.features.forEach((feature) => {
+  feature.projects.forEach((project) => {
+    featuredProjects.push(project);
+  });
+});
+let notFeaturedProjects = allProjects.filter(
+  (x) => !featuredProjects.includes(x)
+);
+console.log("all", allProjects);
+console.log("featured", featuredProjects);
+console.log("not-featured", notFeaturedProjects);
+
 document.documentElement.classList.remove("no-js");
 document.documentElement.classList.add("has-js");
 

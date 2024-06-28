@@ -24,18 +24,24 @@ html {
 
 body {
   background-color: $color-dark1;
-  color: #bbb;
+  color: $color-light1;
   font-family: $font-sans-serif;
   font-weight: 400;
   line-height: 1.75;
+  text-wrap: pretty;
   .is-404 & {
     height: 100%;
   }
 }
 
 .section {
-  margin: 0 auto 9rem;
+  margin: 0 auto 16rem;
   max-width: 110rem;
+  @media (min-width: 80em) {
+    align-items: flex-start;
+    display: flex;
+    gap: 4rem;
+  }
 }
 
 .section:last-child {
@@ -45,7 +51,6 @@ body {
 .section > p {
   font-size: 1.25rem;
   max-width: 60rem;
-  text-wrap: balance;
 }
 
 @media (min-width: 60em) {
@@ -55,20 +60,26 @@ body {
 }
 
 .section > h2 {
+  // background-color: rgba($color-dark1, 0.8);
+  // backdrop-filter: blur(5px);
+  border-top: 4px solid $color-dark2;
   color: #fff;
   font-family: $font-serif;
   font-size: 2rem;
   font-weight: 300;
   line-height: 1.5;
-  margin-bottom: 3rem;
-  max-width: 60rem;
-  position: relative;
-  text-wrap: balance;
-}
-
-@media (min-width: 60em) {
-  .section > h2 {
+  padding: 1rem 0;
+  position: sticky;
+  left: 0;
+  top: -2px; // prevent blurred subpixels from peeking through on top
+  z-index: 10;
+  @media (min-width: 60em) {
     font-size: 3rem;
+  }
+  @media (min-width: 80em) {
+    flex-basis: 20rem;
+    flex-shrink: 0;
+    padding: 1rem 0 0;
   }
 }
 
@@ -79,10 +90,10 @@ body {
   content: "";
   display: none;
   height: 16px;
-  margin: 1.65rem 1.5rem 0 0;
+  margin: -8px 1.5rem 0 0;
   position: absolute;
   right: 100%;
-  top: 0;
+  top: 50%;
   width: 16px;
   @media (prefers-reduced-motion) {
     animation: none;
@@ -92,14 +103,14 @@ body {
 
 .section > h2:before {
   animation-delay: -2000ms;
-  border-color: $color-flame;
+  border-color: $color-accent;
   @media (prefers-reduced-motion) {
     opacity: 0;
   }
 }
 
 .section > h2:after {
-  border-color: $color-flame;
+  border-color: $color-accent;
 }
 
 @media (min-width: 60em) {
@@ -109,44 +120,19 @@ body {
   }
 }
 
-.focus-indicator {
-  background-color: #fff;
-  height: 1px;
-  left: 0;
-  mix-blend-mode: difference;
-  opacity: 0;
-  pointer-events: none;
-  position: absolute;
-  top: 0;
-  transform-origin: 0% 0%;
-  transition: opacity $duration-transition,
-    transform $duration-transition $easeOutExpo;
-  width: 1px;
-  z-index: 100;
-  &.no-js {
-    display: none;
+.section > h3 {
+  color: #fff;
+  font-family: $font-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  z-index: 10;
+  @media (min-width: 60em) {
+    font-size: 3rem;
   }
-  @media (prefers-reduced-motion) {
-    transition: none;
-  }
-}
-
-html:has(:focus-visible) .focus-indicator {
-  opacity: 1;
-}
-
-a:focus {
-  outline: none;
-}
-
-a:focus-visible {
-  outline: 4px solid #fff;
-  outline-offset: 4px;
-}
-
-.has-js {
-  a:focus,
-  a:focus-visible {
-    outline: none;
+  @media (min-width: 80em) {
+    flex-basis: 20rem;
+    flex-shrink: 0;
   }
 }

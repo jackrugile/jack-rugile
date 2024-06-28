@@ -1,0 +1,41 @@
+.focus-indicator {
+  background-color: #fff;
+  height: 1px;
+  left: 0;
+  mix-blend-mode: difference;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  transform-origin: 0% 0%;
+  transition: opacity $duration-transition,
+    transform $duration-transition $easeOutExpo;
+  width: 1px;
+  z-index: 100;
+  &.no-js {
+    display: none;
+  }
+  @media (prefers-reduced-motion) {
+    transition: none;
+  }
+}
+
+html:has(:focus-visible) .focus-indicator {
+  opacity: 1;
+}
+
+a:focus {
+  outline: none;
+}
+
+a:focus-visible {
+  outline: 4px solid #fff;
+  outline-offset: 4px;
+}
+
+.has-js {
+  a:focus,
+  a:focus-visible {
+    outline: none;
+  }
+}
