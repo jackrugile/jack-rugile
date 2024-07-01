@@ -14,17 +14,20 @@
       "category": "sites",
       "projects": [
         "mission-bell",
-        "if-this-then-dominos",
+        "hikup",
         "omelet-agency",
+        "new-belgium-brewing-tour",
+        "if-this-then-dominos",
         "itch-a-skitch"
       ]
     },
     {
       "category": "games",
       "projects": [
-        "lost-without-you",
-        "mono-move",
         "radius-raid",
+        "mono-move",
+        "lost-without-you",
+        "spacepi",
         "ride-the-magic",
         "turtlerat-alley"
       ]
@@ -40,12 +43,24 @@
         "3d-particle-explorations",
         "inspect-interview"
       ]
+    },
+    {
+      "category": "demos",
+      "projects": [
+        "rainbow-firestorm",
+        "simplex-flower-generator",
+        "carousel-lock-interface"
+      ]
     }
   ],
   "categories": [
     {
       "slug": "community",
       "title": "Community"
+    },
+    {
+      "slug": "demos",
+      "title": "Demos"
     },
     {
       "slug": "games",
@@ -57,18 +72,9 @@
     },
     {
       "slug": "sites",
-      "title": "Sites"
+      "title": "Sites/Apps"
     }
   ],
-  "archive": {
-    "projects": [
-      "lost-without-you",
-      "mono-move",
-      "radius-raid",
-      "ride-the-magic",
-      "turtlerat-alley"
-    ]
-  },
   "projects": [
     {
       "slug": "3d-particle-explorations",
@@ -85,6 +91,11 @@
           "url": "https://tympanus.net/codrops/2017/12/12/3d-particle-explorations/"
         },
         {
+          "label": "View Demo",
+          "ariaLabel": "View 3D Particle Explorations Demo",
+          "url": "https://tympanus.net/Development/3d-particle-explorations/"
+        },
+        {
           "label": "View Source Code",
           "ariaLabel": "View 3D Particle Explorations Source Code",
           "url": "https://github.com/jackrugile/3d-particle-explorations"
@@ -93,6 +104,46 @@
       "image": {
         "src": "./images/projects/3d-particle-explorations.jpg",
         "alt": "Screenshot of the 3D Particle Explorations demo, white particle dots on a colorful 3D plane."
+      }
+    },
+    {
+      "slug": "carousel-lock-interface",
+      "category": "demos",
+      "title": "Carousel Lock Interface",
+      "subtitle": "Sliding Combination Lock",
+      "location": "<a href=\"https://codepen.io/jackrugile\">CodePen</a>",
+      "description": "Use the sliding carousels to enter the super secret code. Built with Flickity.",
+      "url": "https://codepen.io/jackrugile/pen/RxqdxL",
+      "links": [
+        {
+          "label": "View Demo",
+          "ariaLabel": "View Carousel Lock Interface Demo",
+          "url": "https://codepen.io/jackrugile/pen/RxqdxL"
+        }
+      ],
+      "image": {
+        "src": "./images/projects/carousel-lock-interface.jpg",
+        "alt": "Screenshot of Carousel Lock Interface demo."
+      }
+    },
+    {
+      "slug": "hikup",
+      "category": "sites",
+      "title": "Hikup",
+      "subtitle": "Digital Utility Web App",
+      "location": "<a href=\"https://www.consumeandcreate.co\">Consume & Create</a> & <a href=\"https://www.omelet.com\">Omelet</a>",
+      "description": "A web app to encourage people to be mindful of unwanted jargon and improve how we use language in our everyday conversations. Built with Vue.js, Nuxt, and the Web Speech API.",
+      "url": "https://www.myhikup.com",
+      "links": [
+        {
+          "label": "View Project",
+          "ariaLabel": "View Hikup Project",
+          "url": "https://www.myhikup.com"
+        }
+      ],
+      "image": {
+        "src": "./images/projects/hikup.jpg",
+        "alt": "Screenshot of Hikup website homepage."
       }
     },
     {
@@ -148,6 +199,11 @@
           "label": "View Project",
           "ariaLabel": "View Itch A Skitch Project",
           "url": "https://itchaskitch.com"
+        },
+        {
+          "label": "View Source Code",
+          "ariaLabel": "View Itch A Skitch Source Code",
+          "url": "https://github.com/jackrugile/itch-a-skitch"
         }
       ],
       "image": {
@@ -256,18 +312,38 @@
       }
     },
     {
+      "slug": "new-belgium-brewing-tour",
+      "category": "sites",
+      "title": "New Belgium Brewing Tour",
+      "subtitle": "360° Photo Tour",
+      "location": "<a href=\"https://www.consumeandcreate.co\">Consume & Create</a>",
+      "description": "An interactive 360° photo tour of two New Belgium Brewing locations. Built with Vue.js, Nuxt, and Three.js.",
+      "url": "https://www.newbelgium.com/visit/vr-tour/",
+      "links": [
+        {
+          "label": "View Project",
+          "ariaLabel": "View New Belgium Brewing Tour Project",
+          "url": "https://www.newbelgium.com/visit/vr-tour/"
+        }
+      ],
+      "image": {
+        "src": "./images/projects/new-belgium-brewing-tour.jpg",
+        "alt": "Screenshot of New Belgium Brewing Tour website."
+      }
+    },
+    {
       "slug": "omelet-agency",
       "category": "sites",
       "title": "Omelet Agency",
       "subtitle": "Los Angeles Ad Agency",
       "location": "<a href=\"https://x.com/legwork\">Legwork Studio</a>",
       "description": "A full website showcasing the work, people, and values of Los Angeles based ad agency, Omelet. Built with React.",
-      "url": "https://www.omelet.com/",
+      "url": "https://www.omelet.com",
       "links": [
         {
           "label": "View Project",
           "ariaLabel": "View Omelet Agency Project",
-          "url": "https://www.omelet.com/"
+          "url": "https://www.omelet.com"
         }
       ],
       "image": {
@@ -305,7 +381,7 @@
       "category": "games",
       "title": "Radius Raid",
       "subtitle": "Space Shoot ’Em Up in 13kb",
-      "location": "<a href=\"https://2013.js13kgames.com/\">js13kGames 2013</a>",
+      "location": "<a href=\"https://2013.js13kgames.com\">js13kGames 2013</a>",
       "description": "Blast away unrelenting enemies before they destroy you. Features 13 enemy types, 5 powerups, parallax backgrounds, retro sound effects, and locally stored stats. Received 1<sup>st</sup> place in js13kGames 2013. Built with 2D canvas in 13kb.",
       "url": "https://jackrugile.com/radius-raid/",
       "links": [
@@ -326,6 +402,26 @@
       }
     },
     {
+      "slug": "rainbow-firestorm",
+      "category": "demos",
+      "title": "Rainbow Firestorm",
+      "subtitle": "Particle Simulation",
+      "location": "<a href=\"https://codepen.io/jackrugile\">CodePen</a>",
+      "description": "A simulation where colorful glowing particles cut through growing circles. Built with 2D canvas.",
+      "url": "https://codepen.io/jackrugile/pen/ExryNq",
+      "links": [
+        {
+          "label": "View Demo",
+          "ariaLabel": "View Rainbow Firestorm Demo",
+          "url": "https://codepen.io/jackrugile/pen/ExryNq"
+        }
+      ],
+      "image": {
+        "src": "./images/projects/rainbow-firestorm.jpg",
+        "alt": "Screenshot of Rainbow Firestorm demo."
+      }
+    },
+    {
       "slug": "ride-the-magic",
       "category": "games",
       "title": "Ride the Magic",
@@ -343,6 +439,51 @@
       "image": {
         "src": "./images/projects/ride-the-magic.jpg",
         "alt": "Screenshot of Ride the Magic gameplay."
+      }
+    },
+    {
+      "slug": "simplex-flower-generator",
+      "category": "demos",
+      "title": "Simplex Flower Generator",
+      "subtitle": "Three.js Mesh Lines",
+      "location": "<a href=\"https://codepen.io/jackrugile\">CodePen</a>",
+      "description": "A generator that uses simplex noise and variable thickness lines to create flowers with varying parameters. Built with Three.js, showcasing THREE.MeshLine.",
+      "url": "https://codepen.io/jackrugile/pen/LeJowx",
+      "links": [
+        {
+          "label": "View Demo",
+          "ariaLabel": "View Simplex Flower Generator Demo",
+          "url": "https://codepen.io/jackrugile/pen/LeJowx"
+        }
+      ],
+      "image": {
+        "src": "./images/projects/simplex-flower-generator.jpg",
+        "alt": "Screenshot of Simplex Flower Generator demo."
+      }
+    },
+    {
+      "slug": "spacepi",
+      "category": "games",
+      "title": "SpacePi",
+      "subtitle": "Space Defense in 13kb",
+      "location": "<a href=\"https://2012.js13kgames.com\">js13kGames 2012</a>",
+      "description": "A mouse accuracy/agility game revolving around the defense of 13 bases in the most desolate regions of space. Received 1<sup>st</sup> place in js13kGames 2012. Built with 2D canvas in 13kb.",
+      "url": "https://jackrugile.com/spacepi/",
+      "links": [
+        {
+          "label": "Play Game",
+          "ariaLabel": "Play SpacePi Game",
+          "url": "https://jackrugile.com/spacepi/"
+        },
+        {
+          "label": "View Source Code",
+          "ariaLabel": "View SpacePi Source Code",
+          "url": "https://github.com/jackrugile/spacepi"
+        }
+      ],
+      "image": {
+        "src": "./images/projects/spacepi.jpg",
+        "alt": "Screenshot of SpacePi title frame."
       }
     },
     {

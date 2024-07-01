@@ -13,7 +13,7 @@
   "scripts": {
     "clean": "rm -rf dist",
     "start": "parcel",
-    "build": "yarn clean && parcel build",
+    "build": "yarn clean && parcel build src/*.pug",
     "build1": "yarn clean && parcel build src/*.pug --public-url ./ --no-minify && cp -r src/static/ dist"
   },
   "devDependencies": {

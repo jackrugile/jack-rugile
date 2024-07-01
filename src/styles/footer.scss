@@ -4,11 +4,10 @@
   display: flex;
   justify-content: center;
   min-height: 50vh;
-  padding: 5rem 2rem 7rem;
+  padding: 5rem 2rem 5rem;
   position: relative;
   @media (min-width: 60em) {
-    padding: 7.5vw 10vw 10vw;
-    padding: 5rem 8rem 7rem;
+    padding: 6rem 8rem 9rem;
   }
 }
 
@@ -256,11 +255,69 @@
   font-size: 1rem;
   font-weight: 400;
   line-height: 1;
-  margin-bottom: 3rem;
   text-align: center;
 }
 
-.footer-meta a {
+.footer-meta-divider {
+  display: none;
+  margin: 0 0.75rem;
+  @media (min-width: 40em) {
+    display: inline-block;
+  }
+}
+
+.footer-meta-copyright {
+  margin: 0;
+  @media (min-width: 40em) {
+    display: inline-block;
+  }
+}
+
+.footer-meta-resume {
+  margin-bottom: 0;
+  margin-top: 1.25rem;
+  @media (min-width: 40em) {
+    display: inline-block;
+    margin-top: 0;
+  }
+}
+
+.footer-meta-resume-link {
+  color: #fff;
+  display: inline-block;
+  font-weight: 700;
+  position: relative;
+  transition: color $duration-transition;
+  white-space: nowrap;
+  @mixin hover {
+    color: $color-accent;
+    transition-duration: 0ms;
+  }
+  .no-js &:focus-visible {
+    @include hover;
+  }
+  &:focus-visible {
+    color: $color-difference;
+  }
+  @media (hover: hover) {
+    &:hover {
+      @include hover;
+    }
+  }
+  @media (prefers-reduced-motion) {
+    transition: none;
+  }
+}
+
+.footer-meta-code {
+  margin-bottom: 0;
+  margin-top: 1.25rem;
+  @media (min-width: 40em) {
+    display: inline-block;
+  }
+}
+
+.footer-meta-code-link {
   background-color: #fff;
   color: $color-dark1;
   display: inline-block;
@@ -291,7 +348,7 @@
   }
 }
 
-.footer-meta a span {
+.footer-meta-code-link span {
   background: currentColor;
   animation: caret-fade 1000ms infinite;
   display: inline-block;
@@ -299,22 +356,5 @@
   width: 2px;
   @media (prefers-reduced-motion) {
     display: none;
-  }
-}
-
-.footer-meta-divider {
-  display: none;
-  margin: 0 0.25rem;
-  @media (min-width: 25em) {
-    display: inline-block;
-  }
-}
-
-.footer-meta-copyright {
-  display: block;
-  margin-top: 0.5rem;
-  @media (min-width: 25em) {
-    display: inline-block;
-    margin-top: 0;
   }
 }

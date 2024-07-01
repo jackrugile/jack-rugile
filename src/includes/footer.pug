@@ -40,4 +40,10 @@ footer.footer
       a.footer-link(href="https://x.com/jackrugile")
         include ./svgs/x.pug
         span.footer-link-text X
-    p.footer-meta Made with <a href="#{data.repository}">code<span>&nbsp;</span></a> <span class="footer-meta-divider">//</span> <a href="#{data.resume}">View my Resume</a> <span class="footer-meta-divider">//</span> <span class="footer-meta-copyright">&copy; #{new Date().getFullYear()} Jack Rugile</span>
+    div.footer-meta
+      p.footer-meta-copyright &copy; #{new Date().getFullYear()} Jack Rugile
+      p.footer-meta-divider //
+      p.footer-meta-resume
+        <a href="#{data.resume}" class="footer-meta-resume-link">Download Resume</a>
+      p.footer-meta-divider //
+      p.footer-meta-code Made with <a href="#{data.repository}" class="footer-meta-code-link">code<span>&nbsp;</span></a>
