@@ -1,0 +1,11 @@
+{
+  "jpeg": {
+    "quality": 70
+  },
+  "webp": {
+    "quality": 70
+  },
+  "avif": {
+    "quality": 50
+  }
+}
