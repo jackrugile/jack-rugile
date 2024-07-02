@@ -37,9 +37,9 @@
 .call-to-action-title {
   color: $color-accent;
   font-family: $font-serif;
-  font-size: 2.75rem;
+  font-size: 2.25rem;
   font-weight: 300;
-  line-height: 1.5;
+  line-height: 1.3;
   margin-bottom: 4rem;
   position: relative;
   &:after {
@@ -51,16 +51,25 @@
     position: absolute;
     width: 100%;
   }
+  @media (min-width: 30em) {
+    font-size: 2.75rem;
+  }
 }
 
 .call-to-action-subtitle {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   margin-bottom: 0;
   position: relative;
+  @media (min-width: 30em) {
+    font-size: 1.5rem;
+  }
 }
 
 .call-to-action-content {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  @media (min-width: 30em) {
+    font-size: 1.5rem;
+  }
 }
 
 .call-to-action-content a {

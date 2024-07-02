@@ -1,4 +1,4 @@
-import data from "../data/data.json";
+// import data from "../data/data.json";
 
 // let allProjects = data.projects.map((project) => project.slug);
 // let featuredProjects = [];
@@ -21,7 +21,7 @@ function consoleBrand() {
   const styles1 = `
     background-color: #000;
     color: #fff;
-    font-family: courier, monospace, sans-serif;
+    font-family: consolas, courier, monospace, sans-serif;
     font-weight: bold;
     line-height: 1;
     padding: 6px 10px;
@@ -29,7 +29,7 @@ function consoleBrand() {
   const styles2 = `
     background-color: #ff0040;
     color: #000;
-    font-family: courier, monospace, sans-serif;
+    font-family: consolas, courier, monospace, sans-serif;
     font-weight: bold;
     line-height: 1;
     padding: 6px 10px;

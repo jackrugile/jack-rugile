@@ -9,9 +9,9 @@ $color-light1: hsl($color-accent-hue, 30%, 80%);
 
 $duration-transition: 300ms;
 
-$font-serif: "Merriweather", georgia, serif;
-$font-sans-serif: "Lato", helvetica, arial, sans-serif;
-$font-monospace: courier, monospace;
+$font-serif: Merriweather, georgia, serif;
+$font-sans-serif: Lato, helvetica, arial, sans-serif;
+$font-monospace: consolas, courier, monospace;
 
 $linear: cubic-bezier(0.25, 0.25, 0.75, 0.75);
 $ease: cubic-bezier(0.25, 0.1, 0.25, 1);
