@@ -292,7 +292,7 @@
       "title": "Mono Move",
       "subtitle": "Single Control Gravity Switching",
       "location": "<a href=\"https://www.meetup.com/denver-creative-tech/\">Denver Creative Tech Meetup</a>",
-      "description": "Play to the end with as few deaths as possible in this single control, gravity switching, rage inducing, death tallying obstacle course. Featured at Denver Creative Tech meetup. Built with 2D canvas.",
+      "description": "Play to the end with as few deaths as possible in this single control, gravity switching, rage inducing, death tallying obstacle course. Featured at the Denver Creative Tech meetup. Built with 2D canvas.",
       "url": "https://jackrugile.com/mono-move/",
       "links": [
         {
@@ -447,7 +447,7 @@
       "title": "Simplex Flower Generator",
       "subtitle": "Three.js Mesh Lines",
       "location": "<a href=\"https://codepen.io/jackrugile\">CodePen</a>",
-      "description": "A generator that uses simplex noise and variable thickness lines to create flowers with varying parameters. Built with Three.js, showcasing THREE.MeshLine.",
+      "description": "A generator that uses simplex noise and variable width lines to create flowers with varying parameters. Built with Three.js, showcasing THREE.MeshLine.",
       "url": "https://codepen.io/jackrugile/pen/LeJowx",
       "links": [
         {
@@ -522,7 +522,7 @@
       "title": "TurtleRat Alley",
       "subtitle": "Capital One Bowling",
       "location": "<a href=\"https://x.com/legwork\">Legwork Studio</a> & <a href=\"https://www.ddb.com/\">DDB</a>",
-      "description": "Part of Capital One’s March Madness 2018 campaign featuring Charles Barkley and San Antonio, TX. Bowl an armadillo in three alleys. Built with Three.js and GSAP.",
+      "description": "Part of Capital One’s March Madness 2018 campaign featuring Charles Barkley and San Antonio, TX. Bowl with an armadillo in three scenic alleys. Built with Three.js and GSAP.",
       "url": "https://cap-one-games.s3-website-us-east-1.amazonaws.com/TurtleRatAlley/",
       "links": [
         {
