@@ -447,7 +447,7 @@
       "title": "Simplex Flower Generator",
       "subtitle": "Three.js Mesh Lines",
       "location": "<a href=\"https://codepen.io/jackrugile\">CodePen</a>",
-      "description": "A generator that uses simplex noise and variable width lines to create flowers with varying parameters. Built with Three.js, showcasing THREE.MeshLine.",
+      "description": "A parameterized generator leveraging simplex noise and adjustable line widths to create floral patterns. Built with Three.js, showcasing THREE.MeshLine.",
       "url": "https://codepen.io/jackrugile/pen/LeJowx",
       "links": [
         {
