@@ -34,7 +34,6 @@
 }
 
 .footer-profile {
-  align-items: center;
   display: block;
   flex-basis: 100%;
   margin-bottom: 3rem;
@@ -84,13 +83,6 @@
   display: block;
   overflow: hidden;
   position: relative;
-  // &:after {
-  //   background-color: $color-accent;
-  //   content: "";
-  //   inset: 4px;
-  //   mix-blend-mode: color;
-  //   position: absolute;
-  // }
 }
 
 .footer-profile-image {
@@ -314,6 +306,7 @@
   margin-top: 1.25rem;
   @media (min-width: 40em) {
     display: inline-block;
+    margin-top: 0;
   }
 }
 

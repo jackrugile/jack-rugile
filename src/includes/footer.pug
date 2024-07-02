@@ -5,13 +5,14 @@ footer.footer
       div.footer-profile-picture-wrap
         div.footer-profile-lqip-wrap
           img(
-            src="data-url:./images/jack-rugile-profile-photo.jpg?width=32"
+            src!="data-url:./images/jack-rugile-profile-photo.jpg?width=32"
             class="footer-profile-lqip"
+            alt=""
           )
         picture.footer-profile-picture
           each imageType in data.imageTypes
             source(
-              srcset=`
+              srcset!=`
                 ./images/jack-rugile-profile-photo.jpg?as=${imageType}&width=256 256w,
                 ./images/jack-rugile-profile-photo.jpg?as=${imageType}&width=512 512w
               `
@@ -20,7 +21,7 @@ footer.footer
           img(
             loading="lazy"
             sizes="(min-width: 30em) 104px, 100vw"
-            src="./images/jack-rugile-profile-photo.jpg?&width=512"
+            src!="./images/jack-rugile-profile-photo.jpg?&width=512"
             alt="Profile photo of Jack Rugile from 2023."
             width="512"
             height="512"

@@ -2,9 +2,9 @@
   "name": "Jack Rugile",
   "title": "Front End Web & Game Developer",
   "description": "Front end web and game developer with 10+ years experience ranging from small creative studios to large corporations. Taking pride in my work to leave the web better than I found it.",
-  "aboutTitle": "Let’s make cool stuff.",
+  "aboutTitle": "Let’s make cool&nbsp;stuff!",
   "aboutDescription": "I’m a front end web and game developer with 10+ years experience ranging from small creative studios to large corporations. My ambition is to create interactive experiences that bring people joy and solve problems. I take pride in my work and want to leave the web better than I found it. I’m looking to collaborate with a team of innovative professionals who are dedicated to their craft.",
-  "footerDescription": "Hey, I'm Jack! I was raised in <a href=\"https://en.wikipedia.org/wiki/Basalt,_Colorado\">Basalt, CO</a>, started my career in <a href=\"https://en.wikipedia.org/wiki/Denver\">Denver, CO</a>, and am currently developing in <a href=\"https://en.wikipedia.org/wiki/Palm_Bay,_Florida\">Palm Bay, FL</a>. You’ll likely find me hanging out with my <a href=\"./images/family.jpg?quality=80&width=1200\">family</a> and our goofy dogs, <a href=\"./images/zoey.jpg?quality=80&width=700\">Zoey</a> and <a href=\"./images/juni.jpg?quality=80&width=700\">Juni</a>. In my free time, I love to play <a href=\"https://playoverwatch.com/en-us/\">Overwatch</a> and compete in <a href=\"https://ldjam.com\">game</a> <a href=\"https://js13kgames.com\">jams</a>.",
+  "footerDescription": "Hey, I'm Jack! I was raised in <a href=\"https://en.wikipedia.org/wiki/Basalt,_Colorado\">Basalt, CO</a>, started my career in <a href=\"https://en.wikipedia.org/wiki/Denver\">Denver, CO</a>, and am currently developing in <a href=\"https://en.wikipedia.org/wiki/Palm_Bay,_Florida\">Palm Bay, FL</a>. You’ll likely find me hanging out with my <a href=\"./images/family.jpg?quality=70&width=1200\">family</a> and our goofy dogs, <a href=\"./images/zoey.jpg?quality=70&width=700\">Zoey</a> and <a href=\"./images/juni.jpg?quality=70&width=700\">Juni</a>. In my free time, I love to play <a href=\"https://playoverwatch.com/en-us/\">Overwatch</a> and compete in <a href=\"https://ldjam.com\">game</a> <a href=\"https://js13kgames.com\">jams</a>.",
   "baseUrl": "https://jackrugile.com",
   "repository": "https://github.com/jackrugile/jack-rugile",
   "resume": "https://jackrugile.com/resume.pdf",
@@ -33,10 +33,6 @@
       ]
     },
     {
-      "category": "open-source",
-      "projects": ["variaboard", "placeholdem", "jrumble"]
-    },
-    {
       "category": "community",
       "projects": [
         "start-making-games",
@@ -45,10 +41,14 @@
       ]
     },
     {
+      "category": "open-source",
+      "projects": ["variaboard", "placeholdem", "jrumble"]
+    },
+    {
       "category": "demos",
       "projects": [
-        "rainbow-firestorm",
         "simplex-flower-generator",
+        "rainbow-firestorm",
         "carousel-lock-interface"
       ]
     }

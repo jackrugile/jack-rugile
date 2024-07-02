@@ -1,33 +1,15 @@
 .project-grid {
   display: grid;
   gap: 2rem;
-  // grid-template-columns: repeat(auto-fill, 1fr);
-  // margin-top: 2rem;
-}
-
-@media (min-width: 40em) {
-  .project-grid {
+  margin-top: 2rem;
+  padding-bottom: 1px; // needed for sticky titles to fully cover subpixels
+  @media (min-width: 40em) {
     grid-template-columns: repeat(2, 1fr);
   }
-}
-
-// @media (min-width: 80em) {
-//   .project-grid {
-//     grid-template-columns: repeat(3, 1fr);
-//   }
-// }
-
-@media (min-width: 120em) {
-  .project-grid {
+  @media (min-width: 80em) {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
-// @media (min-width: 120em) {
-//   .project-grid {
-//     grid-template-columns: repeat(4, 1fr);
-//   }
-// }
 
 .cell {
   display: flex;
@@ -40,18 +22,6 @@
   overflow: hidden;
   padding: 4px;
   position: relative;
-  // filter: saturate(0);
-  // transition: filter $duration-transition;
-  // .cell:hover & {
-  //   filter: saturate(1);
-  // }
-  // &:after {
-  //   // background-color: $color-accent;
-  //   content: "";
-  //   inset: 4px;
-  //   mix-blend-mode: color;
-  //   position: absolute;
-  // }
 }
 
 .cell-lqip-wrap {
