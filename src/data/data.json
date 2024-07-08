@@ -149,21 +149,21 @@
     {
       "slug": "if-this-then-dominos",
       "category": "sites",
-      "title": "If This Then Dominos",
-      "subtitle": "Dominos + IFTTT Automatic Order Triggers",
+      "title": "If This Then Domino’s",
+      "subtitle": "Domino’s + IFTTT Automatic Order Triggers",
       "location": "<a href=\"https://x.com/legwork\">Legwork Studio</a> & <a href=\"https://www.crispin.com\">CPB</a>",
-      "description": "A microsite featuring the many ways you can automatically order Dominos based on event triggers. Built with Vue.js and GSAP. Oct 6, 2018 FWA of the Day.",
+      "description": "A microsite featuring the many ways you can automatically order Domino’s based on event triggers. Built with Vue.js and GSAP. Oct 6, 2018 FWA of the Day.",
       "url": "https://thefwa.com/cases/if-this-then-dominos-p2",
       "links": [
         {
           "label": "View Project",
-          "ariaLabel": "View If This Then Dominos Project",
+          "ariaLabel": "View If This Then Domino’s Project",
           "url": "https://thefwa.com/cases/if-this-then-dominos-p2"
         }
       ],
       "image": {
         "src": "./images/projects/if-this-then-dominos.jpg",
-        "alt": "Screenshot of If This Then Dominos, illustrated cards showing ways to trigger a pizza delivery."
+        "alt": "Screenshot of If This Then Domino’s, illustrated cards showing ways to trigger a pizza delivery."
       }
     },
     {
