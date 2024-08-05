@@ -13,7 +13,7 @@
   "scripts": {
     "clean": "rm -rf dist",
     "start": "parcel",
-    "build": "npm run clean && parcel build src/*.pug"
+    "build": "npm run clean && parcel build src/*.pug --no-cache"
   },
   "devDependencies": {
     "@parcel/optimizer-data-url": "^2.12.0",
