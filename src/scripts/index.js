@@ -50,6 +50,8 @@ function handleFocusIndicator() {
   const focusIndicator = document.querySelector(".focus-indicator");
   const offset = 5;
 
+  focusIndicator.style.transform = `translate3d(0px, 0px, 0) scale(0, 0)`;
+
   function syncFocusIndicator() {
     if (document.activeElement && document.activeElement !== document.body) {
       const bcr = document.activeElement.getBoundingClientRect();
@@ -64,6 +66,7 @@ function handleFocusIndicator() {
   document.addEventListener("blur", syncFocusIndicator, true);
   document.addEventListener("focusin", syncFocusIndicator, true);
   window.addEventListener("resize", syncFocusIndicator);
+  syncFocusIndicator();
 }
 
 handleFocusIndicator();
