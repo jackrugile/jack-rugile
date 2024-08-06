@@ -12,7 +12,7 @@
   },
   "scripts": {
     "clean": "rm -rf dist",
-    "start": "parcel",
+    "start": "parcel --no-cache",
     "build": "npm run clean && parcel build src/*.pug --no-cache"
   },
   "devDependencies": {
