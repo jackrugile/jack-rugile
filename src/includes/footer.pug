@@ -42,7 +42,7 @@ footer.footer
         include ./svgs/x.pug
         span.footer-link-text X
     div.footer-meta
-      p.footer-meta-copyright &copy; #{new Date().getFullYear()} Jack Rugile
+      p.footer-meta-copyright &copy; <time datetime="#{new Date().getFullYear()}">#{new Date().getFullYear()}</time> Jack Rugile
       p.footer-meta-divider //
       p.footer-meta-resume
         <a href="#{data.resume}" class="footer-meta-resume-link">Download Resume</a>
