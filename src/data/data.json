@@ -291,19 +291,14 @@
       "category": "games",
       "title": "Mono Move",
       "subtitle": "Single Control Gravity Switching",
-      "location": "<a href=\"https://www.meetup.com/denver-creative-tech/\">Denver Creative Tech Meetup</a>",
-      "description": "Play to the end with as few deaths as possible in this single control, gravity switching, rage inducing, death tallying obstacle course. Featured at the Denver Creative Tech meetup. Built with 2D canvas.",
-      "url": "https://jackrugile.com/mono-move/",
+      "location": "<a href=\"https://www.crazygames.com/game/mono-move\">CrazyGames</a>",
+      "description": "Play to the end with as few collisions as possible in this single control, gravity switching, rage inducing, collision tallying obstacle course. Published on CrazyGames. Built with 2D canvas.",
+      "url": "https://www.crazygames.com/game/mono-move",
       "links": [
         {
-          "label": "Play Game",
-          "ariaLabel": "Play Monomove Game",
-          "url": "https://jackrugile.com/mono-move/"
-        },
-        {
-          "label": "View Source Code",
-          "ariaLabel": "View Monomove Source",
-          "url": "https://github.com/jackrugile/mono-move"
+          "label": "Play on CrazyGames",
+          "ariaLabel": "Play Mono Move on CrazyGame",
+          "url": "https://www.crazygames.com/game/mono-move"
         }
       ],
       "image": {
