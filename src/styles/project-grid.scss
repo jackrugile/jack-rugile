@@ -17,7 +17,7 @@
 }
 
 .cell-picture-wrap {
-  background-color: $color-dark2;
+  background-color: var(--color-bg-2);
   margin-bottom: 4px;
   overflow: hidden;
   padding: 4px;
@@ -76,7 +76,7 @@
 }
 
 .cell-content {
-  background-color: $color-dark2;
+  background-color: var(--color-bg-2);
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -84,7 +84,7 @@
 }
 
 .cell-title {
-  color: #fff;
+  color: var(--color-fg-1);
   font-family: $font-serif;
   font-size: 1.5rem;
   font-weight: 700;
@@ -94,7 +94,7 @@
 }
 
 .cell-subtitle {
-  color: #fff;
+  color: var(--color-fg-1);
   font-size: 1rem;
   font-weight: 700;
   margin-bottom: 1.25rem;
@@ -103,7 +103,7 @@
 }
 
 .cell-subtitle:after {
-  background-color: $color-dark3;
+  background-color: var(--color-bg-3);
   content: "";
   display: block;
   height: 2px;
@@ -128,11 +128,11 @@
   transition: color $duration-transition;
   &:hover,
   .no-js &:focus-visible {
-    color: $color-accent;
+    color: var(--color-accent);
     transition-duration: 0ms;
   }
   &:focus-visible {
-    color: $color-difference;
+    color: var(--color-difference);
   }
   @media (prefers-reduced-motion) {
     transition: none;
@@ -144,9 +144,9 @@
 }
 
 .cell-link {
-  background-color: $color-dark2;
-  box-shadow: inset 4px 0 0 $color-dark3;
-  color: #fff;
+  background-color: var(--color-bg-2);
+  box-shadow: inset 4px 0 0 var(--color-bg-3);
+  color: var(--color-fg-1);
   display: block;
   font-size: 1rem;
   font-weight: 700;
@@ -159,15 +159,15 @@
     color $duration-transition;
   &:hover,
   .no-js &:focus-visible {
-    background-color: $color-dark3;
-    box-shadow: inset 4px 0 0 $color-accent;
-    color: #fff;
+    background-color: var(--color-bg-3);
+    box-shadow: inset 4px 0 0 var(--color-accent);
+    color: var(--color-fg-1);
     transition-duration: 0ms;
   }
   &:focus-visible {
-    background-color: $color-dark1;
-    box-shadow: inset 4px 0 0 $color-difference;
-    color: $color-difference;
+    background-color: var(--color-bg-1);
+    box-shadow: inset 4px 0 0 var(--color-difference);
+    color: var(--color-difference);
   }
   @media (prefers-reduced-motion) {
     transition: none;

@@ -1,6 +1,6 @@
 .call-to-action {
   align-items: center;
-  background-color: $color-dark2;
+  background-color: var(--color-bg-2);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,17 +25,17 @@
 }
 
 .call-to-action .angle--top {
-  fill: $color-dark1;
+  fill: var(--color-bg-1);
   top: -0.5px;
 }
 
 .call-to-action .angle--bot {
   bottom: -0.5px;
-  fill: $color-dark1;
+  fill: var(--color-bg-1);
 }
 
 .call-to-action-title {
-  color: $color-accent;
+  color: var(--color-accent);
   font-family: $font-serif;
   font-size: 2.25rem;
   font-weight: 300;
@@ -43,7 +43,7 @@
   margin-bottom: 4rem;
   position: relative;
   &:after {
-    background-color: $color-dark3;
+    background-color: var(--color-bg-3);
     bottom: -2rem;
     content: "";
     height: 2px;
@@ -73,19 +73,19 @@
 }
 
 .call-to-action-content a {
-  color: #fff;
+  color: var(--color-fg-1);
   display: inline-block;
   font-weight: 700;
   transition: color $duration-transition;
   @mixin hover {
-    color: $color-accent;
+    color: var(--color-accent);
     transition-duration: 0ms;
   }
   .no-js &:focus-visible {
     @include hover;
   }
   &:focus-visible {
-    color: $color-difference;
+    color: var(--color-difference);
   }
   @media (hover: hover) {
     &:hover {

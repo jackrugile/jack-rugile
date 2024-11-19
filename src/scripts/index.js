@@ -35,11 +35,7 @@ function consoleBrand() {
     padding: 6px 10px;
   `;
 
-  console.log(
-    "%cMade in Denver, CO and Palm Bay, FL 🏔️❄️🌴🌊%cJack Rugile",
-    styles1,
-    styles2
-  );
+  console.log("%cMade in Palm Bay, FL 🌴🌊%cJack Rugile", styles1, styles2);
 
   console.log("View Source: https://github.com/jackrugile/jack-rugile");
 }

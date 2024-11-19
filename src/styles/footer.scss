@@ -1,6 +1,6 @@
 .footer {
   align-items: center;
-  background-color: $color-dark1;
+  background-color: var(--color-bg-1);
   display: flex;
   justify-content: center;
   min-height: 50vh;
@@ -23,7 +23,7 @@
 
 .footer .angle--bot {
   bottom: -0.5px;
-  fill: $color-accent;
+  fill: var(--color-accent);
 }
 
 .footer-inner {
@@ -44,7 +44,7 @@
 }
 
 .footer-profile-picture-wrap {
-  background-color: $color-dark2;
+  background-color: var(--color-bg-2);
   margin: 0 0 2rem;
   overflow: hidden;
   padding: 4px;
@@ -107,20 +107,20 @@
 }
 
 .footer-profile-content a {
-  color: #fff;
+  color: var(--color-fg-1);
   font-weight: 700;
   position: relative;
   transition: color $duration-transition;
   white-space: nowrap;
   @mixin hover {
-    color: $color-accent;
+    color: var(--color-accent);
     transition-duration: 0ms;
   }
   .no-js &:focus-visible {
     @include hover;
   }
   &:focus-visible {
-    color: $color-difference;
+    color: var(--color-difference);
   }
   @media (hover: hover) {
     &:hover {
@@ -146,7 +146,7 @@
 
 .footer-link {
   align-items: center;
-  background-color: $color-dark2;
+  background-color: var(--color-bg-2);
   display: flex;
   padding: 0.75rem;
   position: relative;
@@ -154,7 +154,7 @@
   transition: background-color $duration-transition;
   width: calc(50% - 2px);
   @mixin hover {
-    background-color: $color-dark3;
+    background-color: var(--color-bg-3);
     position: relative;
     transition-duration: 0ms;
     z-index: 1;
@@ -163,7 +163,7 @@
     @include hover;
   }
   &:focus-visible {
-    background-color: $color-dark1;
+    background-color: var(--color-bg-1);
   }
   @media (hover: hover) {
     &:hover {
@@ -185,20 +185,20 @@
 }
 
 .footer-link-icon {
-  fill: #fff;
+  fill: var(--color-fg-1);
   flex-shrink: 0;
   margin: 0 0.5rem 0 0;
   transition: fill $duration-transition;
   width: 1.5rem;
   @mixin hover {
-    fill: $color-accent;
+    fill: var(--color-accent);
     transition-duration: 0ms;
   }
   .no-js .footer-link:focus-visible & {
     @include hover;
   }
   .footer-link:focus-visible & {
-    fill: $color-difference;
+    fill: var(--color-difference);
   }
   @media (hover: hover) {
     .footer-link:hover & {
@@ -216,21 +216,21 @@
 }
 
 .footer-link-text {
-  color: #fff;
+  color: var(--color-fg-1);
   font-size: 1rem;
   font-weight: 400;
   line-height: 1;
   transition: color $duration-transition;
   vertical-align: middle;
   @mixin hover {
-    color: $color-accent;
+    color: var(--color-accent);
     transition-duration: 0ms;
   }
   .no-js .footer-link:focus-visible & {
     @include hover;
   }
   .footer-link:focus-visible & {
-    color: $color-difference;
+    color: var(--color-difference);
   }
   @media (hover: hover) {
     .footer-link:hover & {
@@ -275,21 +275,21 @@
 }
 
 .footer-meta-resume-link {
-  color: #fff;
+  color: var(--color-fg-1);
   display: inline-block;
   font-weight: 700;
   position: relative;
   transition: color $duration-transition;
   white-space: nowrap;
   @mixin hover {
-    color: $color-accent;
+    color: var(--color-accent);
     transition-duration: 0ms;
   }
   .no-js &:focus-visible {
     @include hover;
   }
   &:focus-visible {
-    color: $color-difference;
+    color: var(--color-difference);
   }
   @media (hover: hover) {
     &:hover {
@@ -311,8 +311,8 @@
 }
 
 .footer-meta-code-link {
-  background-color: #fff;
-  color: $color-dark1;
+  background-color: var(--color-fg-1);
+  color: var(--color-bg-1);
   display: inline-block;
   font-family: $font-monospace;
   margin: 0 0.1rem;
@@ -321,15 +321,15 @@
   text-decoration: none;
   transition: background-color $duration-transition, color $duration-transition;
   @mixin hover {
-    background-color: $color-accent;
-    color: $color-dark1;
+    background-color: var(--color-accent);
+    color: var(--color-bg-1);
     transition-duration: 0ms;
   }
   .no-js &:focus-visible {
     @include hover;
   }
   &:focus-visible {
-    background-color: $color-difference;
+    background-color: var(--color-difference);
   }
   @media (hover: hover) {
     &:hover {

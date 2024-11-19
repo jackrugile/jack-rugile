@@ -18,13 +18,13 @@
 }
 
 .page-not-found .angle--top {
-  fill: $color-accent;
+  fill: var(--color-accent);
   top: -0.5px;
 }
 
 .page-not-found .angle--bot {
   bottom: -0.5px;
-  fill: $color-accent;
+  fill: var(--color-accent);
 }
 
 .page-not-found-title {
@@ -33,7 +33,7 @@
 }
 
 .page-not-found-title-text {
-  color: #fff;
+  color: var(--color-fg-1);
   font-family: $font-serif;
   font-size: 3.5rem;
   font-weight: 300;

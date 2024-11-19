@@ -1,11 +1,39 @@
-$color-accent-hue: 345;
-$color-accent: hsl($color-accent-hue, 100%, 50%);
-$color-difference: #fff;
+:root {
+  --color-accent-hue: 345;
+  --color-accent: hsl(var(--color-accent-hue), 100%, 50%);
+  --color-bg-difference: #fff;
+  --color-difference: #fff;
 
-$color-dark1: hsl($color-accent-hue, 30%, 5%);
-$color-dark2: hsl($color-accent-hue, 15%, 10%);
-$color-dark3: hsl($color-accent-hue, 15%, 20%);
-$color-light1: hsl($color-accent-hue, 30%, 80%);
+  --color-bg-1: hsl(var(--color-accent-hue), 30%, 5%);
+  --color-bg-1-translucent: hsla(var(--color-accent-hue), 30%, 5%, 0.9);
+  --color-bg-2: hsl(var(--color-accent-hue), 15%, 10%);
+  --color-bg-3: hsl(var(--color-accent-hue), 15%, 20%);
+
+  --color-fg-1: #fff;
+  --color-fg-2: hsl(var(--color-accent-hue), 30%, 80%);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-accent-hue: 345;
+    --color-accent: hsl(var(--color-accent-hue), 100%, 50%);
+    --color-bg-difference: #fff;
+    --color-difference: #000;
+
+    // --color-bg-1: hsl(var(--color-accent-hue), 30%, 95%);
+    // --color-bg-1-translucent: hsla(var(--color-accent-hue), 30%, 95%, 0.9);
+    // --color-bg-2: hsl(var(--color-accent-hue), 15%, 90%);
+    // --color-bg-3: hsl(var(--color-accent-hue), 15%, 80%);
+
+    --color-bg-1: hsl(var(--color-accent-hue), 15%, 90%);
+    --color-bg-1-translucent: hsla(var(--color-accent-hue), 15%, 90%, 0.9);
+    --color-bg-2: hsl(var(--color-accent-hue), 30%, 95%);
+    --color-bg-3: hsl(var(--color-accent-hue), 30%, 85%);
+
+    --color-fg-1: hsl(var(--color-accent-hue), 30%, 10%);
+    --color-fg-2: hsl(var(--color-accent-hue), 30%, 20%);
+  }
+}
 
 $duration-transition: 300ms;
 

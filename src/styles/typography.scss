@@ -1,6 +1,6 @@
 ::selection {
-  background-color: $color-accent;
-  color: $color-dark1;
+  background-color: var(--color-accent);
+  color: var(--color-bg-1);
 }
 
 p {

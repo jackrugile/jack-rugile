@@ -3,7 +3,7 @@
 }
 
 html {
-  color-scheme: dark;
+  color-scheme: dark light;
   font-size: 16px;
   &.is-404 {
     height: 100%;
@@ -17,8 +17,8 @@ html {
 }
 
 body {
-  background-color: $color-dark1;
-  color: $color-light1;
+  background-color: var(--color-bg-1);
+  color: var(--color-fg-2);
   font-family: $font-sans-serif;
   font-weight: 400;
   line-height: 1.5;
@@ -62,10 +62,10 @@ body {
 }
 
 .section > h2 {
-  background-color: rgba($color-dark1, 0.9);
+  background-color: var(--color-bg-1-translucent);
   backdrop-filter: blur(4px);
-  border-bottom: 4px solid $color-dark2;
-  color: #fff;
+  border-bottom: 4px solid var(--color-bg-2);
+  color: var(--color-fg-1);
   font-family: $font-serif;
   font-size: 2rem;
   font-weight: 300;
@@ -108,14 +108,14 @@ body {
 
 .section > h2:before {
   animation-delay: -2000ms;
-  border-color: $color-accent;
+  border-color: var(--color-accent);
   @media (prefers-reduced-motion) {
     opacity: 0;
   }
 }
 
 .section > h2:after {
-  border-color: $color-accent;
+  border-color: var(--color-accent);
 }
 
 .section > h2.h2--split {
