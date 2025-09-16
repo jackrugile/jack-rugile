@@ -152,7 +152,7 @@
   position: relative;
   text-decoration: none;
   transition: background-color $duration-transition;
-  width: calc(50% - 2px);
+  width: 100%;
   @mixin hover {
     background-color: $color-dark3;
     position: relative;
