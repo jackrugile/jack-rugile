@@ -1,21 +1,89 @@
-// import data from "../data/data.json";
+import "../styles/index.scss";
 
-// let allProjects = data.projects.map((project) => project.slug);
-// let featuredProjects = [];
-// data.features.forEach((feature) => {
-//   feature.projects.forEach((project) => {
-//     featuredProjects.push(project);
-//   });
-// });
-// let notFeaturedProjects = allProjects.filter(
-//   (x) => !featuredProjects.includes(x)
-// );
-// console.log("all", allProjects);
-// console.log("featured", featuredProjects);
-// console.log("not-featured", notFeaturedProjects);
+const THEME_STORAGE_KEY = "jackrugile-theme";
+const THEME_MODES = [
+  { value: null, label: "Theme: Auto" },
+  { value: "light", label: "Theme: Light" },
+  { value: "dark", label: "Theme: Dark" },
+];
 
-document.documentElement.classList.remove("no-js");
-document.documentElement.classList.add("has-js");
+function getStoredTheme() {
+  try {
+    const t = localStorage.getItem(THEME_STORAGE_KEY);
+    if (t === "light" || t === "dark") return t;
+  } catch (e) {
+    // ignore
+  }
+  return null;
+}
+
+function effectiveThemeIsLight() {
+  const s = getStoredTheme();
+  if (s === "light") return true;
+  if (s === "dark") return false;
+  return window.matchMedia("(prefers-color-scheme: light)").matches;
+}
+
+function updateThemeColorMeta() {
+  const meta = document.getElementById("theme-color-meta");
+  if (!meta) return;
+  meta.setAttribute("content", effectiveThemeIsLight() ? "#f7f7f7" : "#0d0d0d");
+}
+
+function applyDocumentTheme() {
+  const s = getStoredTheme();
+  const root = document.documentElement;
+  if (s === "light" || s === "dark") root.setAttribute("data-theme", s);
+  else root.removeAttribute("data-theme");
+  updateThemeColorMeta();
+  updateThemeToggle();
+}
+
+function getThemeModeIndex() {
+  const s = getStoredTheme();
+  if (s === null) return 0;
+  if (s === "light") return 1;
+  return 2;
+}
+
+function updateThemeToggle() {
+  const btn = document.getElementById("theme-toggle");
+  if (!btn) return;
+  const idx = getThemeModeIndex();
+  const current = THEME_MODES[idx];
+  const next = THEME_MODES[(idx + 1) % THEME_MODES.length];
+  const labelEl = btn.querySelector(".theme-toggle-value");
+  if (labelEl) labelEl.textContent = current.label;
+  btn.setAttribute(
+    "aria-label",
+    `Theme: ${current.label}. Activate to use ${next.label} theme.`,
+  );
+}
+
+function cycleTheme() {
+  const nextIdx = (getThemeModeIndex() + 1) % THEME_MODES.length;
+  const v = THEME_MODES[nextIdx].value;
+  try {
+    if (v == null) localStorage.removeItem(THEME_STORAGE_KEY);
+    else localStorage.setItem(THEME_STORAGE_KEY, v);
+  } catch (e) {
+    // ignore
+  }
+  applyDocumentTheme();
+}
+
+function initTheme() {
+  applyDocumentTheme();
+  const btn = document.getElementById("theme-toggle");
+  if (btn) btn.addEventListener("click", cycleTheme);
+  window
+    .matchMedia("(prefers-color-scheme: light)")
+    .addEventListener("change", () => {
+      if (getStoredTheme() === null) updateThemeColorMeta();
+    });
+}
+
+initTheme();
 
 function consoleBrand() {
   const styles1 = `
@@ -38,60 +106,10 @@ function consoleBrand() {
   console.log(
     "%cMade in Denver, CO and Palm Bay, FL 🏔️❄️🌴🌊%cJack Rugile",
     styles1,
-    styles2
+    styles2,
   );
 
   console.log("View Source: https://github.com/jackrugile/jack-rugile");
 }
 
 consoleBrand();
-
-function handleFocusIndicator() {
-  const focusIndicator = document.querySelector(".focus-indicator");
-  const offset = 5;
-
-  function syncFocusIndicator() {
-    if (document.activeElement && document.activeElement !== document.body) {
-      const bcr = document.activeElement.getBoundingClientRect();
-      const x = bcr.x - offset;
-      const y = bcr.y - offset + window.scrollY;
-      const width = bcr.width + offset * 2;
-      const height = bcr.height + offset * 2;
-      focusIndicator.style.transform = `translate3d(${x}px, ${y}px, 0) scale(${width}, ${height})`;
-    }
-  }
-
-  document.addEventListener("blur", syncFocusIndicator, true);
-  document.addEventListener("focusin", syncFocusIndicator, true);
-  window.addEventListener("resize", syncFocusIndicator);
-  window.addEventListener("pageshow", () => {
-    focusIndicator.style.transform = `translate3d(0px, 0px, 0) scale(0, 0)`;
-  });
-  syncFocusIndicator();
-}
-
-handleFocusIndicator();
-
-function initImage(image) {
-  image.parentNode.classList.add("loaded");
-}
-
-function onImageLoad(e) {
-  initImage(this);
-  this.removeEventListener("load", onImageLoad);
-}
-
-function onImageError() {
-  this.removeEventListener("load", onImageError);
-}
-
-const images = document.querySelectorAll("img[loading='lazy']");
-
-images.forEach((image) => {
-  if (image.complete && image.naturalWidth > 1) {
-    initImage(image);
-  } else {
-    image.addEventListener("load", onImageLoad);
-    image.addEventListener("error", onImageError);
-  }
-});

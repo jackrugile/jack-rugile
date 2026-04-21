@@ -1,6 +1,6 @@
 .call-to-action {
   align-items: center;
-  background-color: $color-dark2;
+  background-color: $color-call-to-action-bg;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,25 +25,25 @@
 }
 
 .call-to-action .angle--top {
-  fill: $color-dark1;
+  fill: $color-call-to-action-angle-fill;
   top: -0.5px;
 }
 
 .call-to-action .angle--bot {
   bottom: -0.5px;
-  fill: $color-dark1;
+  fill: $color-call-to-action-angle-fill;
 }
 
 .call-to-action-title {
-  color: $color-accent;
+  color: var(--color-accent);
   font-family: $font-serif;
   font-size: 2.25rem;
   font-weight: 300;
-  line-height: 1.3;
+  line-height: 1.25;
   margin-bottom: 4rem;
   position: relative;
   &:after {
-    background-color: $color-dark3;
+    background-color: var(--color-call-to-action-title-rule);
     bottom: -2rem;
     content: "";
     height: 2px;
@@ -73,26 +73,18 @@
 }
 
 .call-to-action-content a {
-  color: #fff;
+  color: var(--color-text-strong);
   display: inline-block;
   font-weight: 700;
-  transition: color $duration-transition;
   @mixin hover {
-    color: $color-accent;
-    transition-duration: 0ms;
-  }
-  .no-js &:focus-visible {
-    @include hover;
+    color: var(--color-accent);
   }
   &:focus-visible {
-    color: $color-difference;
+    color: var(--color-accent);
   }
   @media (hover: hover) {
     &:hover {
       @include hover;
     }
-  }
-  @media (prefers-reduced-motion) {
-    transition: none;
   }
 }

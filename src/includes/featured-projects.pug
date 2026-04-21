@@ -1,3 +1,6 @@
+-
+  const projectCellSizes = '(max-width: 39.99em) calc(100vw - 4rem), (min-width: 40em) and (max-width: 59.99em) calc((min(110rem, 100vw - 4rem) - 2rem) / 2), (min-width: 60em) and (max-width: 79.99em) calc((min(110rem, 100vw - 16rem) - 2rem) / 2), (min-width: 80em) calc((min(110rem, 100vw - 16rem) - 4rem) / 3)'
+- let projectCellIndex = 0
 each feature in data.features
   - let cat = data.categories.find(e => e.slug === feature.category);
   section.section
@@ -6,41 +9,42 @@ each feature in data.features
       each slug in feature.projects
         - let project = data.projects.find(e => e.slug === slug);
         if project
+          - const isFirstLcpCell = projectCellIndex === 0
+          - const isEagerLoadImage = projectCellIndex < 3
+          - projectCellIndex++
           article.cell
-            div.cell-picture-wrap
-              div.cell-lqip-wrap
-                img(
-                  src!=`data-url:${project.image.src}?width=32`
-                  class="cell-lqip"
-                  alt=""
+            picture.cell-picture
+              each imageType in data.imageTypes
+                source(
+                  srcset!=`
+                    ${project.image.src}?as=${imageType}&width=320 320w,
+                    ${project.image.src}?as=${imageType}&width=480 480w,
+                    ${project.image.src}?as=${imageType}&width=640 640w,
+                    ${project.image.src}?as=${imageType}&width=720 720w,
+                    ${project.image.src}?as=${imageType}&width=800 800w,
+                    ${project.image.src}?as=${imageType}&width=1024 1024w,
+                    ${project.image.src}?as=${imageType}&width=1280 1280w
+                  `
+                  sizes=projectCellSizes
+                  type=`image/${imageType}`
                 )
-              picture.cell-picture
-                each imageType in data.imageTypes
-                  source(
-                    srcset!=`
-                      ${project.image.src}?as=${imageType}&width=480 480w,
-                      ${project.image.src}?as=${imageType}&width=800 800w,
-                      ${project.image.src}?as=${imageType}&width=1280 1280w
-                    `
-                    type=`image/${imageType}`
-                  )
-                img(
-                  loading="lazy"
-                  sizes="(min-width: 160em) 540px, (min-width: 120em) 25vw, (min-width: 80em) 33vw, (min-width: 40em) 50vw, 100vw"
-                  src!=`${project.image.src}?width=1280`
-                  alt=project.image.alt
-                  width="1280"
-                  height="720"
-                  class="cell-image"
-                )
-            div.cell-inner
-              div.cell-content
-                h3.cell-title #{project.title}
-                h4.cell-subtitle !{project.subtitle}
-                if project.description
-                  p.cell-description !{project.description}
-                if project.location
-                  p.cell-location @ !{project.location}
-              div.cell-links
-                each link in project.links
-                  a.cell-link(href=link.url, aria-label=link.ariaLabel) #{link.label}
+              img(
+                loading=(isEagerLoadImage ? "eager" : "lazy")
+                sizes=projectCellSizes
+                src!=`${project.image.src}?width=640`
+                alt=project.image.alt
+                width="320"
+                height="180"
+                class="cell-image"
+                fetchpriority=(isFirstLcpCell ? "high" : undefined)
+              )
+            div.cell-content
+              h3.cell-title #{project.title}
+              h4.cell-subtitle !{project.subtitle}
+              if project.description
+                p.cell-description !{project.description}
+              if project.location
+                p.cell-location @ !{project.location}
+            div.cell-links
+              each link in project.links
+                a.cell-link(href=link.url, aria-label=link.ariaLabel) #{link.label}

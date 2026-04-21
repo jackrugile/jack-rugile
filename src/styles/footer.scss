@@ -1,6 +1,6 @@
 .footer {
   align-items: center;
-  background-color: $color-dark1;
+  background-color: $color-main-bg;
   display: flex;
   justify-content: center;
   min-height: 50vh;
@@ -23,7 +23,7 @@
 
 .footer .angle--bot {
   bottom: -0.5px;
-  fill: $color-accent;
+  fill: var(--color-accent);
 }
 
 .footer-inner {
@@ -43,8 +43,9 @@
   }
 }
 
-.footer-profile-picture-wrap {
-  background-color: $color-dark2;
+.footer-profile-picture {
+  background-color: $color-footer-profile-wrap-bg;
+  display: block;
   margin: 0 0 2rem;
   overflow: hidden;
   padding: 4px;
@@ -55,47 +56,11 @@
   }
 }
 
-.footer-profile-lqip-wrap {
-  bottom: 4px;
-  left: 4px;
-  overflow: hidden;
-  pointer-events: none;
-  position: absolute;
-  right: 4px;
-  top: 4px;
-}
-
-.footer-profile-lqip {
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  transform: scale(1.025);
-  transition: transform $duration-transition * 2;
-  width: 100%;
-  .loaded & {
-    transform: scale(1);
-  }
-}
-
-.footer-profile-picture {
-  display: block;
-  overflow: hidden;
-  position: relative;
-}
-
 .footer-profile-image {
   display: block;
   height: auto;
   position: relative;
   width: 100%;
-  .has-js & {
-    opacity: 0;
-    transition: opacity $duration-transition * 2;
-  }
-  .has-js .loaded & {
-    opacity: 1;
-  }
 }
 
 .footer-profile-content {
@@ -106,28 +71,20 @@
 }
 
 .footer-profile-content a {
-  color: #fff;
+  color: var(--color-text-strong);
   font-weight: 700;
   position: relative;
-  transition: color $duration-transition;
   white-space: nowrap;
   @mixin hover {
-    color: $color-accent;
-    transition-duration: 0ms;
-  }
-  .no-js &:focus-visible {
-    @include hover;
+    color: var(--color-accent);
   }
   &:focus-visible {
-    color: $color-difference;
+    color: var(--color-accent);
   }
   @media (hover: hover) {
     &:hover {
       @include hover;
     }
-  }
-  @media (prefers-reduced-motion) {
-    transition: none;
   }
 }
 
@@ -145,24 +102,19 @@
 
 .footer-link {
   align-items: center;
-  background-color: $color-dark2;
+  background-color: $color-footer-link-bg;
   display: flex;
   padding: 0.75rem;
   position: relative;
   text-decoration: none;
-  transition: background-color $duration-transition;
   width: 100%;
   @mixin hover {
-    background-color: $color-dark3;
+    background-color: $color-footer-link-hover-bg;
     position: relative;
-    transition-duration: 0ms;
     z-index: 1;
   }
-  .no-js &:focus-visible {
-    @include hover;
-  }
   &:focus-visible {
-    background-color: $color-dark1;
+    @include hover;
   }
   @media (hover: hover) {
     &:hover {
@@ -174,9 +126,6 @@
     padding: 0.25rem;
     width: auto;
     &:hover,
-    .no-js &:focus-visible {
-      background-color: transparent;
-    }
     &:focus-visible {
       background-color: transparent;
     }
@@ -184,20 +133,15 @@
 }
 
 .footer-link-icon {
-  fill: #fff;
+  fill: var(--color-text-strong);
   flex-shrink: 0;
   margin: 0 0.5rem 0 0;
-  transition: fill $duration-transition;
   width: 1.5rem;
   @mixin hover {
-    fill: $color-accent;
-    transition-duration: 0ms;
-  }
-  .no-js .footer-link:focus-visible & {
-    @include hover;
+    fill: var(--color-accent);
   }
   .footer-link:focus-visible & {
-    fill: $color-difference;
+    @include hover;
   }
   @media (hover: hover) {
     .footer-link:hover & {
@@ -209,134 +153,117 @@
     margin: 0 0.5rem 0 0;
     width: 1.75rem;
   }
-  @media (prefers-reduced-motion) {
-    transition: none;
-  }
 }
 
 .footer-link-text {
-  color: #fff;
+  color: var(--color-text-strong);
   font-size: 1rem;
   font-weight: 400;
   line-height: 1;
-  transition: color $duration-transition;
   vertical-align: middle;
   @mixin hover {
-    color: $color-accent;
-    transition-duration: 0ms;
-  }
-  .no-js .footer-link:focus-visible & {
-    @include hover;
+    color: var(--color-accent);
   }
   .footer-link:focus-visible & {
-    color: $color-difference;
+    @include hover;
   }
   @media (hover: hover) {
     .footer-link:hover & {
       @include hover;
     }
   }
-  @media (prefers-reduced-motion) {
-    transition: none;
-  }
 }
 
 .footer-meta {
+  align-items: center;
+  display: flex;
   flex-basis: 100%;
+  flex-direction: column;
   font-size: 1rem;
   font-weight: 400;
+  gap: 1.25rem;
   line-height: 1;
   text-align: center;
+  @media (min-width: 40em) {
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0;
+    justify-content: center;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
 }
 
-.footer-meta-divider {
-  display: none;
-  margin: 0 0.75rem;
+.footer-meta > * + *::before {
   @media (min-width: 40em) {
+    content: "//";
     display: inline-block;
+    margin: 0 0.75rem;
+    white-space: nowrap;
   }
 }
 
 .footer-meta-copyright {
   margin: 0;
-  @media (min-width: 40em) {
-    display: inline-block;
-  }
 }
 
 .footer-meta-resume {
-  margin-bottom: 0;
-  margin-top: 1.25rem;
-  @media (min-width: 40em) {
-    display: inline-block;
-    margin-top: 0;
-  }
+  margin: 0;
 }
 
 .footer-meta-resume-link {
-  color: #fff;
+  color: var(--color-text-strong);
   display: inline-block;
   font-weight: 700;
   position: relative;
-  transition: color $duration-transition;
   white-space: nowrap;
   @mixin hover {
-    color: $color-accent;
-    transition-duration: 0ms;
-  }
-  .no-js &:focus-visible {
-    @include hover;
+    color: var(--color-accent);
   }
   &:focus-visible {
-    color: $color-difference;
+    @include hover;
   }
   @media (hover: hover) {
     &:hover {
       @include hover;
     }
   }
-  @media (prefers-reduced-motion) {
-    transition: none;
-  }
 }
 
 .footer-meta-code {
-  margin-bottom: 0;
-  margin-top: 1.25rem;
+  margin: 0;
+}
+
+.footer-meta-theme {
+  margin: 0;
   @media (min-width: 40em) {
-    display: inline-block;
-    margin-top: 0;
+    vertical-align: middle;
   }
 }
 
 .footer-meta-code-link {
-  background-color: #fff;
-  color: $color-dark1;
+  background-color: var(--color-badge-bg);
+  color: var(--color-badge-fg);
   display: inline-block;
   font-family: $font-monospace;
   margin: 0 0.1rem;
   padding: 0.25rem 0.35rem;
   position: relative;
   text-decoration: none;
-  transition: background-color $duration-transition, color $duration-transition;
   @mixin hover {
-    background-color: $color-accent;
-    color: $color-dark1;
-    transition-duration: 0ms;
-  }
-  .no-js &:focus-visible {
-    @include hover;
+    background-color: var(--color-accent);
+    color: var(--color-on-accent);
   }
   &:focus-visible {
-    background-color: $color-difference;
+    @include hover;
   }
   @media (hover: hover) {
     &:hover {
       @include hover;
     }
-  }
-  @media (prefers-reduced-motion) {
-    transition: none;
   }
 }
 

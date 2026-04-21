@@ -1,4 +1,5 @@
 .page-not-found {
+  background-color: $color-page-not-found-bg;
   align-items: center;
   display: flex;
   height: 100%;
@@ -18,25 +19,48 @@
 }
 
 .page-not-found .angle--top {
-  fill: $color-accent;
+  fill: var(--color-accent);
   top: -0.5px;
 }
 
 .page-not-found .angle--bot {
   bottom: -0.5px;
-  fill: $color-accent;
+  fill: var(--color-accent);
 }
 
 .page-not-found-title {
   align-items: center;
   display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
 }
 
 .page-not-found-title-text {
-  color: #fff;
+  color: var(--color-text-strong);
   font-family: $font-serif;
   font-size: 3.5rem;
   font-weight: 300;
   line-height: 1.2;
   margin-bottom: 0;
+}
+
+.page-not-found-home {
+  color: var(--color-text-strong);
+  display: inline-block;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.15em;
+  @mixin hover {
+    color: var(--color-accent);
+  }
+  &:focus-visible {
+    @include hover;
+  }
+  @media (hover: hover) {
+    &:hover {
+      @include hover;
+    }
+  }
 }

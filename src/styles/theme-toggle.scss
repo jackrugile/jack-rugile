@@ -1,0 +1,22 @@
+@import "./variables";
+
+.theme-toggle {
+  background-color: var(--color-bg-3);
+  display: inline-block;
+  vertical-align: middle;
+  border: 2px solid var(--color-accent);
+  color: var(--color-text-strong);
+  cursor: pointer;
+  font-family: $font-sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: 0.4rem 0.65rem;
+  &:hover {
+    background-color: var(--color-bg-2);
+  }
+  &:focus-visible {
+    outline: 3px solid var(--color-focus-indicator);
+    outline-offset: 2px;
+  }
+}

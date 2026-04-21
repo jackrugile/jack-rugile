@@ -1,0 +1,77 @@
+@import "./variables";
+
+@mixin theme-dark {
+  --color-bg-1: hsl(#{$color-accent-hue}, 0%, 5%);
+  --color-bg-2: hsl(#{$color-accent-hue}, 0%, 10%);
+  --color-bg-3: hsl(#{$color-accent-hue}, 0%, 20%);
+  --color-main-bg: hsl(#{$color-accent-hue}, 0%, 5%);
+  --color-page-not-found-bg: hsl(#{$color-accent-hue}, 0%, 5%);
+  --color-header-bg: hsl(#{$color-accent-hue}, 0%, 10%);
+  --color-call-to-action-bg: hsl(#{$color-accent-hue}, 0%, 10%);
+  --color-call-to-action-angle-fill: hsl(#{$color-accent-hue}, 0%, 5%);
+  --color-footer-profile-wrap-bg: hsl(#{$color-accent-hue}, 0%, 10%);
+  --color-footer-link-bg: hsl(#{$color-accent-hue}, 0%, 10%);
+  --color-footer-link-hover-bg: hsl(#{$color-accent-hue}, 0%, 20%);
+  --color-call-to-action-title-rule: hsl(#{$color-accent-hue}, 0%, 20%);
+  --color-project-panel: var(--color-bg-2);
+  --color-project-panel-emphasis: var(--color-bg-3);
+  --color-project-link-hover-bg: var(--color-bg-3);
+  --color-text-body: hsl(#{$color-accent-hue}, 0%, 80%);
+  --color-text-strong: #fff;
+  --color-accent: hsl(#{$color-accent-hue}, 100%, 50%);
+  --color-on-accent: hsl(#{$color-accent-hue}, 0%, 5%);
+  --color-badge-bg: #fff;
+  --color-badge-fg: hsl(#{$color-accent-hue}, 0%, 5%);
+  --color-sticky-text: #fff;
+  --color-sticky-border: hsl(#{$color-accent-hue}, 0%, 10%);
+  --color-focus-indicator: #fff;
+}
+
+@mixin theme-light {
+  --color-bg-1: hsl(#{$color-accent-hue}, 0%, 87%);
+  --color-bg-2: hsl(#{$color-accent-hue}, 0%, 94%);
+  --color-bg-3: hsl(#{$color-accent-hue}, 0%, 97%);
+  --color-main-bg: hsl(#{$color-accent-hue}, 0%, 94%);
+  --color-page-not-found-bg: #fff;
+  --color-header-bg: #fff;
+  --color-call-to-action-bg: #fff;
+  --color-call-to-action-angle-fill: hsl(#{$color-accent-hue}, 0%, 94%);
+  --color-footer-profile-wrap-bg: #fff;
+  --color-footer-link-bg: hsl(#{$color-accent-hue}, 0%, 100%);
+  --color-footer-link-hover-bg: var(--color-bg-1);
+  --color-call-to-action-title-rule: hsl(#{$color-accent-hue}, 0%, 70%);
+  --color-project-panel: #fff;
+  --color-project-panel-emphasis: hsl(#{$color-accent-hue}, 0%, 60%);
+  --color-project-link-hover-bg: var(--color-bg-1);
+  --color-text-body: hsl(#{$color-accent-hue}, 0%, 22%);
+  --color-text-strong: hsl(#{$color-accent-hue}, 0%, 10%);
+  --color-accent: hsl(#{$color-accent-hue}, 100%, 46%);
+  --color-on-accent: hsl(#{$color-accent-hue}, 0%, 8%);
+  --color-badge-bg: hsl(#{$color-accent-hue}, 0%, 12%);
+  --color-badge-fg: hsl(#{$color-accent-hue}, 0%, 96%);
+  --color-sticky-text: hsl(#{$color-accent-hue}, 0%, 10%);
+  --color-sticky-border: hsl(#{$color-accent-hue}, 0%, 70%);
+  --color-focus-indicator: #000;
+}
+
+html {
+  color-scheme: dark light;
+}
+
+:root {
+  @include theme-dark;
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme]) {
+    @include theme-light;
+  }
+}
+
+:root[data-theme="light"] {
+  @include theme-light;
+}
+
+:root[data-theme="dark"] {
+  @include theme-dark;
+}

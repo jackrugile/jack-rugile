@@ -1,17 +1,14 @@
 $color-accent-hue: 345;
-$color-accent: hsl($color-accent-hue, 100%, 50%);
-$color-difference: #fff;
 
-$color-dark1: hsl($color-accent-hue, 30%, 5%);
-$color-dark2: hsl($color-accent-hue, 15%, 10%);
-$color-dark3: hsl($color-accent-hue, 15%, 20%);
-$color-light1: hsl($color-accent-hue, 30%, 80%);
-
-$duration-transition: 300ms;
-
-$font-serif: Merriweather, georgia, serif;
-$font-sans-serif: Lato, helvetica, arial, sans-serif;
-$font-monospace: consolas, courier, monospace;
+$font-serif:
+  "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia,
+  serif;
+$font-sans-serif:
+  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+  Arial, sans-serif;
+$font-monospace:
+  ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono",
+  "Courier New", monospace;
 
 $linear: cubic-bezier(0.25, 0.25, 0.75, 0.75);
 $ease: cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -45,3 +42,15 @@ $easeInOutSine: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 $easeInOutExpo: cubic-bezier(1, 0, 0, 1);
 $easeInOutCirc: cubic-bezier(0.785, 0.135, 0.15, 0.86);
 $easeInOutBack: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+$color-main-bg: var(--color-main-bg);
+$color-page-not-found-bg: var(--color-page-not-found-bg);
+$color-header-bg: var(--color-header-bg);
+$color-call-to-action-bg: var(--color-call-to-action-bg);
+$color-call-to-action-angle-fill: var(--color-call-to-action-angle-fill);
+$color-footer-profile-wrap-bg: var(--color-footer-profile-wrap-bg);
+$color-footer-link-bg: var(--color-footer-link-bg);
+$color-footer-link-hover-bg: var(--color-footer-link-hover-bg);
+$color-project-panel: var(--color-project-panel);
+$color-project-panel-emphasis: var(--color-project-panel-emphasis);
+$color-project-link-hover-bg: var(--color-project-link-hover-bg);
